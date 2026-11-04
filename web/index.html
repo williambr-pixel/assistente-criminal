@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="ChatJuridico: análise informativa de relatos e consulta offline a leis penais brasileiras."
+      content="ChatJuridico: análise local de relatos, consulta a seis normas brasileiras, fontes oficiais, glossário jurídico e indicações de livros."
     />
     <meta name="theme-color" content="#2563eb" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
         </a>
         <div class="topbar-actions">
           <button class="install-button" id="install-button" type="button" hidden>Instalar app</button>
-          <span class="offline-label"><span></span> Consulta offline</span>
+          <span class="offline-label"><span></span> Acesso offline</span>
         </div>
       </header>
 
@@ -49,15 +49,16 @@
           <p class="eyebrow"><span class="eyebrow-line"></span> CONSULTA PENAL</p>
           <h1 id="page-title">Entenda os possíveis<br /><span>enquadramentos.</span></h1>
           <p class="intro-copy">
-            Descreva os fatos do caso. A ferramenta identifica termos e indica artigos
-            que podem ser relevantes para sua análise.
+            Descreva os fatos para comparar palavras do relato com referências da base penal local.
+            O processamento é feito no aparelho; os resultados são sugestões informativas, não uma
+            conclusão jurídica.
           </p>
         </section>
 
         <button class="vade-quick-access" id="vade-shortcut" type="button">
           <span class="vade-quick-copy">
             <strong>Vade Mecum</strong>
-            <span>Pesquise e leia a legislação federal completa, inclusive offline.</span>
+            <span>Consulte seis normas brasileiras selecionadas, também offline após o carregamento inicial.</span>
           </span>
           <span class="vade-quick-action">Consultar <span aria-hidden="true">→</span></span>
         </button>
@@ -159,7 +160,7 @@
           <section class="intro">
             <p class="eyebrow"><span class="eyebrow-line"></span> LEGISLAÇÃO FEDERAL</p>
             <h1 id="vade-title">Consulte as leis<br /><span>do seu caso.</span></h1>
-            <p class="intro-copy">Pesquise artigos na Constituição, no Código Penal e em outras leis centrais. O texto fica disponível no aparelho, mesmo sem internet, depois da primeira abertura.</p>
+            <p class="intro-copy">Pesquise em seis normas selecionadas: Constituição Federal, Código Penal, Código de Processo Penal, Lei Maria da Penha, Lei de Drogas e Lei de Execução Penal. O texto local fica disponível offline após o carregamento inicial.</p>
           </section>
 
           <form class="vade-search-panel" id="vade-search-form">
