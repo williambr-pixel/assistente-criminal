@@ -1,0 +1,123 @@
+naming:
+  active: true
+  FunctionNaming:
+    active: true
+    functionPattern: '^[a-z][a-zA-Z0-9]*'
+    ignoreAnnotated: [ 'Composable' ]
+  TopLevelPropertyNaming:
+    active: true
+    constantPattern: '[A-Z][A-Z0-9_]*'
+    propertyPattern: '[a-z][A-Za-z0-9]*'
+    privatePropertyPattern: '(_)?[a-z][A-Za-z0-9]*'
+    ignoreAnnotated: [ 'Composable' ]
+
+complexity:
+  active: true
+  LongMethod:
+    active: true
+    allowedLines: 60
+  LongParameterList:
+    active: true
+    allowedFunctionParameters: 10
+    ignoreDefaultParameters: true
+  TooManyFunctions:
+    active: true
+    allowedFunctionsPerFile: 30
+    ignoreDeprecated: true
+    ignorePrivate: true
+    ignoreAnnotatedFunctions: [ 'Composable' ]
+
+style:
+  active: true
+  MagicNumber:
+    active: true
+    ignoreNumbers: [ '-1', '0', '1', '2', '4', '8', '12', '16', '24', '32', '64' ]
+    ignoreAnnotated: [ 'Preview', 'Composable' ]
+  MaxLineLength:
+    active: true
+    maxLineLength: 120
+    # Removed 'excludeComment' to fix build failure
+  
+  UnusedPrivateFunction:
+    active: true
+    ignoreAnnotated: [ 'Preview' ]
+  UnusedPrivateProperty:
+    active: true
+  UnusedParameter:
+    active: true
+
+comments:
+  active: true
+
+Compose:
+  active: true
+  ComposableNaming:
+    active: true
+  CompositionLocalAllowlist:
+    active: false
+  CompositionLocalNaming:
+    active: true
+  RememberContentMissing:
+    active: true
+  RememberMissing:
+    active: true
+  ModifierMissing:
+    active: false
+  ModifierNotUsedAtRoot:
+    active: false
+  ModifierWithoutDefault:
+    active: false
+  ViewModelInjection:
+    active: false
+
+potential-bugs:
+  active: true
+  NullableToStringCall:
+    active: true
+  ImplicitDefaultLocale:
+    active: true
+  UnreachableCatchBlock:
+    active: true
+  UnsafeCast:
+    active: true
+  InvalidRange:
+    active: true
+  # Removed 'IteratorNotThrowsNoSuchElementException' to fix build failure
+
+exceptions:
+  active: true
+
+ktlint:
+  active: true
+  BackingPropertyNaming:
+    active: false
+  Indentation:
+    active: true
+  BlankLineBetweenWhenConditions:
+    active: false
+  ClassSignature:
+    active: false
+  FinalNewline:
+    active: true
+  FunctionSignature:
+    active: false
+  FunctionExpressionBody:
+    active: false
+  ImportOrdering:
+    active: false
+  MaximumLineLength:
+    active: false
+  NoTrailingSpaces:
+    active: true
+  TrailingCommaOnCallSite:
+    active: false
+  TrailingCommaOnDeclarationSite:
+    active: false
+
+empty-blocks:
+  active: true
+
+performance:
+  active: true
+  SpreadOperator:
+    active: true

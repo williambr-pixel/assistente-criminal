@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="article_details_legal_text_header">Texto legal</string>
+    <string name="article_details_penalty_header">Pena</string>
+    <string name="article_details_elements_header">Elementos do tipo</string>
+    <string name="article_details_observations_header">Observações práticas</string>
+    <string name="article_details_not_found">Artigo não encontrado na base local.</string>
+    <string name="article_details_disclaimer">Conteúdo informativo e offline. Confira a redação oficial e as alterações legislativas antes de usar em peça ou parecer.</string>
+    <string name="crime_group_administracao_publica">Administração pública</string>
+    <string name="crime_group_armas">Armas</string>
+    <string name="crime_group_dignidade_sexual">Dignidade sexual</string>
+    <string name="crime_group_drogas">Drogas</string>
+    <string name="crime_group_fe_publica">Fé pública</string>
+    <string name="crime_group_honra">Honra</string>
+    <string name="crime_group_liberdade">Liberdade</string>
+    <string name="crime_group_outros">Outros</string>
+    <string name="crime_group_patrimonio">Patrimônio</string>
+    <string name="crime_group_transito">Trânsito</string>
+    <string name="crime_group_vida">Vida</string>
+    <string name="crime_group_violencia_domestica">Violência doméstica</string>
+</resources>

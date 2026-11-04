@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="case_search_title">Assistente criminal</string>
+    <string name="case_search_intro_title">Descreva o caso</string>
+    <string name="case_search_intro_body">Relate os fatos como faria em uma consulta. O app sugere os artigos penais mais prováveis a partir dos elementos descritos.</string>
+    <string name="case_search_query_label">Relato do caso</string>
+    <string name="case_search_query_placeholder" tools:ignore="Typos">Ex.: o autor, armado, rendeu a vítima e levou o celular.</string>
+    <string name="case_search_query_support">Inclua a conduta, o meio empregado, o resultado e o contexto.</string>
+    <string name="case_search_submit">Analisar caso</string>
+    <string name="case_search_clear">Limpar</string>
+    <string name="case_search_examples_title">Exemplos de relato</string>
+    <string name="case_search_example_armed_robbery" tools:ignore="Typos">O autor, armado, rendeu a vítima e levou o celular.</string>
+    <string name="case_search_example_domestic_violence">O companheiro agrediu a vítima com socos e a ameaçou de morte em casa.</string>
+    <string name="case_search_example_fraud" tools:ignore="Typos">O autor aplicou um golpe pelo WhatsApp e fez a vítima transferir dinheiro por Pix.</string>
+    <string name="case_search_example_drugs" tools:ignore="Typos">O autor foi flagrado vendendo porções de cocaína e guardando dinheiro trocado.</string>
+    <plurals name="case_search_results_header">
+        <item quantity="one">%1$d artigo possível</item>
+        <item quantity="other">%1$d artigos possíveis</item>
+    </plurals>
+    <string name="case_search_matched_terms">Termos identificados: %1$s</string>
+    <string name="case_search_conflict_warning">Há termos que podem indicar outro tipo penal. Confira as circunstâncias.</string>
+    <string name="case_search_no_results_title">Nenhum artigo encontrado</string>
+    <string name="case_search_no_results_body">Descreva melhor a conduta, o meio empregado e o resultado. Também vale citar o contexto e o vínculo entre as pessoas.</string>
+    <string name="case_search_disclaimer">Base informativa offline. Confira sempre a redação oficial e as alterações legislativas antes de usar em peça ou parecer.</string>
+    <string name="case_search_confidence_high">Alta</string>
+    <string name="case_search_confidence_medium">Média</string>
+    <string name="case_search_confidence_low">Baixa</string>
+    <string name="case_search_example_action">Usar exemplo</string>
+</resources>

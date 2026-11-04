@@ -1,0 +1,1170 @@
+[
+  {
+    "id": "cp-121",
+    "code": "Código Penal",
+    "article": "Art. 121",
+    "title": "Homicídio simples",
+    "group": "VIDA",
+    "legalText": "Matar alguém.",
+    "penalty": "Reclusão, de 6 (seis) a 20 (vinte) anos.",
+    "elements": [
+      "Conduta de matar outra pessoa",
+      "Resultado morte",
+      "Nexo de causalidade entre a conduta e a morte",
+      "Dolo, ainda que eventual"
+    ],
+    "observations": [
+      "Se o crime é cometido por motivo fútil ou torpe, com meio cruel, emboscada ou recurso que dificulte a defesa, aplica-se o homicídio qualificado (art. 121, § 2º).",
+      "Homicídio praticado contra a mulher por razões da condição de sexo feminino configura feminicídio.",
+      "Sem dolo, o caso pode ser homicídio culposo (art. 121, § 3º)."
+    ],
+    "strongKeywords": ["homicídio", "homicidio", "matou", "mataram", "matar", "assassinou", "assassinato"],
+    "keywords": ["morte", "morto", "corpo", "óbito", "obito", "disparo", "golpe", "facada", "sangue", "arma"],
+    "disqualifiers": ["culposo", "sem intenção", "acidente"]
+  },
+  {
+    "id": "cp-121-2",
+    "code": "Código Penal",
+    "article": "Art. 121, § 2º",
+    "title": "Homicídio qualificado e feminicídio",
+    "group": "VIDA",
+    "legalText": "Matar alguém mediante paga ou promessa de recompensa, por motivo torpe ou fútil, com meio cruel ou insidioso, à traição, de emboscada ou mediante recurso que dificulte a defesa da vítima, para assegurar outro crime, ou contra a mulher por razões da condição de sexo feminino.",
+    "penalty": "Reclusão, de 12 (doze) a 30 (trinta) anos.",
+    "elements": [
+      "Homicídio doloso",
+      "Presença de ao menos uma circunstância qualificadora",
+      "No feminicídio, motivação ligada à condição de sexo feminino"
+    ],
+    "observations": [
+      "Qualificadoras comuns: motivo fútil, motivo torpe, meio cruel, veneno, fogo, explosivo, emboscada, traição, dissimulação e conexão com outro crime.",
+      "O feminicídio exige contexto de violência doméstica e familiar ou menosprezo à condição de mulher.",
+      "Aumentos de pena podem incidir em razão de descumprimento de medida protetiva ou presença de menores."
+    ],
+    "strongKeywords": ["qualificado", "feminicídio", "feminicidio", "motivo fútil", "motivo torpe", "emboscada", "traição", "veneno", "tortura", "paga", "recompensa"],
+    "keywords": ["matou", "homicídio", "morte", "ocultar", "impunidade", "meio cruel", "dissimulação", "companheira", "esposa"],
+    "disqualifiers": ["culposo", "sem intenção"]
+  },
+  {
+    "id": "cp-121-3",
+    "code": "Código Penal",
+    "article": "Art. 121, § 3º",
+    "title": "Homicídio culposo",
+    "group": "VIDA",
+    "legalText": "Matar alguém por negligência, imprudência ou imperícia, sem a intenção de produzir o resultado.",
+    "penalty": "Detenção, de 1 (um) a 3 (três) anos.",
+    "elements": [
+      "Conduta sem dolo de matar",
+      "Violação de dever objetivo de cuidado",
+      "Resultado morte",
+      "Previsibilidade objetiva do resultado"
+    ],
+    "observations": [
+      "Se o crime é praticado na direção de veículo automotor, aplica-se o art. 302 do Código de Trânsito Brasileiro.",
+      "A culpa consciente pode configurar dolo eventual, alterando o enquadramento para homicídio doloso."
+    ],
+    "strongKeywords": ["homicídio culposo", "culposo", "negligência", "imprudência", "imperícia"],
+    "keywords": ["acidente", "morte", "atropelou", "dirigia", "carro", "caminhão", "queda", "afogamento"],
+    "disqualifiers": ["quis matar", "dolo", "intenção de matar"]
+  },
+  {
+    "id": "cp-122",
+    "code": "Código Penal",
+    "article": "Art. 122",
+    "title": "Induzimento, instigação ou auxílio ao suicídio",
+    "group": "VIDA",
+    "legalText": "Induzir ou instigar alguém a suicidar-se ou prestar-lhe auxílio para que o faça, quando o suicídio se consuma ou a tentativa é iniciada.",
+    "penalty": "Reclusão, de 2 (dois) a 6 (seis) anos.",
+    "elements": [
+      "Induzimento, instigação ou auxílio",
+      "Consumação do suicídio ou início da tentativa",
+      "Vítima com capacidade de resistência"
+    ],
+    "observations": [
+      "Se a vítima é menor de 14 anos ou não tem discernimento, o caso pode ser homicídio.",
+      "A pena aumenta se o crime é praticado por motivo egoístico ou por quem tem autoridade sobre a vítima."
+    ],
+    "strongKeywords": ["induziu ao suicídio", "instigou ao suicídio", "auxílio ao suicídio", "incentivou a se matar"],
+    "keywords": ["suicídio", "suicidio", "se matar", "cartas", "mensagens", "desafio", "jogo"],
+    "disqualifiers": ["matou", "homicídio doloso"]
+  },
+  {
+    "id": "cp-129",
+    "code": "Código Penal",
+    "article": "Art. 129",
+    "title": "Lesão corporal",
+    "group": "VIDA",
+    "legalText": "Ofender a integridade corporal ou a saúde de outrem.",
+    "penalty": "Detenção, de 3 (três) meses a 1 (um) ano.",
+    "elements": [
+      "Ofensa à integridade corporal ou à saúde",
+      "Dolo de lesionar",
+      "Nexo causal entre a conduta e a lesão"
+    ],
+    "observations": [
+      "Se a lesão é praticada em contexto de violência doméstica, aplica-se o § 9º, com pena mais grave.",
+      "A lesão culposa está prevista no § 3º.",
+      "Lesões leves podem ser alcançadas pelo princípio da insignificância em situações excepcionais, tema sensível na violência doméstica."
+    ],
+    "strongKeywords": ["lesão corporal", "lesão", "lesionou", "lesionada", "lesionado", "agressão", "agrediu", "espancou", "feriu"],
+    "keywords": ["hematoma", "machucado", "socos", "chutes", "tapas", "empurrão", "briga", "ferimento", "dor", "hospital", "atendimento médico"],
+    "disqualifiers": ["morte", "matou", "arma de fogo", "estupro"]
+  },
+  {
+    "id": "cp-129-3",
+    "code": "Código Penal",
+    "article": "Art. 129, § 3º",
+    "title": "Lesão corporal culposa",
+    "group": "VIDA",
+    "legalText": "Ofender a integridade corporal ou a saúde de outrem por negligência, imprudência ou imperícia.",
+    "penalty": "Detenção, de 2 (dois) meses a 1 (um) ano.",
+    "elements": [
+      "Ofensa à integridade corporal ou à saúde",
+      "Ausência de intenção de lesionar",
+      "Violação de dever de cuidado"
+    ],
+    "observations": [
+      "Se a lesão ocorre na direção de veículo automotor, aplica-se o art. 303 do Código de Trânsito Brasileiro.",
+      "É admissível a ação penal pública condicionada à representação."
+    ],
+    "strongKeywords": ["lesão culposa", "culposa", "negligência", "imprudência", "imperícia"],
+    "keywords": ["acidente", "queda", "machucou", "machucado", "ferimento", "atropelamento", "sem intenção"],
+    "disqualifiers": ["quis machucar", "dolo", "agressão"]
+  },
+  {
+    "id": "cp-129-9",
+    "code": "Código Penal",
+    "article": "Art. 129, § 9º",
+    "title": "Lesão corporal em violência doméstica",
+    "group": "VIOLENCIA_DOMESTICA",
+    "legalText": "Ofender a integridade corporal ou a saúde de ascendente, descendente, cônjuge, companheiro, ou de pessoa com quem o agente convive ou conviveu, ou que esteja sob sua autoridade, guarda ou vigilância.",
+    "penalty": "Detenção, de 3 (três) meses a 3 (três) anos.",
+    "elements": [
+      "Lesão corporal dolosa",
+      "Relação familiar, de convivência ou de autoridade",
+      "Contexto de violência doméstica e familiar"
+    ],
+    "observations": [
+      "Aplica-se a Lei Maria da Penha (Lei 11.340/2006), inclusive para medidas protetivas de urgência.",
+      "A ação penal é pública incondicionada.",
+      "Agressões recíprocas devem ser analisadas com cautela, considerando o contexto de vulnerabilidade."
+    ],
+    "strongKeywords": ["violência doméstica", "violencia domestica", "marido", "esposa", "companheiro", "companheira", "namorado", "namorada", "ex-companheiro", "ex-esposa"],
+    "keywords": ["lesão", "agressão", "empurrou", "socos", "tapas", "ameaça", "residência", "cônjuge", "ciúme", "medida protetiva"],
+    "disqualifiers": ["estranho", "desconhecido", "na rua"]
+  },
+  {
+    "id": "cp-147",
+    "code": "Código Penal",
+    "article": "Art. 147",
+    "title": "Ameaça",
+    "group": "LIBERDADE",
+    "legalText": "Ameaçar alguém, por palavra, escrito ou gesto, ou qualquer outro meio simbólico, de causar-lhe mal injusto e grave.",
+    "penalty": "Detenção, de 1 (um) a 6 (seis) meses, ou multa.",
+    "elements": [
+      "Ameaça de mal injusto e grave",
+      "Meio verbal, escrito, gestual ou simbólico",
+      "Capacidade de intimidar a vítima"
+    ],
+    "observations": [
+      "A ameaça contra a mulher em contexto doméstico pode justificar medidas protetivas de urgência.",
+      "Se houver agressão física, também pode haver lesão corporal (art. 129).",
+      "Ameaça genérica, sem destinatário determinado, pode não configurar o tipo penal."
+    ],
+    "strongKeywords": ["ameaça", "ameaca", "ameaçou", "ameacou", "ameaçando", "ameacando", "ameaçaram", "ameacaram"],
+    "keywords": ["vou te matar", "vou acabar com você", "vou pegar você", "medo", "intimidação", "mensagem", "bilhete", "gesto", "arma"],
+    "disqualifiers": ["agressão física", "soco", "empurrão", "esfaqueou"]
+  },
+  {
+    "id": "cp-147-b",
+    "code": "Código Penal",
+    "article": "Art. 147-B",
+    "title": "Violência psicológica contra a mulher",
+    "group": "VIOLENCIA_DOMESTICA",
+    "legalText": "Causar dano emocional à mulher que a prejudique e perturbe seu pleno desenvolvimento ou que vise a degradar ou a controlar suas ações, comportamentos, crenças e decisões, mediante ameaça, constrangimento, humilhação, manipulação, isolamento, chantagem, ridicularização, limitação do direito de ir e vir ou qualquer outro meio que cause prejuízo à sua saúde psicológica e autodeterminação.",
+    "penalty": "Reclusão, de 6 (seis) meses a 2 (dois) anos, e multa.",
+    "elements": [
+      "Dano emocional à mulher",
+      "Emprego de ameaça, humilhação, manipulação, isolamento, chantagem ou controle",
+      "Prejuízo à saúde psicológica ou à autodeterminação"
+    ],
+    "observations": [
+      "Tipo penal incluído pela Lei 14.188/2021.",
+      "Pode ser cumulado com ameaça, lesão corporal e descumprimento de medida protetiva.",
+      "A prova costuma ser construída com relatos, mensagens, testemunhas e avaliação psicológica."
+    ],
+    "strongKeywords": ["violência psicológica", "violencia psicologica", "dano emocional", "humilhação", "humilhacao", "manipulação", "manipulacao", "chantagem", "isolamento"],
+    "keywords": ["marido", "companheiro", "namorado", "xingou", "proibiu", "ciúme", "perseguição", "controle", "ameaça", "depressão"],
+    "disqualifiers": ["agressão física grave", "estupro"]
+  },
+  {
+    "id": "cp-148",
+    "code": "Código Penal",
+    "article": "Art. 148",
+    "title": "Sequestro e cárcere privado",
+    "group": "LIBERDADE",
+    "legalText": "Privar alguém de sua liberdade, mediante sequestro ou cárcere privado.",
+    "penalty": "Reclusão, de 1 (um) a 3 (três) anos.",
+    "elements": [
+      "Privação da liberdade de locomoção",
+      "Sequestro ou cárcere privado",
+      "Dolo"
+    ],
+    "observations": [
+      "A pena aumenta se a vítima é menor, incapaz, idosa, gestante ou se a privação dura mais de 15 dias.",
+      "Se há exigência de vantagem como condição para a liberdade, pode configurar extorsão mediante sequestro (art. 159).",
+      "Se a vítima é mantida em condições degradantes de trabalho, considerar o art. 149."
+    ],
+    "strongKeywords": ["sequestro", "cárcere privado", "carcere privado", "manteve presa", "trancou", "amarrou"],
+    "keywords": ["privação de liberdade", "liberdade", "cativeiro", "impediu de sair", "trancada", "amordaçou"],
+    "disqualifiers": ["extorsão", "resgate"]
+  },
+  {
+    "id": "cp-149",
+    "code": "Código Penal",
+    "article": "Art. 149",
+    "title": "Redução a condição análoga à de escravo",
+    "group": "LIBERDADE",
+    "legalText": "Submeter alguém a trabalho forçado ou a jornada exaustiva, ou sujeitá-lo a condições degradantes de trabalho, ou restringir, por qualquer meio, sua locomoção em razão de dívida contraída com o empregador ou preposto.",
+    "penalty": "Reclusão, de 2 (dois) a 8 (oito) anos, e multa.",
+    "elements": [
+      "Trabalho forçado, jornada exaustiva ou condições degradantes",
+      "Restrição de locomoção por dívida, quando for o caso",
+      "Dolo"
+    ],
+    "observations": [
+      "A pena aumenta se o crime é cometido contra criança, adolescente, idoso ou pessoa com deficiência.",
+      "Pode haver cumulação com crimes trabalhistas e com tráfico de pessoas.",
+      "A fiscalização costuma envolver o Ministério Público do Trabalho e órgãos de proteção."
+    ],
+    "strongKeywords": ["trabalho escravo", "condição análoga à de escravo", "trabalho forçado", "trabalho forcado", "jornada exaustiva"],
+    "keywords": ["alojamento", "dívida", "cativeiro", "fazenda", "carvoaria", "imigrante", "documentos retidos", "salário"],
+    "disqualifiers": ["sequestro", "extorsão"]
+  },
+  {
+    "id": "cp-150",
+    "code": "Código Penal",
+    "article": "Art. 150",
+    "title": "Violação de domicílio",
+    "group": "LIBERDADE",
+    "legalText": "Entrar ou permanecer, clandestina ou astuciosamente, ou contra a vontade expressa ou tácita de quem de direito, em casa alheia ou em suas dependências.",
+    "penalty": "Detenção, de 1 (um) a 3 (três) meses, ou multa.",
+    "elements": [
+      "Entrada ou permanência em domicílio alheio",
+      "Clandestinidade, astúcia ou oposição do morador",
+      "Dolo"
+    ],
+    "observations": [
+      "A inviolabilidade do domicílio é garantia constitucional (art. 5º, XI, da Constituição).",
+      "A entrada pode ser justificada por flagrante delito, desastre, socorro ou determinação judicial, nos termos constitucionais.",
+      "O conceito de casa inclui compartimentos habitados, ainda que não sejam residência principal."
+    ],
+    "strongKeywords": ["violação de domicílio", "violacao de domicilio", "entrou na casa", "invadiu a casa", "arrombou a porta"],
+    "keywords": ["domicílio", "residência", "casa", "apartamento", "quintal", "morador", "sem autorização", "janela"],
+    "disqualifiers": ["furto", "roubo", "mandado judicial"]
+  },
+  {
+    "id": "cp-138",
+    "code": "Código Penal",
+    "article": "Art. 138",
+    "title": "Calúnia",
+    "group": "HONRA",
+    "legalText": "Caluniar alguém, imputando-lhe falsamente fato definido como crime.",
+    "penalty": "Detenção, de 6 (seis) meses a 2 (dois) anos, e multa.",
+    "elements": [
+      "Imputação de fato definido como crime",
+      "Falsidade da imputação",
+      "Destinatário determinado",
+      "Dolo"
+    ],
+    "observations": [
+      "A exceptio veritatis é admitida quando o fato é verdadeiro, salvo nas hipóteses legais.",
+      "A pena aumenta se a calúnia é cometida na presença de várias pessoas ou por meio que facilite a divulgação.",
+      "A retratação pode extinguir a punibilidade em determinadas fases."
+    ],
+    "strongKeywords": ["calúnia", "calunia", "caluniou", "imputou falsamente crime", "acusou falsamente"],
+    "keywords": ["mentira", "falso", "difamou", "rede social", "publicação", "acusação", "crime que não cometeu"],
+    "disqualifiers": ["verdade", "fato verdadeiro", "difamação"]
+  },
+  {
+    "id": "cp-139",
+    "code": "Código Penal",
+    "article": "Art. 139",
+    "title": "Difamação",
+    "group": "HONRA",
+    "legalText": "Difamar alguém, imputando-lhe fato ofensivo à sua reputação.",
+    "penalty": "Detenção, de 3 (três) meses a 1 (um) ano, e multa.",
+    "elements": [
+      "Imputação de fato ofensivo à reputação",
+      "Destinatário determinado",
+      "Dolo"
+    ],
+    "observations": [
+      "Diferente da calúnia, o fato imputado não precisa ser crime.",
+      "A exceção da verdade só é admitida quando o ofendido é funcionário público e a ofensa se refere ao exercício das funções.",
+      "A divulgação em redes sociais pode aumentar a pena."
+    ],
+    "strongKeywords": ["difamação", "difamacao", "difamou", "difamaram", "ofendeu a reputação"],
+    "keywords": ["reputação", "honra", "mentira", "fofoca", "rede social", "publicação", "trabalho", "colega"],
+    "disqualifiers": ["crime", "calúnia", "injúria"]
+  },
+  {
+    "id": "cp-140",
+    "code": "Código Penal",
+    "article": "Art. 140",
+    "title": "Injúria",
+    "group": "HONRA",
+    "legalText": "Injuriar alguém, ofendendo-lhe a dignidade ou o decoro.",
+    "penalty": "Detenção, de 1 (um) a 6 (seis) meses, ou multa.",
+    "elements": [
+      "Ofensa à dignidade ou ao decoro",
+      "Destinatário determinado",
+      "Dolo"
+    ],
+    "observations": [
+      "A injúria pode ser racial, com pena mais grave e ação penal pública incondicionada.",
+      "A injúria real ocorre quando há emprego de violência ou vias de fato.",
+      "Ofensas genéricas podem não configurar injúria por falta de destinatário determinado."
+    ],
+    "strongKeywords": ["injúria", "injuria", "injuriaram", "injurou", "ofendeu a dignidade", "xingamento"],
+    "keywords": ["palavrão", "ofensa", "humilhação", "apelido", "rede social", "mensagem", "dignidade", "decoro"],
+    "disqualifiers": ["calúnia", "difamação", "agressão física"]
+  },
+  {
+    "id": "lei7716-2a",
+    "code": "Lei 7.716/1989",
+    "article": "Art. 2º-A",
+    "title": "Injúria racial",
+    "group": "HONRA",
+    "legalText": "Injuriar alguém, ofendendo-lhe a dignidade ou o decoro, em razão de raça, cor, etnia ou procedência nacional.",
+    "penalty": "Reclusão, de 2 (dois) a 5 (cinco) anos, e multa.",
+    "elements": [
+      "Ofensa à dignidade ou ao decoro",
+      "Motivação por raça, cor, etnia ou procedência nacional",
+      "Destinatário determinado"
+    ],
+    "observations": [
+      "A Lei 14.532/2023 transferiu a injúria racial do Código Penal para a Lei 7.716/1989.",
+      "A ação penal é pública incondicionada.",
+      "Se a ofensa atinge um grupo indeterminado, pode configurar racismo (art. 20 da Lei 7.716/1989)."
+    ],
+    "strongKeywords": ["injúria racial", "injuria racial", "racismo", "ofensa racial", "xenofobia"],
+    "keywords": ["raça", "cor", "etnia", "procedência nacional", "negro", "indígena", "nordestino", "apelido racista", "rede social"],
+    "disqualifiers": ["injúria simples", "motivo pessoal"]
+  },
+  {
+    "id": "lei7716-20",
+    "code": "Lei 7.716/1989",
+    "article": "Art. 20",
+    "title": "Prática de racismo",
+    "group": "HONRA",
+    "legalText": "Praticar, induzir ou incitar a discriminação ou preconceito de raça, cor, etnia, religião ou procedência nacional.",
+    "penalty": "Reclusão, de 1 (um) a 3 (três) anos, e multa.",
+    "elements": [
+      "Conduta discriminatória ou preconceituosa",
+      "Motivação por raça, cor, etnia, religião ou procedência nacional",
+      "Dolo"
+    ],
+    "observations": [
+      "A pena aumenta se o crime é cometido por meio de comunicação social, redes sociais ou publicação.",
+      "O racismo é imprescritível e inafiançável, nos termos constitucionais.",
+      "A distinção entre racismo e injúria racial depende do alcance coletivo da conduta."
+    ],
+    "strongKeywords": ["racismo", "discriminação racial", "discriminacao racial", "preconceito", "segregação", "neonazismo"],
+    "keywords": ["religião", "religioso", "etnia", "procedência", "comunidade", "rede social", "discurso de ódio", "grupo"],
+    "disqualifiers": ["injúria racial", "ofensa individual"]
+  },
+  {
+    "id": "cp-155",
+    "code": "Código Penal",
+    "article": "Art. 155",
+    "title": "Furto",
+    "group": "PATRIMONIO",
+    "legalText": "Subtrair, para si ou para outrem, coisa alheia móvel.",
+    "penalty": "Reclusão, de 1 (um) a 4 (quatro) anos, e multa.",
+    "elements": [
+      "Subtração de coisa alheia móvel",
+      "Ânimo de assenhoreamento definitivo",
+      "Ausência de violência ou grave ameaça"
+    ],
+    "observations": [
+      "Se houver violência ou grave ameaça, o caso é de roubo (art. 157).",
+      "Se a coisa é de pequeno valor e o agente é primário, pode caber o furto privilegiado.",
+      "O furto qualificado (art. 155, § 4º) envolve rompimento de obstáculo, abuso de confiança, destreza ou concurso de pessoas."
+    ],
+    "strongKeywords": ["furto", "furtou", "furtaram", "subtraiu", "subtração", "subtracao"],
+    "keywords": ["celular", "carteira", "bicicleta", "loja", "supermercado", "apoderou", "levou", "desapareceu", "furto de fios", "sem violência"],
+    "disqualifiers": ["arma", "grave ameaça", "violência", "assalto", "rendeu"]
+  },
+  {
+    "id": "cp-155-4",
+    "code": "Código Penal",
+    "article": "Art. 155, § 4º",
+    "title": "Furto qualificado",
+    "group": "PATRIMONIO",
+    "legalText": "Furto cometido com destruição ou rompimento de obstáculo, com abuso de confiança, mediante fraude, com destreza ou concurso de duas ou mais pessoas.",
+    "penalty": "Reclusão, de 2 (dois) a 8 (oito) anos, e multa.",
+    "elements": [
+      "Subtração de coisa alheia móvel",
+      "Presença de ao menos uma qualificadora",
+      "Ausência de violência ou grave ameaça"
+    ],
+    "observations": [
+      "O rompimento de obstáculo exige perícia para comprovar a violação.",
+      "O abuso de confiança pressupõe relação de confiança entre autor e vítima.",
+      "O concurso de pessoas exige atuação conjunta e consciente."
+    ],
+    "strongKeywords": ["furto qualificado", "arrombamento", "arrombou", "rompimento de obstáculo", "abuso de confiança", "destreza"],
+    "keywords": ["porta arrombada", "janela quebrada", "cadeado", "cofre", "empregado", "conhecido", "dois autores", "vários autores"],
+    "disqualifiers": ["violência", "arma", "grave ameaça"]
+  },
+  {
+    "id": "cp-157",
+    "code": "Código Penal",
+    "article": "Art. 157",
+    "title": "Roubo",
+    "group": "PATRIMONIO",
+    "legalText": "Subtrair coisa móvel alheia, para si ou para outrem, mediante grave ameaça ou violência a pessoa, ou depois de havê-la, por qualquer meio, reduzido à impossibilidade de resistência.",
+    "penalty": "Reclusão, de 4 (quatro) a 10 (dez) anos, e multa.",
+    "elements": [
+      "Subtração de coisa alheia móvel",
+      "Grave ameaça ou violência contra a pessoa",
+      "Finalidade de assenhoreamento definitivo"
+    ],
+    "observations": [
+      "O emprego de arma ou o concurso de duas ou mais pessoas majora a pena (art. 157, § 2º).",
+      "Se da violência resulta morte, aplica-se o latrocínio (art. 157, § 3º).",
+      "Violência ou ameaça posterior à subtração, para garantir a posse, também pode configurar roubo."
+    ],
+    "strongKeywords": ["roubo", "assalto", "assaltou", "assaltaram", "assaltante", "rendeu a vítima"],
+    "keywords": ["arma", "armado", "violência", "grave ameaça", "ameaçou", "celular", "dinheiro", "relógio", "rendeu", "anunciou o assalto"],
+    "disqualifiers": ["sem violência", "furto", "subtraiu sem"]
+  },
+  {
+    "id": "cp-157-2",
+    "code": "Código Penal",
+    "article": "Art. 157, § 2º",
+    "title": "Roubo majorado (arma ou concurso de pessoas)",
+    "group": "PATRIMONIO",
+    "legalText": "Roubo cometido com emprego de arma, com concurso de duas ou mais pessoas, com emprego de arma de fogo de uso restrito ou proibido, ou nas demais hipóteses de aumento previstas no § 2º.",
+    "penalty": "Reclusão, de 4 (quatro) a 10 (dez) anos, aumentada de 1/3 até 1/2; no caso de arma de fogo de uso restrito ou proibido, aumento de 2/3.",
+    "elements": [
+      "Roubo consumado ou tentado",
+      "Emprego de arma, concurso de pessoas ou outra majorante",
+      "Nexo entre a majorante e a prática do crime"
+    ],
+    "observations": [
+      "A arma pode ser própria ou imprópria, desde que idônea a causar temor.",
+      "A apreensão e a perícia da arma são relevantes para a comprovação.",
+      "O aumento pode incidir cumulativamente em hipóteses específicas."
+    ],
+    "strongKeywords": ["arma de fogo", "arma", "armado", "concurso de pessoas", "dois assaltantes", "três assaltantes", "uso restrito"],
+    "keywords": ["revólver", "pistola", "faca", "simulacro", "rendeu", "ameaçou", "assalto", "roubo"],
+    "disqualifiers": ["sem arma", "desarmado", "furto"]
+  },
+  {
+    "id": "cp-157-3",
+    "code": "Código Penal",
+    "article": "Art. 157, § 3º",
+    "title": "Latrocínio",
+    "group": "PATRIMONIO",
+    "legalText": "Roubo do qual resulta morte em razão da violência empregada contra a pessoa.",
+    "penalty": "Reclusão, de 20 (vinte) a 30 (trinta) anos, sem prejuízo da multa.",
+    "elements": [
+      "Roubo",
+      "Morte da vítima",
+      "Nexo entre a violência do roubo e a morte"
+    ],
+    "observations": [
+      "O latrocínio é crime contra o patrimônio, com pena mais grave que o homicídio simples.",
+      "Admite tentativa quando há roubo com violência e a morte não se consuma, conforme entendimento jurisprudencial.",
+      "A competência e a dosimetria exigem análise detalhada do dolo e do resultado."
+    ],
+    "strongKeywords": ["latrocínio", "latrocinio", "roubo seguido de morte", "matou durante o assalto", "morte no assalto"],
+    "keywords": ["assalto", "roubo", "morte", "disparo", "vítima fatal", "arma", "reação"],
+    "disqualifiers": ["furto", "sem violência"]
+  },
+  {
+    "id": "cp-158",
+    "code": "Código Penal",
+    "article": "Art. 158",
+    "title": "Extorsão",
+    "group": "PATRIMONIO",
+    "legalText": "Constranger alguém, mediante violência ou grave ameaça, e com o intuito de obter para si ou para outrem indevida vantagem econômica, a fazer, tolerar que se faça ou deixar de fazer alguma coisa.",
+    "penalty": "Reclusão, de 4 (quatro) a 10 (dez) anos, e multa.",
+    "elements": [
+      "Constrangimento mediante violência ou grave ameaça",
+      "Intuito de vantagem econômica indevida",
+      "Ação, tolerância ou omissão da vítima"
+    ],
+    "observations": [
+      "Diferencia-se do roubo porque a vantagem depende de conduta da vítima.",
+      "Pode envolver extorsão mediante sequestro (art. 159) quando há privação de liberdade.",
+      "A extorsão praticada por meio eletrônico pode ter contornos específicos."
+    ],
+    "strongKeywords": ["extorsão", "extorsao", "extorquiu", "exigiu dinheiro", "exigiu vantagem"],
+    "keywords": ["constrangimento", "ameaça", "violência", "dinheiro", "pix", "resgate", "chantagem", "coação"],
+    "disqualifiers": ["furto", "roubo", "sequestro"]
+  },
+  {
+    "id": "cp-159",
+    "code": "Código Penal",
+    "article": "Art. 159",
+    "title": "Extorsão mediante sequestro",
+    "group": "PATRIMONIO",
+    "legalText": "Sequestrar pessoa com o fim de obter, para si ou para outrem, vantagem econômica, como condição ou preço do resgate.",
+    "penalty": "Reclusão, de 8 (oito) a 15 (quinze) anos.",
+    "elements": [
+      "Privação da liberdade",
+      "Finalidade de obter vantagem econômica",
+      "Condição ou preço de resgate"
+    ],
+    "observations": [
+      "A pena aumenta se o sequestro dura mais de 24 horas, se a vítima é menor de 18 anos, idosa ou gestante.",
+      "A morte da vítima pode qualificar o crime com pena mais grave.",
+      "A colaboração premiada pode ser relevante em investigações complexas."
+    ],
+    "strongKeywords": ["extorsão mediante sequestro", "sequestro com resgate", "pedido de resgate", "resgate"],
+    "keywords": ["cativeiro", "sequestrou", "manteve preso", "vantagem econômica", "família", "pagamento"],
+    "disqualifiers": ["sem resgate", "cárcere privado"]
+  },
+  {
+    "id": "cp-163",
+    "code": "Código Penal",
+    "article": "Art. 163",
+    "title": "Dano",
+    "group": "PATRIMONIO",
+    "legalText": "Destruir, inutilizar ou deteriorar coisa alheia.",
+    "penalty": "Detenção, de 1 (um) a 6 (seis) meses, ou multa.",
+    "elements": [
+      "Destruição, inutilização ou deterioração",
+      "Coisa alheia",
+      "Dolo"
+    ],
+    "observations": [
+      "O dano qualificado envolve violência à pessoa, grave ameaça, uso de substância inflamável ou explosiva, ou patrimônio público.",
+      "Se o dano é praticado em contexto de violência doméstica, pode haver majoração e medidas protetivas.",
+      "O dano culposo é punido apenas na modalidade qualificada por lei especial."
+    ],
+    "strongKeywords": ["dano", "danificou", "quebrou", "destruiu", "depredação", "depredacao"],
+    "keywords": ["vidraça", "carro", "portão", "muro", "celular", "patrimônio público", "pichação", "vandalismo"],
+    "disqualifiers": ["furto", "roubo"]
+  },
+  {
+    "id": "cp-168",
+    "code": "Código Penal",
+    "article": "Art. 168",
+    "title": "Apropriação indébita",
+    "group": "PATRIMONIO",
+    "legalText": "Apropriar-se de coisa alheia móvel de que tem a posse ou a detenção.",
+    "penalty": "Reclusão, de 1 (um) a 4 (quatro) anos, e multa.",
+    "elements": [
+      "Posse ou detenção de coisa alheia",
+      "Apropriação em proveito próprio ou de terceiro",
+      "Ausência de violência ou grave ameaça"
+    ],
+    "observations": [
+      "A apropriação indébita previdenciária e a de coisa de pequeno valor têm regras próprias.",
+      "Se a coisa foi obtida mediante fraude, pode ser estelionato.",
+      "A devolução pode influenciar a dosimetria e a punibilidade."
+    ],
+    "strongKeywords": ["apropriação indébita", "apropriacao indebita", "apropriou", "não devolveu", "nao devolveu"],
+    "keywords": ["empréstimo", "aluguel", "conserto", "veículo", "carro", "documento", "confiança", "depósito"],
+    "disqualifiers": ["furto", "roubo", "estelionato"]
+  },
+  {
+    "id": "cp-171",
+    "code": "Código Penal",
+    "article": "Art. 171",
+    "title": "Estelionato",
+    "group": "PATRIMONIO",
+    "legalText": "Obter, para si ou para outrem, vantagem ilícita, em prejuízo alheio, induzindo ou mantendo alguém em erro, mediante artifício, ardil ou qualquer outro meio fraudulento.",
+    "penalty": "Reclusão, de 1 (um) a 5 (cinco) anos, e multa.",
+    "elements": [
+      "Vantagem ilícita",
+      "Prejuízo alheio",
+      "Indução ou manutenção em erro",
+      "Artifício, ardil ou meio fraudulento"
+    ],
+    "observations": [
+      "O estelionato contra pessoa idosa ou vulnerável pode ter aumento de pena.",
+      "A ação penal é pública condicionada à representação, salvo hipóteses legais.",
+      "A fraude eletrônica tem tipo específico no § 2º-A."
+    ],
+    "strongKeywords": ["estelionato", "estelionatário", "estelionatario", "golpe", "fraude", "aplicou um golpe"],
+    "keywords": ["pix", "transferência", "dinheiro", "vantagem", "prejuízo", "mentira", "falsa promessa", "contrato", "venda"],
+    "disqualifiers": ["furto", "roubo", "apropriação"]
+  },
+  {
+    "id": "cp-171-2a",
+    "code": "Código Penal",
+    "article": "Art. 171, § 2º-A",
+    "title": "Estelionato por meio eletrônico",
+    "group": "PATRIMONIO",
+    "legalText": "Fraude cometida com a utilização de informações fornecidas pela vítima ou por terceiro induzido a erro por meio de redes sociais, contatos telefônicos ou envio de correio eletrônico fraudulento, ou por qualquer outro meio fraudulento análogo.",
+    "penalty": "Reclusão, de 4 (quatro) a 8 (oito) anos, e multa.",
+    "elements": [
+      "Fraude eletrônica ou digital",
+      "Indução da vítima a erro",
+      "Vantagem ilícita e prejuízo alheio"
+    ],
+    "observations": [
+      "Tipo incluído pela Lei 14.155/2021.",
+      "Engloba golpes de falso funcionário de banco, falso parente, falsas centrais de atendimento e fraudes em marketplaces.",
+      "A preservação de logs, números e mensagens é essencial para a prova."
+    ],
+    "strongKeywords": ["golpe virtual", "fraude eletrônica", "fraude eletronica", "estelionato digital", "golpe do pix", "falso funcionário do banco"],
+    "keywords": ["whatsapp", "telefone", "rede social", "pix", "transferência", "link", "aplicativo", "banco", "marketplace"],
+    "disqualifiers": ["furto", "roubo"]
+  },
+  {
+    "id": "cp-180",
+    "code": "Código Penal",
+    "article": "Art. 180",
+    "title": "Receptação",
+    "group": "PATRIMONIO",
+    "legalText": "Adquirir, receber, transportar, conduzir ou ocultar coisa que sabe ser produto de crime, ou influir para que terceiro de boa-fé a adquira, receba ou oculte.",
+    "penalty": "Reclusão, de 1 (um) a 4 (quatro) anos, e multa.",
+    "elements": [
+      "Coisa produto de crime",
+      "Ciência da origem ilícita",
+      "Aquisição, recebimento, transporte, condução ou ocultação"
+    ],
+    "observations": [
+      "A receptação culposa está prevista no § 2º.",
+      "A receptação qualificada (§ 3º) alcança a atividade comercial ou industrial.",
+      "A comprovação da origem ilícita é essencial."
+    ],
+    "strongKeywords": ["receptação", "receptacao", "receptou", "produto de crime", "coisa roubada"],
+    "keywords": ["celular roubado", "comprou", "vendeu", "desmanche", "peças", "ocultou", "origem ilícita", "mercado"],
+    "disqualifiers": ["furto", "roubo", "estelionato"]
+  },
+  {
+    "id": "cp-180-3",
+    "code": "Código Penal",
+    "article": "Art. 180, § 3º",
+    "title": "Receptação qualificada",
+    "group": "PATRIMONIO",
+    "legalText": "Adquirir ou receber coisa produto de crime, ou influir para que terceiro de boa-fé a adquira ou receba, em atividade comercial ou industrial.",
+    "penalty": "Reclusão, de 3 (três) a 8 (oito) anos, e multa.",
+    "elements": [
+      "Coisa produto de crime",
+      "Exercício de atividade comercial ou industrial",
+      "Ciência da origem ilícita"
+    ],
+    "observations": [
+      "Aplica-se a lojas, ferros-velhos, desmanches e estabelecimentos similares.",
+      "Pode haver cumulação com crimes contra a ordem tributária e ambientais.",
+      "A fiscalização e a documentação do comércio são provas relevantes."
+    ],
+    "strongKeywords": ["receptação qualificada", "desmanche", "ferro velho", "ferro-velho", "comércio de peças roubadas"],
+    "keywords": ["loja", "estabelecimento", "comércio", "peças", "celulares", "veículos", "nota fiscal", "estoque"],
+    "disqualifiers": ["receptação simples", "uso pessoal"]
+  },
+  {
+    "id": "cp-213",
+    "code": "Código Penal",
+    "article": "Art. 213",
+    "title": "Estupro",
+    "group": "DIGNIDADE_SEXUAL",
+    "legalText": "Constranger alguém, mediante violência ou grave ameaça, a ter conjunção carnal ou a praticar ou permitir que com ele se pratique outro ato libidinoso.",
+    "penalty": "Reclusão, de 6 (seis) a 10 (dez) anos.",
+    "elements": [
+      "Constrangimento mediante violência ou grave ameaça",
+      "Conjunção carnal ou outro ato libidinoso",
+      "Ausência de consentimento válido"
+    ],
+    "observations": [
+      "Se a vítima é menor de 18 anos, aplicam-se regras específicas de proteção.",
+      "Se da conduta resulta lesão grave ou morte, a pena é aumentada.",
+      "A palavra da vítima tem especial relevância, mas deve ser analisada em conjunto com as demais provas."
+    ],
+    "strongKeywords": ["estupro", "estuprou", "violência sexual", "violencia sexual", "conjunção carnal", "ato libidinoso"],
+    "keywords": ["constrangeu", "forçou", "ameaça", "violência", "vítima", "sexo", "abuso"],
+    "disqualifiers": ["consentimento", "menor de 14", "vulnerável"]
+  },
+  {
+    "id": "cp-215-a",
+    "code": "Código Penal",
+    "article": "Art. 215-A",
+    "title": "Importunação sexual",
+    "group": "DIGNIDADE_SEXUAL",
+    "legalText": "Praticar contra alguém e sem a sua anuência ato libidinoso com o objetivo de satisfazer a própria lascívia ou a de terceiro.",
+    "penalty": "Reclusão, de 1 (um) a 5 (cinco) anos.",
+    "elements": [
+      "Ato libidinoso",
+      "Ausência de anuência da vítima",
+      "Finalidade de satisfazer lascívia própria ou de terceiro"
+    ],
+    "observations": [
+      "Tipo incluído pela Lei 13.718/2018.",
+      "Diferencia-se do estupro pela ausência de violência ou grave ameaça.",
+      "Pode ocorrer em transporte público, ambiente de trabalho e locais de convivência."
+    ],
+    "strongKeywords": ["importunação sexual", "importunacao sexual", "importunou", "passou a mão", "tocou sem consentimento"],
+    "keywords": ["ônibus", "metrô", "transporte público", "trabalho", "assédio", "beijo forçado", "sem consentimento", "lascívia"],
+    "disqualifiers": ["violência grave", "estupro", "menor de 14"]
+  },
+  {
+    "id": "cp-216-a",
+    "code": "Código Penal",
+    "article": "Art. 216-A",
+    "title": "Assédio sexual",
+    "group": "DIGNIDADE_SEXUAL",
+    "legalText": "Constranger alguém com o intuito de obter vantagem ou favorecimento sexual, prevalecendo-se o agente de sua condição de superior hierárquico ou ascendência inerentes ao exercício de emprego, cargo ou função.",
+    "penalty": "Detenção, de 1 (um) a 2 (dois) anos.",
+    "elements": [
+      "Constrangimento com intuito sexual",
+      "Prevalecimento de superioridade hierárquica ou ascendência",
+      "Relação de emprego, cargo ou função"
+    ],
+    "observations": [
+      "A pena aumenta se a vítima é menor de 18 anos.",
+      "Diferencia-se da importunação sexual pela existência de relação hierárquica.",
+      "Também pode haver responsabilização cível e trabalhista."
+    ],
+    "strongKeywords": ["assédio sexual", "assedio sexual", "assediou", "superior hierárquico", "chefe"],
+    "keywords": ["emprego", "trabalho", "cargo", "função", "promoção", "chantagem", "vantagem sexual", "constrangimento"],
+    "disqualifiers": ["importunação", "violência física", "estupro"]
+  },
+  {
+    "id": "cp-217-a",
+    "code": "Código Penal",
+    "article": "Art. 217-A",
+    "title": "Estupro de vulnerável",
+    "group": "DIGNIDADE_SEXUAL",
+    "legalText": "Ter conjunção carnal ou praticar outro ato libidinoso com menor de 14 anos, ou com quem, por enfermidade ou deficiência mental, não tem o necessário discernimento, ou que, por qualquer outra causa, não pode oferecer resistência.",
+    "penalty": "Reclusão, de 8 (oito) a 15 (quinze) anos.",
+    "elements": [
+      "Vítima menor de 14 anos ou vulnerável",
+      "Conjunção carnal ou ato libidinoso",
+      "Dolo"
+    ],
+    "observations": [
+      "A vulnerabilidade é presumida para menores de 14 anos.",
+      "O consentimento do menor não afasta a tipicidade.",
+      "Pode haver aumento de pena em caso de relação de parentesco, autoridade ou prevalecimento."
+    ],
+    "strongKeywords": ["estupro de vulnerável", "estupro de vulneravel", "menor de 14", "criança", "crianca", "adolescente"],
+    "keywords": ["vulnerável", "deficiência mental", "sem discernimento", "abuso", "ato libidinoso", "conjunção"],
+    "disqualifiers": ["maior de 14", "consentimento válido"]
+  },
+  {
+    "id": "cp-329",
+    "code": "Código Penal",
+    "article": "Art. 329",
+    "title": "Resistência",
+    "group": "OUTROS",
+    "legalText": "Opor-se à execução de ato legal, mediante violência ou ameaça a funcionário competente para executá-lo ou a quem lhe esteja prestando auxílio.",
+    "penalty": "Detenção, de 2 (dois) meses a 2 (dois) anos.",
+    "elements": [
+      "Oposição a ato legal",
+      "Violência ou ameaça",
+      "Funcionário competente ou auxiliar"
+    ],
+    "observations": [
+      "Se a violência configura lesão corporal, pode haver concurso de crimes.",
+      "A resistência passiva, sem violência ou ameaça, pode não configurar o tipo.",
+      "A legalidade do ato é pressuposto do crime."
+    ],
+    "strongKeywords": ["resistência", "resistencia", "resistiu", "reagiu à prisão", "reagiu a abordagem"],
+    "keywords": ["policial", "guarda", "abordagem", "prisão", "empurrou", "agrediu", "fuga", "algemas"],
+    "disqualifiers": ["desacato", "desobediência"]
+  },
+  {
+    "id": "cp-330",
+    "code": "Código Penal",
+    "article": "Art. 330",
+    "title": "Desacato",
+    "group": "OUTROS",
+    "legalText": "Desacatar funcionário público no exercício da função ou em razão dela.",
+    "penalty": "Detenção, de 6 (seis) meses a 2 (dois) anos, ou multa.",
+    "elements": [
+      "Funcionário público no exercício da função",
+      "Conduta de desacato",
+      "Dolo"
+    ],
+    "observations": [
+      "A jurisprudência discute a compatibilidade do tipo com a liberdade de expressão.",
+      "Ofensas proferidas por particular contra servidor podem configurar injúria, conforme o caso.",
+      "A abordagem policial e o contexto da conduta são relevantes."
+    ],
+    "strongKeywords": ["desacato", "desacatou", "xingou o policial", "ofendeu o policial"],
+    "keywords": ["policial", "guarda municipal", "servidor", "autoridade", "ofensa", "grito", "abordagem"],
+    "disqualifiers": ["resistência", "desobediência", "injúria"]
+  },
+  {
+    "id": "cp-331",
+    "code": "Código Penal",
+    "article": "Art. 331",
+    "title": "Desobediência",
+    "group": "OUTROS",
+    "legalText": "Desobedecer a ordem legal de funcionário público.",
+    "penalty": "Detenção, de 3 (três) meses a 1 (um) ano, e multa.",
+    "elements": [
+      "Ordem legal de funcionário público",
+      "Desobediência",
+      "Dolo"
+    ],
+    "observations": [
+      "Não se configura quando há sanção administrativa específica para o descumprimento.",
+      "A ordem deve ser legal, legítima e dirigida a quem tem dever de cumpri-la.",
+      "Pode haver concurso com resistência ou desacato."
+    ],
+    "strongKeywords": ["desobediência", "desobediencia", "desobedeceu", "recusou a ordem"],
+    "keywords": ["ordem", "policial", "fiscal", "servidor", "determinação", "abordagem", "recusou"],
+    "disqualifiers": ["resistência", "desacato"]
+  },
+  {
+    "id": "cp-312",
+    "code": "Código Penal",
+    "article": "Art. 312",
+    "title": "Peculato",
+    "group": "ADMINISTRACAO_PUBLICA",
+    "legalText": "Apropriar-se o funcionário público de dinheiro, valor ou qualquer outro bem móvel, público ou particular, de que tem a posse em razão do cargo, ou desviá-lo, em proveito próprio ou alheio.",
+    "penalty": "Reclusão, de 2 (dois) a 12 (doze) anos, e multa.",
+    "elements": [
+      "Funcionário público",
+      "Posse do bem em razão do cargo",
+      "Apropriação ou desvio",
+      "Proveito próprio ou alheio"
+    ],
+    "observations": [
+      "O peculato culposo admite extinção da punibilidade se a reparação ocorre antes da sentença.",
+      "Pode ser cometido por meio de fraude em sistemas e licitações.",
+      "A análise exige comprovação do vínculo funcional e da disponibilidade do bem."
+    ],
+    "strongKeywords": ["peculato", "apropriou de dinheiro público", "desviou verba", "desvio de verba"],
+    "keywords": ["funcionário público", "servidor", "cargo", "repartição", "licitação", "verba", "caixa", "tesouraria"],
+    "disqualifiers": ["concussão", "corrupção"]
+  },
+  {
+    "id": "cp-316",
+    "code": "Código Penal",
+    "article": "Art. 316",
+    "title": "Concussão",
+    "group": "ADMINISTRACAO_PUBLICA",
+    "legalText": "Exigir, para si ou para outrem, direta ou indiretamente, ainda que fora da função ou antes de assumi-la, mas em razão dela, vantagem indevida.",
+    "penalty": "Reclusão, de 2 (dois) a 8 (oito) anos, e multa.",
+    "elements": [
+      "Funcionário público",
+      "Exigência de vantagem indevida",
+      "Em razão da função"
+    ],
+    "observations": [
+      "Diferencia-se da corrupção passiva porque aqui há exigência, e não solicitação ou recebimento.",
+      "A exigência pode ser direta ou por interposta pessoa.",
+      "A prova pode envolver gravações e testemunhas."
+    ],
+    "strongKeywords": ["concussão", "concussao", "exigiu vantagem", "exigiu propina", "exigiu dinheiro"],
+    "keywords": ["funcionário público", "servidor", "fiscal", "propina", "vantagem indevida", "cargo", "repartição"],
+    "disqualifiers": ["corrupção passiva", "solicitou"]
+  },
+  {
+    "id": "cp-317",
+    "code": "Código Penal",
+    "article": "Art. 317",
+    "title": "Corrupção passiva",
+    "group": "ADMINISTRACAO_PUBLICA",
+    "legalText": "Solicitar ou receber, para si ou para outrem, direta ou indiretamente, ainda que fora da função ou antes de assumi-la, mas em razão dela, vantagem indevida, ou aceitar promessa de tal vantagem.",
+    "penalty": "Reclusão, de 2 (dois) a 12 (doze) anos, e multa.",
+    "elements": [
+      "Funcionário público",
+      "Solicitação, recebimento ou aceitação de promessa",
+      "Vantagem indevida em razão da função"
+    ],
+    "observations": [
+      "A pena aumenta se o ato é praticado em razão das funções e com infração de dever.",
+      "A corrupção ativa é o crime do particular que oferece ou promete vantagem (art. 333).",
+      "Colaboração premiada e acordo de não persecução penal podem ser aplicáveis."
+    ],
+    "strongKeywords": ["corrupção passiva", "corrupcao passiva", "recebeu propina", "aceitou propina", "solicitou propina"],
+    "keywords": ["funcionário público", "servidor", "policial", "fiscal", "propina", "vantagem indevida", "pagamento", "promessa"],
+    "disqualifiers": ["concussão", "corrupção ativa"]
+  },
+  {
+    "id": "cp-333",
+    "code": "Código Penal",
+    "article": "Art. 333",
+    "title": "Corrupção ativa",
+    "group": "ADMINISTRACAO_PUBLICA",
+    "legalText": "Oferecer ou prometer vantagem indevida a funcionário público, para determiná-lo a praticar, omitir ou retardar ato de ofício.",
+    "penalty": "Reclusão, de 2 (dois) a 12 (doze) anos, e multa.",
+    "elements": [
+      "Oferecimento ou promessa de vantagem indevida",
+      "Funcionário público destinatário",
+      "Finalidade de influenciar ato de ofício"
+    ],
+    "observations": [
+      "A pena aumenta se o ato de ofício é praticado com infração de dever.",
+      "O crime se consuma com a oferta ou promessa, ainda que não haja aceitação.",
+      "A colaboração do particular pode ser relevante para a investigação."
+    ],
+    "strongKeywords": ["corrupção ativa", "corrupcao ativa", "ofereceu propina", "prometeu propina", "subornou"],
+    "keywords": ["policial", "fiscal", "servidor", "propina", "vantagem", "dinheiro", "ofereceu", "prometeu"],
+    "disqualifiers": ["corrupção passiva", "concussão"]
+  },
+  {
+    "id": "cp-299",
+    "code": "Código Penal",
+    "article": "Art. 299",
+    "title": "Falsidade ideológica",
+    "group": "FE_PUBLICA",
+    "legalText": "Omitir, em documento público ou particular, declaração que dele devia constar, ou nele inserir ou fazer inserir declaração falsa ou diversa da que devia ser escrita, com o fim de prejudicar direito, criar obrigação ou alterar a verdade sobre fato juridicamente relevante.",
+    "penalty": "Reclusão, de 1 (um) a 5 (cinco) anos, e multa, se o documento é público; e de 1 (um) a 3 (três) anos, e multa, se particular.",
+    "elements": [
+      "Documento público ou particular",
+      "Omissão ou inserção de declaração falsa",
+      "Finalidade de prejudicar direito, criar obrigação ou alterar a verdade"
+    ],
+    "observations": [
+      "Diferencia-se da falsificação material, que altera a forma do documento.",
+      "Pode ocorrer em declarações de imposto de renda, contratos e registros públicos.",
+      "A consumação ocorre com a prática da conduta, independentemente do resultado."
+    ],
+    "strongKeywords": ["falsidade ideológica", "falsidade ideologica", "declaração falsa", "declaracao falsa", "informação falsa"],
+    "keywords": ["documento", "contrato", "declaração", "imposto de renda", "registro", "assinatura", "certidão"],
+    "disqualifiers": ["documento falso", "uso de documento falso"]
+  },
+  {
+    "id": "cp-304",
+    "code": "Código Penal",
+    "article": "Art. 304",
+    "title": "Uso de documento falso",
+    "group": "FE_PUBLICA",
+    "legalText": "Fazer uso de qualquer dos papéis falsificados ou alterados previstos nos arts. 297 a 302 do Código Penal.",
+    "penalty": "Detenção, de 6 (seis) meses a 2 (dois) anos, e multa.",
+    "elements": [
+      "Documento falso ou alterado",
+      "Uso do documento",
+      "Ciência da falsidade"
+    ],
+    "observations": [
+      "Se o agente participou da falsificação, responde pelo crime de falsificação.",
+      "O uso pode ocorrer perante autoridade, banco ou estabelecimento comercial.",
+      "A perícia documental é prova relevante."
+    ],
+    "strongKeywords": ["uso de documento falso", "usou documento falso", "documento falsificado", "carteira falsa"],
+    "keywords": ["identidade", "CNH", "passaporte", "certidão", "diploma", "apresentou", "fiscalização"],
+    "disqualifiers": ["falsidade ideológica", "falsificação"]
+  },
+  {
+    "id": "cp-307",
+    "code": "Código Penal",
+    "article": "Art. 307",
+    "title": "Falsa identidade",
+    "group": "FE_PUBLICA",
+    "legalText": "Atribuir-se ou atribuir a terceiro falsa identidade para obter vantagem, em proveito próprio ou alheio, ou para causar dano a outrem.",
+    "penalty": "Detenção, de 3 (três) meses a 1 (um) ano, ou multa.",
+    "elements": [
+      "Atribuição de falsa identidade",
+      "Finalidade de vantagem ou dano",
+      "Dolo"
+    ],
+    "observations": [
+      "A autodefesa pode afastar a tipicidade quando o agente apenas nega a acusação.",
+      "Se há documento falso, pode haver concurso com uso de documento falso.",
+      "A identificação falsa em abordagem policial é hipótese comum."
+    ],
+    "strongKeywords": ["falsa identidade", "identidade falsa", "se passou por outra pessoa", "nome falso"],
+    "keywords": ["documento", "RG", "CPF", "abordagem", "policial", "identificação", "assumiu o nome"],
+    "disqualifiers": ["documento falso", "falsificação"]
+  },
+  {
+    "id": "ctb-302",
+    "code": "Código de Trânsito Brasileiro",
+    "article": "Art. 302",
+    "title": "Homicídio culposo na direção de veículo",
+    "group": "TRANSITO",
+    "legalText": "Praticar homicídio culposo na direção de veículo automotor.",
+    "penalty": "Detenção, de 2 (dois) a 4 (quatro) anos, e suspensão ou proibição de obter a permissão ou habilitação para dirigir.",
+    "elements": [
+      "Condução de veículo automotor",
+      "Culpa",
+      "Resultado morte"
+    ],
+    "observations": [
+      "Se o crime é praticado sob influência de álcool ou droga, a pena é de reclusão, de 5 a 8 anos.",
+      "A velocidade excessiva, a manobra perigosa e o uso de celular podem caracterizar culpa grave.",
+      "A CNH e o prontuário de trânsito são provas relevantes."
+    ],
+    "strongKeywords": ["homicídio culposo na direção", "atropelou e matou", "matou no trânsito", "acidente fatal"],
+    "keywords": ["carro", "moto", "caminhão", "atropelamento", "morte", "acidente", "dirigia", "velocidade", "álcool"],
+    "disqualifiers": ["quis matar", "dolo", "homicídio doloso"]
+  },
+  {
+    "id": "ctb-303",
+    "code": "Código de Trânsito Brasileiro",
+    "article": "Art. 303",
+    "title": "Lesão corporal culposa na direção de veículo",
+    "group": "TRANSITO",
+    "legalText": "Praticar lesão corporal culposa na direção de veículo automotor.",
+    "penalty": "Detenção, de 6 (seis) meses a 2 (dois) anos, e suspensão ou proibição de obter a permissão ou habilitação para dirigir.",
+    "elements": [
+      "Condução de veículo automotor",
+      "Culpa",
+      "Lesão corporal"
+    ],
+    "observations": [
+      "Se o crime é praticado sob influência de álcool ou droga, a pena é de reclusão, de 2 a 5 anos.",
+      "A vítima pode ser pedestre, passageiro ou outro condutor.",
+      "A ação penal é pública incondicionada."
+    ],
+    "strongKeywords": ["lesão corporal na direção", "atropelou", "atropelamento", "acidente de trânsito com ferido"],
+    "keywords": ["carro", "moto", "caminhão", "ferido", "hospital", "habilitação", "velocidade", "ultrapassagem"],
+    "disqualifiers": ["morte", "dolo", "agressão"]
+  },
+  {
+    "id": "ctb-306",
+    "code": "Código de Trânsito Brasileiro",
+    "article": "Art. 306",
+    "title": "Embriaguez ao volante",
+    "group": "TRANSITO",
+    "legalText": "Conduzir veículo automotor com capacidade psicomotora alterada em razão da influência de álcool ou de outra substância psicoativa que determine dependência.",
+    "penalty": "Detenção, de 6 (seis) meses a 3 (três) anos, multa e suspensão ou proibição de obter a permissão ou habilitação para dirigir.",
+    "elements": [
+      "Condução de veículo automotor",
+      "Capacidade psicomotora alterada",
+      "Influência de álcool ou substância psicoativa"
+    ],
+    "observations": [
+      "A concentração de álcool por litro de sangue igual ou superior a 6 decigramas ou 0,3 miligrama por litro de ar alveolar presume a alteração.",
+      "Sinais de alteração também podem ser comprovados por exame clínico, perícia ou vídeo.",
+      "A recusa ao teste do bafômetro não impede a comprovação por outros meios."
+    ],
+    "strongKeywords": ["embriaguez ao volante", "dirigia embriagado", "bêbado ao volante", "bebado ao volante", "álcool no sangue"],
+    "keywords": ["bafômetro", "cerveja", "álcool", "drink", "blitz", "bar", "CNH", "direção"],
+    "disqualifiers": ["droga ilícita", "tráfico"]
+  },
+  {
+    "id": "ctb-308",
+    "code": "Código de Trânsito Brasileiro",
+    "article": "Art. 308",
+    "title": "Participação em corrida não autorizada",
+    "group": "TRANSITO",
+    "legalText": "Participar, na direção de veículo automotor, em via pública, de corrida, disputa ou competição automobilística não autorizada pela autoridade competente, desde que resulte dano potencial à incolumidade pública ou privada.",
+    "penalty": "Detenção, de 6 (seis) meses a 3 (três) anos, multa e suspensão ou proibição de obter a permissão ou habilitação para dirigir.",
+    "elements": [
+      "Condução de veículo automotor",
+      "Participação em corrida ou competição não autorizada",
+      "Dano potencial à incolumidade"
+    ],
+    "observations": [
+      "A chamada racha pode gerar também responsabilização por homicídio ou lesão corporal culposa.",
+      "Vídeos e testemunhas são provas frequentes.",
+      "A autorização da autoridade competente afasta a tipicidade."
+    ],
+    "strongKeywords": ["racha", "corrida ilegal", "corrida não autorizada", "pega"],
+    "keywords": ["velocidade", "via pública", "competição", "moto", "carro", "adrenalina", "dano"],
+    "disqualifiers": ["corrida autorizada", "circuito fechado"]
+  },
+  {
+    "id": "drogas-28",
+    "code": "Lei 11.343/2006",
+    "article": "Art. 28",
+    "title": "Posse de droga para consumo pessoal",
+    "group": "DROGAS",
+    "legalText": "Adquirir, guardar, ter em depósito, transportar ou trazer consigo, para consumo pessoal, drogas sem autorização ou em desacordo com determinação legal ou regulamentar.",
+    "penalty": "Advertência sobre os efeitos das drogas, prestação de serviços à comunidade e medida educativa de comparecimento a programa ou curso educativo.",
+    "elements": [
+      "Posse ou guarda de droga",
+      "Finalidade de consumo pessoal",
+      "Ausência de autorização legal"
+    ],
+    "observations": [
+      "Não há pena privativa de liberdade para o usuário.",
+      "A distinção entre usuário e traficante considera quantidade, circunstâncias, conduta e antecedentes.",
+      "O porte para consumo não gera antecedente criminal, conforme entendimento consolidado."
+    ],
+    "strongKeywords": ["uso pessoal", "consumo pessoal", "usuário de drogas", "usuario de drogas", "maconha para uso"],
+    "keywords": ["maconha", "cocaína", "droga", "pequena quantidade", "porção", "cigarro", "dose"],
+    "disqualifiers": ["venda", "tráfico", "balança", "dinheiro trocado"]
+  },
+  {
+    "id": "drogas-33",
+    "code": "Lei 11.343/2006",
+    "article": "Art. 33",
+    "title": "Tráfico de drogas",
+    "group": "DROGAS",
+    "legalText": "Importar, exportar, remeter, preparar, produzir, fabricar, adquirir, vender, expor à venda, oferecer, ter em depósito, transportar, trazer consigo, guardar, prescrever, ministrar, entregar a consumo ou fornecer drogas, ainda que gratuitamente, sem autorização ou em desacordo com determinação legal ou regulamentar.",
+    "penalty": "Reclusão, de 5 (cinco) a 15 (quinze) anos, e pagamento de 500 a 1.500 dias-multa.",
+    "elements": [
+      "Conduta de tráfico (venda, guarda, transporte, produção etc.)",
+      "Droga ilícita",
+      "Ausência de autorização legal"
+    ],
+    "observations": [
+      "O § 4º prevê redução de pena para agentes primários, de bons antecedentes e que não integrem organização criminosa.",
+      "A quantidade e a natureza da droga influenciam a dosimetria.",
+      "A associação para o tráfico tem tipo autônomo (art. 35)."
+    ],
+    "strongKeywords": ["tráfico de drogas", "trafico de drogas", "traficante", "venda de drogas", "vendia drogas"],
+    "keywords": ["maconha", "cocaína", "crack", "entorpecente", "porções", "balança", "dinheiro", "boca de fumo", "entrega"],
+    "disqualifiers": ["uso pessoal", "consumo próprio", "pequena quantidade para uso"]
+  },
+  {
+    "id": "drogas-35",
+    "code": "Lei 11.343/2006",
+    "article": "Art. 35",
+    "title": "Associação para o tráfico",
+    "group": "DROGAS",
+    "legalText": "Associarem-se duas ou mais pessoas para o fim de praticar, reiteradamente ou não, qualquer dos crimes previstos nos arts. 33, caput e § 1º, e 34 da Lei 11.343/2006.",
+    "penalty": "Reclusão, de 3 (três) a 10 (dez) anos, e pagamento de 700 a 1.200 dias-multa.",
+    "elements": [
+      "Associação de duas ou mais pessoas",
+      "Finalidade de praticar tráfico",
+      "Estabilidade ou divisão de tarefas"
+    ],
+    "observations": [
+      "Exige vínculo associativo estável, não bastando a reunião ocasional.",
+      "Pode haver concurso com o tráfico e com organização criminosa.",
+      "A prova costuma ser indireta, com vigilância, interceptações e testemunhas."
+    ],
+    "strongKeywords": ["associação para o tráfico", "associacao para o trafico", "associação ao tráfico", "organização do tráfico"],
+    "keywords": ["grupo", "boca de fumo", "divisão de tarefas", "olheiro", "avião", "gerente", "venda", "droga"],
+    "disqualifiers": ["uso pessoal", "tráfico individual"]
+  },
+  {
+    "id": "eca-244b",
+    "code": "Lei 8.069/1990 (ECA)",
+    "article": "Art. 244-B",
+    "title": "Corrupção de menores",
+    "group": "OUTROS",
+    "legalText": "Corromper ou facilitar a corrupção de menor de 18 anos, com ele praticando infração penal ou induzindo-o a praticá-la.",
+    "penalty": "Reclusão, de 1 (um) a 4 (quatro) anos.",
+    "elements": [
+      "Menor de 18 anos",
+      "Prática de infração penal em conjunto ou induzimento",
+      "Dolo"
+    ],
+    "observations": [
+      "A prova da materialidade pode ser feita por documentos e testemunhas.",
+      "A Súmula 500 do STJ admite a comprovação da idade por outros meios, não só pela certidão.",
+      "Pode haver concurso com o crime praticado em conjunto."
+    ],
+    "strongKeywords": ["corrupção de menores", "corrupcao de menores", "menor de idade", "adolescente no crime", "usou menor"],
+    "keywords": ["menor", "adolescente", "17 anos", "16 anos", "coautoria", "induziu", "facilitou"],
+    "disqualifiers": ["maior de idade", "18 anos completos"]
+  },
+  {
+    "id": "lmp-24a",
+    "code": "Lei 11.340/2006 (Maria da Penha)",
+    "article": "Art. 24-A",
+    "title": "Descumprimento de medida protetiva",
+    "group": "VIOLENCIA_DOMESTICA",
+    "legalText": "Descumprir decisão judicial que defere medidas protetivas de urgência previstas na Lei Maria da Penha.",
+    "penalty": "Detenção, de 3 (três) meses a 2 (dois) anos, e multa.",
+    "elements": [
+      "Decisão judicial que deferiu medida protetiva",
+      "Ciência do agressor",
+      "Descumprimento da medida"
+    ],
+    "observations": [
+      "Tipo incluído pela Lei 13.641/2018.",
+      "O descumprimento pode gerar prisão preventiva e novas medidas.",
+      "A comunicação imediata à autoridade judicial e ao Ministério Público é recomendada."
+    ],
+    "strongKeywords": ["descumprimento de medida protetiva", "descumpriu medida protetiva", "violou medida protetiva"],
+    "keywords": ["medida protetiva", "aproximação", "afastamento", "Maria da Penha", "companheiro", "ex-companheiro", "ordem judicial"],
+    "disqualifiers": ["sem medida judicial", "medida revogada"]
+  }
+]

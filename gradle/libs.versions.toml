@@ -1,0 +1,106 @@
+[versions]
+activity = "1.13.0"
+agp = "9.2.1"
+annotations = "1.11.0"
+appcompat = "1.8.0"
+coil = "3.5.0"
+compileSdk = "37"
+compose-bom = "2026.09.00"
+composeRules = "0.6.1"
+core = "1.19.1"
+coroutines = "1.11.0"
+detekt = "2.0.0-alpha.4"
+espresso = "3.7.0"
+hilt = "2.60.1"
+hilt-navigation-compose = "1.4.0"
+javax-inject = "1"
+junit = "4.13.2"
+kotlin = "2.4.0"
+kotlin-ksp = "2.3.12"
+kotlin-serialization = "1.11.0"
+kover = "0.9.8"
+ktor = "3.5.0"
+lifecycle = "2.10.0"
+material = "1.14.0"
+minSdk = "26"
+navigation = "1.1.2"
+paging = "3.5.3"
+paparazzi = "2.0.0-alpha05"
+result = "2.3.1"
+robolectric = "4.16.1"
+room = "2.8.5"
+splashscreen = "1.2.0"
+targetSdk = "36"
+test-runner = "1.7.0"
+testCore = "1.7.0"
+truth = "1.4.5"
+turbine = "1.2.1"
+
+[libraries]
+annotations = { group = "androidx.annotation", name = "annotation", version.ref = "annotations" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
+coil-network-ktor3 = { group = "io.coil-kt.coil3", name = "coil-network-ktor3", version.ref = "coil" }
+coil-test = { module = "io.coil-kt.coil3:coil-test", version.ref = "coil" }
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "activity" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+compose-material = { group = "androidx.compose.material3", name = "material3" }
+compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+core = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
+detekt-compose = { group = "io.nlopez.compose.rules", name = "detekt", version.ref = "composeRules" }
+detekt-formatting = { group = "dev.detekt", name = "detekt-rules-ktlint-wrapper", version.ref = "detekt" }
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+javax-inject = { group = "javax.inject", name = "javax.inject", version.ref = "javax-inject" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlin-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlin-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlin-serialization" }
+ktor-client-cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+ktor-client-mock = { group = "io.ktor", name = "ktor-client-mock", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+lifecycle-viewModel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-viewModel-navigation = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-navigation3", version.ref = "lifecycle" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+navigation-runtime = { group = "androidx.navigation3", name = "navigation3-runtime", version.ref = "navigation" }
+navigation-ui = { group = "androidx.navigation3", name = "navigation3-ui", version.ref = "navigation" }
+paging-common = { group = "androidx.paging", name = "paging-common-ktx", version.ref = "paging" }
+paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "paging" }
+paging-runtime = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "paging" }
+paging-testing = { group = "androidx.paging", name = "paging-testing", version.ref = "paging" }
+paparazzi-core = { group = "app.cash.paparazzi", name = "paparazzi", version.ref = "paparazzi" }
+result = { group = "com.michael-bull.kotlin-result", name = "kotlin-result", version.ref = "result" }
+robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
+room = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-paging = { group = "androidx.room", name = "room-paging", version.ref = "room" }
+splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashscreen" }
+test-core = { group = "androidx.test", name = "core-ktx", version.ref = "testCore" }
+test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+test-runner = { group = "androidx.test", name = "runner", version.ref = "test-runner" }
+truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+detekt = { id = "dev.detekt", version.ref = "detekt" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "kotlin-ksp" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
+paparazzi = { id = "app.cash.paparazzi", version.ref = "paparazzi" }
