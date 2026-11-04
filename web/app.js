@@ -21,8 +21,10 @@ const dialogBody = document.querySelector("#dialog-body");
 const closeDialogButton = document.querySelector(".dialog-close");
 const caseView = document.querySelector("#case-view");
 const vadeView = document.querySelector("#vade-view");
+const booksView = document.querySelector("#books-view");
 const caseTab = document.querySelector("#case-tab");
 const vadeTab = document.querySelector("#vade-tab");
+const booksTab = document.querySelector("#books-tab");
 const vadeShortcut = document.querySelector("#vade-shortcut");
 const vadeForm = document.querySelector("#vade-search-form");
 const vadeQueryInput = document.querySelector("#vade-query");
@@ -178,13 +180,20 @@ function bulletList(items) {
 }
 
 function showView(view) {
-  const isVade = view === "vade";
-  caseView.hidden = isVade;
-  vadeView.hidden = !isVade;
-  caseTab.classList.toggle("is-active", !isVade);
-  caseTab.setAttribute("aria-selected", String(!isVade));
-  vadeTab.classList.toggle("is-active", isVade);
-  vadeTab.setAttribute("aria-selected", String(isVade));
+  const views = {
+    case: { panel: caseView, tab: caseTab },
+    vade: { panel: vadeView, tab: vadeTab },
+    books: { panel: booksView, tab: booksTab },
+  };
+  const activeView = views[view];
+  if (!activeView) return;
+
+  Object.values(views).forEach(({ panel, tab }) => {
+    const isActive = panel === activeView.panel;
+    panel.hidden = !isActive;
+    tab.classList.toggle("is-active", isActive);
+    tab.setAttribute("aria-selected", String(isActive));
+  });
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
@@ -481,6 +490,7 @@ resultList.addEventListener("click", (event) => {
 
 caseTab.addEventListener("click", () => showView("case"));
 vadeTab.addEventListener("click", () => showView("vade"));
+booksTab.addEventListener("click", () => showView("books"));
 vadeShortcut.addEventListener("click", () => showView("vade"));
 
 vadeForm.addEventListener("submit", (event) => {

@@ -37,8 +37,9 @@
       </header>
 
       <nav class="view-tabs" aria-label="Funcionalidades">
-        <button class="view-tab is-active" id="case-tab" type="button" aria-selected="true">Analisar relato</button>
-        <button class="view-tab" id="vade-tab" type="button" aria-selected="false">Vade Mecum</button>
+        <button class="view-tab is-active" id="case-tab" type="button" aria-controls="case-view" aria-selected="true">Analisar relato</button>
+        <button class="view-tab" id="vade-tab" type="button" aria-controls="vade-view" aria-selected="false">Vade Mecum</button>
+        <button class="view-tab" id="books-tab" type="button" aria-controls="books-view" aria-selected="false">Livros</button>
       </nav>
 
       <main>
@@ -180,6 +181,72 @@
               <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4m0 4h.01M10.3 3.9 2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" /></svg>
             </span>
             <p><strong>Base de consulta, não parecer jurídico.</strong> A consolidação é importada do Portal da Legislação da Presidência da República. A versão local pode ficar desatualizada; confira alterações posteriores e a publicação oficial antes de usar.</p>
+          </aside>
+        </section>
+
+        <section class="app-view books-view" id="books-view" hidden aria-labelledby="books-title">
+          <section class="intro">
+            <p class="eyebrow"><span class="eyebrow-line"></span> BIBLIOTECA DE ESTUDO</p>
+            <h1 id="books-title">Boas leituras<br /><span>para sua formação.</span></h1>
+            <p class="intro-copy">Uma seleção para construir a base jurídica e aprofundar matérias importantes. Veja o que cada obra pode ajudar a estudar e escolha a leitura adequada ao seu momento.</p>
+          </section>
+
+          <div class="books-heading">
+            <div>
+              <h2>Indicações de livros</h2>
+              <p>Referências para acompanhar aulas, revisar conceitos e aprofundar os estudos.</p>
+            </div>
+            <span class="books-count">6 indicações</span>
+          </div>
+
+          <section class="book-grid" aria-label="Livros recomendados para estudantes de Direito">
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">FORMAÇÃO GERAL</span><span class="book-level">Início do curso</span></div>
+              <h3>Introdução ao Estudo do Direito</h3>
+              <p class="book-author">Tércio Sampaio Ferraz Jr.</p>
+              <p class="book-description">Ajuda a compreender conceitos jurídicos fundamentais, a linguagem do Direito e como as normas são interpretadas e aplicadas.</p>
+              <p class="book-use"><strong>Bom para:</strong> criar uma base para as matérias do curso.</p>
+            </article>
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">DIREITO CONSTITUCIONAL</span><span class="book-level">Base e revisão</span></div>
+              <h3>Direito Constitucional Esquematizado</h3>
+              <p class="book-author">Pedro Lenza</p>
+              <p class="book-description">Apresenta a estrutura constitucional brasileira e organiza os principais temas para estudo e revisão.</p>
+              <p class="book-use"><strong>Bom para:</strong> acompanhar Constitucional e revisar conteúdos.</p>
+            </article>
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">DIREITO CIVIL</span><span class="book-level">Base e aprofundamento</span></div>
+              <h3>Manual de Direito Civil</h3>
+              <p class="book-author">Flávio Tartuce</p>
+              <p class="book-description">Reúne os principais institutos do Direito Civil em uma abordagem sistemática, útil para conectar conceitos e matérias.</p>
+              <p class="book-use"><strong>Bom para:</strong> consulta durante as disciplinas de Civil.</p>
+            </article>
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">DIREITO PENAL</span><span class="book-level">Base e aprofundamento</span></div>
+              <h3>Manual de Direito Penal</h3>
+              <p class="book-author">Rogério Greco</p>
+              <p class="book-description">Explora os fundamentos da teoria do crime e outros temas penais, com explicações para acompanhar o estudo da parte geral e especial.</p>
+              <p class="book-use"><strong>Bom para:</strong> estudar institutos penais com mais contexto.</p>
+            </article>
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">PROCESSO PENAL</span><span class="book-level">Aprofundamento</span></div>
+              <h3>Manual de Processo Penal</h3>
+              <p class="book-author">Renato Brasileiro de Lima</p>
+              <p class="book-description">Aprofunda a investigação, as etapas do processo e as garantias processuais, articulando conceitos com a prática jurídica.</p>
+              <p class="book-use"><strong>Bom para:</strong> avançar em Processo Penal e consultar temas.</p>
+            </article>
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">DIREITO ADMINISTRATIVO</span><span class="book-level">Base e revisão</span></div>
+              <h3>Manual de Direito Administrativo</h3>
+              <p class="book-author">Matheus Carvalho</p>
+              <p class="book-description">Organiza os princípios, a estrutura da Administração Pública e os principais institutos administrativos.</p>
+              <p class="book-use"><strong>Bom para:</strong> construir uma referência para a disciplina.</p>
+            </article>
+          </section>
+
+          <aside class="books-note">
+            <strong>Dica de estudo</strong>
+            <p>Use livros junto das aulas e da legislação. Edições e entendimentos jurídicos mudam; confira a edição, as atualizações e as referências adotadas pelo seu curso. As indicações são educacionais e não substituem orientação acadêmica ou jurídica.</p>
           </aside>
         </section>
       </main>
