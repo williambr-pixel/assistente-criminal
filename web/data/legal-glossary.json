@@ -1,0 +1,102 @@
+[
+  {
+    "term": "Acórdão",
+    "category": "Processo",
+    "definition": "Decisão proferida por um órgão colegiado de um tribunal, formada pelo entendimento de seus julgadores."
+  },
+  {
+    "term": "Ação penal",
+    "category": "Processo Penal",
+    "definition": "Procedimento judicial destinado a apurar uma acusação criminal e permitir uma decisão, respeitados o contraditório e a ampla defesa."
+  },
+  {
+    "term": "Ampla defesa",
+    "category": "Direitos fundamentais",
+    "definition": "Direito de apresentar argumentos, provas e recursos permitidos em lei para se defender em um processo."
+  },
+  {
+    "term": "Audiência de custódia",
+    "category": "Processo Penal",
+    "definition": "Apresentação da pessoa presa em flagrante a uma autoridade judicial, em prazo legal, para examinar a legalidade e as circunstâncias da prisão."
+  },
+  {
+    "term": "Cautelar",
+    "category": "Processo",
+    "definition": "Medida provisória destinada a proteger a utilidade do processo ou evitar riscos previstos em lei, antes da decisão final."
+  },
+  {
+    "term": "Contraditório",
+    "category": "Direitos fundamentais",
+    "definition": "Direito de conhecer e poder responder aos argumentos e às provas apresentados no processo."
+  },
+  {
+    "term": "Denúncia",
+    "category": "Processo Penal",
+    "definition": "Peça pela qual o Ministério Público apresenta uma acusação criminal ao Judiciário. Não equivale a uma condenação."
+  },
+  {
+    "term": "Dolo",
+    "category": "Direito Penal",
+    "definition": "Em termos gerais, vontade consciente de realizar uma conduta descrita como crime ou assunção do risco de produzir o resultado, nos termos da lei penal."
+  },
+  {
+    "term": "Flagrante",
+    "category": "Processo Penal",
+    "definition": "Situação em que alguém é encontrado nas hipóteses legais relacionadas à prática recente de uma infração penal, podendo haver prisão em flagrante."
+  },
+  {
+    "term": "Habeas corpus",
+    "category": "Garantias constitucionais",
+    "definition": "Ação constitucional destinada a proteger a liberdade de locomoção contra ilegalidade ou abuso de poder."
+  },
+  {
+    "term": "Indiciamento",
+    "category": "Investigação",
+    "definition": "Ato fundamentado da autoridade policial que atribui a alguém, durante a investigação, a condição de provável autor ou partícipe, sem declarar culpa."
+  },
+  {
+    "term": "Inquérito policial",
+    "category": "Investigação",
+    "definition": "Procedimento de investigação conduzido pela polícia judiciária para apurar circunstâncias, materialidade e possível autoria de uma infração penal."
+  },
+  {
+    "term": "Jurisprudência",
+    "category": "Fontes do Direito",
+    "definition": "Conjunto de decisões judiciais sobre questões jurídicas. A existência de decisões não significa que esta ferramenta tenha consultado tribunais."
+  },
+  {
+    "term": "Legítima defesa",
+    "category": "Direito Penal",
+    "definition": "Hipótese legal em que alguém repele, usando moderadamente os meios necessários, uma agressão injusta, atual ou iminente, a direito próprio ou de outra pessoa."
+  },
+  {
+    "term": "Medida protetiva",
+    "category": "Proteção",
+    "definition": "Ordem judicial prevista em lei para prevenir riscos ou proteger pessoas em situações específicas, como as de violência doméstica e familiar."
+  },
+  {
+    "term": "Ministério Público",
+    "category": "Instituições",
+    "definition": "Instituição permanente que defende a ordem jurídica e interesses definidos na Constituição e nas leis; na ação penal pública, pode oferecer denúncia."
+  },
+  {
+    "term": "Prescrição",
+    "category": "Direito Penal",
+    "definition": "Perda da possibilidade de o Estado exercer determinada pretensão penal pelo decurso do tempo, conforme prazos e regras legais."
+  },
+  {
+    "term": "Prisão preventiva",
+    "category": "Processo Penal",
+    "definition": "Prisão cautelar decretada por autoridade judicial quando presentes os requisitos e fundamentos previstos em lei; não é cumprimento antecipado de pena."
+  },
+  {
+    "term": "Recurso",
+    "category": "Processo",
+    "definition": "Meio previsto em lei para pedir a revisão, reforma, invalidação ou esclarecimento de uma decisão judicial."
+  },
+  {
+    "term": "Trânsito em julgado",
+    "category": "Processo",
+    "definition": "Momento em que uma decisão se torna definitiva no processo, por não caber mais recurso."
+  }
+]

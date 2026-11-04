@@ -1,4 +1,4 @@
-const CACHE_NAME = "chatjuridico-v3";
+const CACHE_NAME = "chatjuridico-v4";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -9,6 +9,7 @@ const APP_SHELL = [
   "./icons/icon.svg",
   "./data/criminal-articles.json",
   "./data/vade-mecum.json",
+  "./data/legal-glossary.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
 ];

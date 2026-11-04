@@ -40,6 +40,7 @@
         <button class="view-tab is-active" id="case-tab" type="button" aria-controls="case-view" aria-selected="true">Analisar relato</button>
         <button class="view-tab" id="vade-tab" type="button" aria-controls="vade-view" aria-selected="false">Vade Mecum</button>
         <button class="view-tab" id="books-tab" type="button" aria-controls="books-view" aria-selected="false">Livros</button>
+        <button class="view-tab" id="glossary-tab" type="button" aria-controls="glossary-view" aria-selected="false">Glossário</button>
       </nav>
 
       <main>
@@ -101,11 +102,12 @@
             <div>
               <p class="eyebrow"><span class="eyebrow-line"></span> ANÁLISE INFORMATIVA</p>
               <h2 id="results-title">Artigos para conferir</h2>
-              <p class="results-explainer">A indicação compara palavras do relato — incluindo variações simples — com termos associados a cada artigo. É um ponto de partida, não uma conclusão de que o crime aconteceu ou de que alguém é culpado. Clique em um artigo para entender o que precisa ser verificado e o que a indicação significa para as pessoas envolvidas.</p>
+              <p class="results-explainer">A indicação compara palavras do relato — incluindo variações simples — com termos associados a cada artigo da base local. As referências abaixo levam ao texto oficial da lei. Esta ferramenta não pesquisa jurisprudência e não conclui que o crime aconteceu ou que alguém é culpado.</p>
             </div>
             <span class="result-count" id="result-count"></span>
           </div>
           <div class="result-list" id="result-list"></div>
+          <section class="source-notes" id="source-notes" aria-label="Fontes das indicações" hidden></section>
         </section>
 
         <section class="examples" id="examples" aria-labelledby="examples-title">
@@ -248,6 +250,22 @@
             <strong>Dica de estudo</strong>
             <p>Use livros junto das aulas e da legislação. Edições e entendimentos jurídicos mudam; confira a edição, as atualizações e as referências adotadas pelo seu curso. As indicações são educacionais e não substituem orientação acadêmica ou jurídica.</p>
           </aside>
+        </section>
+
+        <section class="app-view glossary-view" id="glossary-view" hidden aria-labelledby="glossary-title">
+          <section class="intro">
+            <p class="eyebrow"><span class="eyebrow-line"></span> CONSULTA RÁPIDA</p>
+            <h1 id="glossary-title">Entenda os termos<br /><span>do Direito.</span></h1>
+            <p class="intro-copy">Consulte definições introdutórias de expressões jurídicas e encontre termos usados nas explicações do app. O significado concreto pode depender da lei e do contexto.</p>
+          </section>
+
+          <section class="glossary-search-panel" aria-label="Pesquisar no glossário">
+            <label for="glossary-query">BUSQUE UM TERMO OU SIGNIFICADO</label>
+            <input id="glossary-query" type="search" autocomplete="off" placeholder="Ex.: dolo, prescrição, contraditório" />
+            <p class="field-hint">Digite uma palavra para filtrar as definições. Conteúdo educativo, não é orientação jurídica.</p>
+          </section>
+          <div class="glossary-status" id="glossary-status" role="status">Carregando glossário…</div>
+          <section class="glossary-list" id="glossary-list" aria-live="polite" aria-label="Termos jurídicos"></section>
         </section>
       </main>
       <footer>Feito para apoiar a pesquisa — <span>não substitui orientação jurídica.</span></footer>
