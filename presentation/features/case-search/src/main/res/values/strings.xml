@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="case_search_title">Assistente criminal</string>
+    <string name="case_search_intro_kicker">ANÁLISE PENAL INFORMATIVA</string>
     <string name="case_search_intro_title">Descreva o caso</string>
     <string name="case_search_intro_body">Relate os fatos como faria em uma consulta. O app sugere os artigos penais mais prováveis a partir dos elementos descritos.</string>
     <string name="case_search_query_label">Relato do caso</string>
