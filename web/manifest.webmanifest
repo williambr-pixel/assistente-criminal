@@ -2,7 +2,7 @@
   "id": "./",
   "name": "ChatJuridico",
   "short_name": "ChatJuridico",
-  "description": "Consulta penal informativa e legislação federal brasileira offline.",
+  "description": "Análise local de relatos, seis normas brasileiras, fontes oficiais, glossário jurídico e indicações de livros.",
   "lang": "pt-BR",
   "start_url": "./",
   "scope": "./",
