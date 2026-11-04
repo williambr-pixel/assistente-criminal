@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "Assistente Criminal",
-  "short_name": "Assistente",
+  "name": "ChatJuridico",
+  "short_name": "ChatJuridico",
   "description": "Consulta penal informativa e legislação federal brasileira offline.",
   "lang": "pt-BR",
   "start_url": "./",
@@ -9,7 +9,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#f7f8fa",
-  "theme_color": "#6358d9",
+  "theme_color": "#2563eb",
   "categories": ["education", "productivity"],
   "icons": [
     {

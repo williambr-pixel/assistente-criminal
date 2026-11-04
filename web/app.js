@@ -23,6 +23,7 @@ const caseView = document.querySelector("#case-view");
 const vadeView = document.querySelector("#vade-view");
 const caseTab = document.querySelector("#case-tab");
 const vadeTab = document.querySelector("#vade-tab");
+const vadeShortcut = document.querySelector("#vade-shortcut");
 const vadeForm = document.querySelector("#vade-search-form");
 const vadeQueryInput = document.querySelector("#vade-query");
 const vadeLawFilter = document.querySelector("#vade-law-filter");
@@ -34,6 +35,7 @@ const closeInstallDialogButton = document.querySelector(".install-dialog-close")
 
 let articles = [];
 let currentMatches = [];
+let currentDescription = "";
 let lawDocuments = [];
 let installPrompt;
 let vadeIndex = { generatedAt: "" };
@@ -325,6 +327,7 @@ function renderVadeArticles(results, query, totalCount) {
 }
 
 function openVadeArticle(document, article) {
+  dialog.classList.add("vade-reading-dialog");
   const safeSource = escapeHtml(document.source);
   dialogBody.innerHTML = `
     <p class="detail-article">${escapeHtml(article.label)}</p>
@@ -358,10 +361,15 @@ function applicationContext(match) {
   return `
     <section class="application-context" aria-labelledby="application-context-title">
       <h3 id="application-context-title">Como esta indicação se relaciona ao relato</h3>
+      <p class="case-report"><strong>Fatos informados:</strong> ${escapeHtml(currentDescription)}</p>
       <p>${matchedTerms}</p>
       <p><strong>Texto do artigo em linguagem direta:</strong> ${escapeHtml(article.legalText)}</p>
+      <div class="context-checklist">
+        <h4>Aspectos legais a confrontar com os fatos</h4>
+        ${bulletList(article.elements)}
+      </div>
       ${contextualCircumstances}
-      <p class="context-limit">Para aplicar o artigo a uma pessoa, não basta aparecerem palavras parecidas: é necessário verificar os elementos abaixo e as provas do caso, no procedimento adequado. A sugestão não declara que houve crime nem que a pessoa mencionada é culpada.</p>
+      <p class="context-limit">Para aplicar o artigo a uma pessoa, não basta aparecerem palavras parecidas: é necessário verificar cada requisito legal com os fatos e as provas do caso, no procedimento adequado. A sugestão não declara que houve crime nem que a pessoa mencionada é culpada.</p>
       ${articleNumber ? `<button class="vade-lookup-button" type="button" data-vade-lookup="${escapeHtml(articleNumber)}">Consultar Art. ${escapeHtml(articleNumber)} no Vade Mecum <span aria-hidden="true">→</span></button>` : ""}
     </section>
     <section class="detail-section people-context">
@@ -373,6 +381,7 @@ function applicationContext(match) {
 }
 
 function openArticle(match) {
+  dialog.classList.remove("vade-reading-dialog");
   const { article } = match;
   const groupNames = {
     ADMINISTRACAO_PUBLICA: "Administração pública",
@@ -405,10 +414,6 @@ function openArticle(match) {
       <p>Essa faixa não é aplicada automaticamente pela ferramenta nem significa que a pena máxima será imposta. Se houver condenação, a pena concreta depende da decisão judicial, das provas, das circunstâncias do caso e das regras legais aplicáveis.</p>
     </section>
     <section class="detail-section">
-      <h3>O que deve ser verificado</h3>
-      ${bulletList(article.elements)}
-    </section>
-    <section class="detail-section">
       <h3>Observações práticas</h3>
       ${bulletList(article.observations)}
     </section>
@@ -427,6 +432,7 @@ async function submitSearch(event) {
   const description = input.value.trim();
   if (!description || articles.length === 0) return;
 
+  currentDescription = description;
   clearButton.disabled = false;
   setLoading(true);
   resultsSection.hidden = false;
@@ -451,6 +457,7 @@ input.addEventListener("keydown", (event) => {
 clearButton.addEventListener("click", () => {
   input.value = "";
   currentMatches = [];
+  currentDescription = "";
   resultsSection.hidden = true;
   examplesSection.hidden = false;
   clearButton.disabled = true;
@@ -474,6 +481,7 @@ resultList.addEventListener("click", (event) => {
 
 caseTab.addEventListener("click", () => showView("case"));
 vadeTab.addEventListener("click", () => showView("vade"));
+vadeShortcut.addEventListener("click", () => showView("vade"));
 
 vadeForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -600,7 +608,7 @@ loadAppData().catch((error) => {
     <p class="conflict-note" role="alert">${escapeHtml(error.message)} Inicie o servidor local a partir da pasta do projeto para habilitar a consulta.</p>`);
   submitButton.disabled = true;
   vadeSourceStatus.textContent = `Não foi possível carregar a legislação: ${error.message}`;
-  console.error("Erro ao carregar as bases locais do Assistente Criminal.", error);
+  console.error("Erro ao carregar as bases locais do ChatJuridico.", error);
 });
 
 if ("serviceWorker" in navigator && window.isSecureContext) {

@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Assistente criminal: análise informativa de relatos e consulta offline a leis penais brasileiras."
+      content="ChatJuridico: análise informativa de relatos e consulta offline a leis penais brasileiras."
     />
-    <meta name="theme-color" content="#f7f8fa" />
+    <meta name="theme-color" content="#2563eb" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="Assistente Criminal" />
+    <meta name="apple-mobile-web-app-title" content="ChatJuridico" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./icons/icon-192.png" />
-    <title>Assistente criminal</title>
+    <title>ChatJuridico</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./app.js" defer></script>
   </head>
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <a class="brand" href="./" aria-label="Assistente criminal — início">
+        <a class="brand" href="./" aria-label="ChatJuridico — início">
           <span class="brand-mark" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12 3 19 6v5c0 4.6-2.8 8-7 10-4.2-2-7-5.4-7-10V6l7-3Z" />
-              <path d="m9 12 2 2 4-4" />
+              <path d="M12 4v15m-7 1h14M4 20h16M3 8c2.2 0 3.6-3 9-3s6.8 3 9 3M5 8l-3 6h6L5 8Zm14 0-3 6h6l-3-6Z" />
+              <path d="M2 14c.5 2 5.5 2 6 0m8 0c.5 2 5.5 2 6 0" />
             </svg>
           </span>
-          <span class="brand-name">assistente<span>criminal</span></span>
+          <span class="brand-name">ChatJuridico</span>
         </a>
         <div class="topbar-actions">
           <button class="install-button" id="install-button" type="button" hidden>Instalar app</button>
@@ -38,7 +38,7 @@
 
       <nav class="view-tabs" aria-label="Funcionalidades">
         <button class="view-tab is-active" id="case-tab" type="button" aria-selected="true">Analisar relato</button>
-        <button class="view-tab" id="vade-tab" type="button" aria-selected="false">Vade Mecum <span class="tab-badge">6 leis</span></button>
+        <button class="view-tab" id="vade-tab" type="button" aria-selected="false">Vade Mecum</button>
       </nav>
 
       <main>
@@ -51,6 +51,14 @@
             que podem ser relevantes para sua análise.
           </p>
         </section>
+
+        <button class="vade-quick-access" id="vade-shortcut" type="button">
+          <span class="vade-quick-copy">
+            <strong>Vade Mecum</strong>
+            <span>Pesquise e leia a legislação federal completa, inclusive offline.</span>
+          </span>
+          <span class="vade-quick-action">Consultar <span aria-hidden="true">→</span></span>
+        </button>
 
         <section class="search-panel" aria-labelledby="form-title">
           <div class="panel-heading">
@@ -191,7 +199,7 @@
         <button class="install-dialog-close dialog-close" type="button" aria-label="Fechar instruções">&times;</button>
       </div>
       <div class="dialog-body install-dialog-body">
-        <h2 class="detail-title" id="install-dialog-title">Instale o Assistente Criminal</h2>
+        <h2 class="detail-title" id="install-dialog-title">Instale o ChatJuridico</h2>
         <p>Adicione o app à tela inicial para abrir em uma janela própria e consultar a legislação salva no aparelho, inclusive offline.</p>
         <section class="detail-section">
           <h3>Android</h3>
