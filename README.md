@@ -100,6 +100,31 @@ This template is packed with modern libraries and tools from the Android ecosyst
       across unit, integration, and end-to-end scenarios without the brittleness
       often introduced by mocks.
 
+### 🌐 Running the browser version
+
+The browser version shares the local criminal-article data and includes an
+installable Progressive Web App (PWA) with an offline vade mecum. From the
+repository root, refresh the official law corpus and start the local server:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\update-vade-mecum.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\serve-web.ps1
+```
+
+Open `http://127.0.0.1:8000/web/` in your browser. The vade mecum contains the
+Constitution, Penal Code, Code of Criminal Procedure, Maria da Penha Law, Drug
+Law, and Criminal Execution Law, indexed from the official Presidency of the
+Republic legislation portal. Its locally saved text may be outdated; check the
+official source linked to each provision before relying on it.
+
+The published browser app is available at
+<https://williambr-pixel.github.io/assistente-criminal/>. On iPhone, open that
+address in Safari, tap **Share**, then **Add to Home Screen**.
+
+The local `127.0.0.1` development server is available only on this computer;
+use the published HTTPS address on a phone. This PWA is not a native `.apk` or
+`.ipa` package and is not submitted to Google Play or the App Store.
+
 ### ▶️ Running the test suites
 
 Execute the following Gradle tasks from the project root to run the automated test suites locally:
