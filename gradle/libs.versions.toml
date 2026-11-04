@@ -1,6 +1,6 @@
 [versions]
 activity = "1.13.0"
-agp = "9.2.1"
+agp = "9.5.0"
 annotations = "1.11.0"
 appcompat = "1.8.0"
 coil = "3.5.0"
