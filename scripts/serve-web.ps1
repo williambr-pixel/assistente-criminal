@@ -9,16 +9,18 @@ $files = @{
     "/web/manifest.webmanifest" = @{ Path = Join-Path $repoRoot "web\manifest.webmanifest"; Type = "application/manifest+json; charset=utf-8" }
     "/web/service-worker.js" = @{ Path = Join-Path $repoRoot "web\service-worker.js"; Type = "text/javascript; charset=utf-8" }
     "/web/favicon.svg" = @{ Path = Join-Path $repoRoot "web\favicon.svg"; Type = "image/svg+xml" }
+    "/web/icons/icon.svg" = @{ Path = Join-Path $repoRoot "web\icons\icon.svg"; Type = "image/svg+xml" }
     "/web/icons/icon-192.png" = @{ Path = Join-Path $repoRoot "web\icons\icon-192.png"; Type = "image/png" }
     "/web/icons/icon-512.png" = @{ Path = Join-Path $repoRoot "web\icons\icon-512.png"; Type = "image/png" }
     "/web/data/criminal-articles.json" = @{ Path = Join-Path $repoRoot "web\data\criminal-articles.json"; Type = "application/json; charset=utf-8" }
     "/web/data/vade-mecum.json" = @{ Path = Join-Path $repoRoot "web\data\vade-mecum.json"; Type = "application/json; charset=utf-8" }
+    "/web/data/legal-glossary.json" = @{ Path = Join-Path $repoRoot "web\data\legal-glossary.json"; Type = "application/json; charset=utf-8" }
 }
 
 $listener = [System.Net.HttpListener]::new()
 $listener.Prefixes.Add("http://127.0.0.1:8000/")
 $listener.Start()
-Write-Output "Assistente Criminal: http://127.0.0.1:8000/web/"
+Write-Output "ChatJuridico: http://127.0.0.1:8000/web/"
 Write-Output "O servidor atende apenas este computador. Use um endereco HTTPS publicado para instalar no celular."
 
 try {
