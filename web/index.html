@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Assistente criminal: análise informativa de relatos e consulta offline a leis penais brasileiras."
+      content="ChatJuridico: análise informativa de relatos e consulta offline a leis penais brasileiras."
     />
-    <meta name="theme-color" content="#f7f8fa" />
+    <meta name="theme-color" content="#2563eb" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="Assistente Criminal" />
+    <meta name="apple-mobile-web-app-title" content="ChatJuridico" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./icons/icon-192.png" />
-    <title>Assistente criminal</title>
+    <title>ChatJuridico</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./app.js" defer></script>
   </head>
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <a class="brand" href="./" aria-label="Assistente criminal — início">
+        <a class="brand" href="./" aria-label="ChatJuridico — início">
           <span class="brand-mark" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12 3 19 6v5c0 4.6-2.8 8-7 10-4.2-2-7-5.4-7-10V6l7-3Z" />
-              <path d="m9 12 2 2 4-4" />
+              <path d="M12 4v15m-7 1h14M4 20h16M3 8c2.2 0 3.6-3 9-3s6.8 3 9 3M5 8l-3 6h6L5 8Zm14 0-3 6h6l-3-6Z" />
+              <path d="M2 14c.5 2 5.5 2 6 0m8 0c.5 2 5.5 2 6 0" />
             </svg>
           </span>
-          <span class="brand-name">assistente<span>criminal</span></span>
+          <span class="brand-name">ChatJuridico</span>
         </a>
         <div class="topbar-actions">
           <button class="install-button" id="install-button" type="button" hidden>Instalar app</button>
@@ -37,8 +37,10 @@
       </header>
 
       <nav class="view-tabs" aria-label="Funcionalidades">
-        <button class="view-tab is-active" id="case-tab" type="button" aria-selected="true">Analisar relato</button>
-        <button class="view-tab" id="vade-tab" type="button" aria-selected="false">Vade Mecum <span class="tab-badge">6 leis</span></button>
+        <button class="view-tab is-active" id="case-tab" type="button" aria-controls="case-view" aria-selected="true">Analisar relato</button>
+        <button class="view-tab" id="vade-tab" type="button" aria-controls="vade-view" aria-selected="false">Vade Mecum</button>
+        <button class="view-tab" id="books-tab" type="button" aria-controls="books-view" aria-selected="false">Livros</button>
+        <button class="view-tab" id="glossary-tab" type="button" aria-controls="glossary-view" aria-selected="false">Glossário</button>
       </nav>
 
       <main>
@@ -51,6 +53,14 @@
             que podem ser relevantes para sua análise.
           </p>
         </section>
+
+        <button class="vade-quick-access" id="vade-shortcut" type="button">
+          <span class="vade-quick-copy">
+            <strong>Vade Mecum</strong>
+            <span>Pesquise e leia a legislação federal completa, inclusive offline.</span>
+          </span>
+          <span class="vade-quick-action">Consultar <span aria-hidden="true">→</span></span>
+        </button>
 
         <section class="search-panel" aria-labelledby="form-title">
           <div class="panel-heading">
@@ -92,11 +102,12 @@
             <div>
               <p class="eyebrow"><span class="eyebrow-line"></span> ANÁLISE INFORMATIVA</p>
               <h2 id="results-title">Artigos para conferir</h2>
-              <p class="results-explainer">A indicação compara palavras do relato — incluindo variações simples — com termos associados a cada artigo. É um ponto de partida, não uma conclusão de que o crime aconteceu ou de que alguém é culpado. Clique em um artigo para entender o que precisa ser verificado e o que a indicação significa para as pessoas envolvidas.</p>
+              <p class="results-explainer">A indicação compara palavras do relato — incluindo variações simples — com termos associados a cada artigo da base local. As referências abaixo levam ao texto oficial da lei. Esta ferramenta não pesquisa jurisprudência e não conclui que o crime aconteceu ou que alguém é culpado.</p>
             </div>
             <span class="result-count" id="result-count"></span>
           </div>
           <div class="result-list" id="result-list"></div>
+          <section class="source-notes" id="source-notes" aria-label="Fontes das indicações" hidden></section>
         </section>
 
         <section class="examples" id="examples" aria-labelledby="examples-title">
@@ -174,6 +185,88 @@
             <p><strong>Base de consulta, não parecer jurídico.</strong> A consolidação é importada do Portal da Legislação da Presidência da República. A versão local pode ficar desatualizada; confira alterações posteriores e a publicação oficial antes de usar.</p>
           </aside>
         </section>
+
+        <section class="app-view books-view" id="books-view" hidden aria-labelledby="books-title">
+          <section class="intro">
+            <p class="eyebrow"><span class="eyebrow-line"></span> BIBLIOTECA DE ESTUDO</p>
+            <h1 id="books-title">Boas leituras<br /><span>para sua formação.</span></h1>
+            <p class="intro-copy">Uma seleção para construir a base jurídica e aprofundar matérias importantes. Veja o que cada obra pode ajudar a estudar e escolha a leitura adequada ao seu momento.</p>
+          </section>
+
+          <div class="books-heading">
+            <div>
+              <h2>Indicações de livros</h2>
+              <p>Referências para acompanhar aulas, revisar conceitos e aprofundar os estudos.</p>
+            </div>
+            <span class="books-count">6 indicações</span>
+          </div>
+
+          <section class="book-grid" aria-label="Livros recomendados para estudantes de Direito">
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">FORMAÇÃO GERAL</span><span class="book-level">Início do curso</span></div>
+              <h3>Introdução ao Estudo do Direito</h3>
+              <p class="book-author">Tércio Sampaio Ferraz Jr.</p>
+              <p class="book-description">Ajuda a compreender conceitos jurídicos fundamentais, a linguagem do Direito e como as normas são interpretadas e aplicadas.</p>
+              <p class="book-use"><strong>Bom para:</strong> criar uma base para as matérias do curso.</p>
+            </article>
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">DIREITO CONSTITUCIONAL</span><span class="book-level">Base e revisão</span></div>
+              <h3>Direito Constitucional Esquematizado</h3>
+              <p class="book-author">Pedro Lenza</p>
+              <p class="book-description">Apresenta a estrutura constitucional brasileira e organiza os principais temas para estudo e revisão.</p>
+              <p class="book-use"><strong>Bom para:</strong> acompanhar Constitucional e revisar conteúdos.</p>
+            </article>
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">DIREITO CIVIL</span><span class="book-level">Base e aprofundamento</span></div>
+              <h3>Manual de Direito Civil</h3>
+              <p class="book-author">Flávio Tartuce</p>
+              <p class="book-description">Reúne os principais institutos do Direito Civil em uma abordagem sistemática, útil para conectar conceitos e matérias.</p>
+              <p class="book-use"><strong>Bom para:</strong> consulta durante as disciplinas de Civil.</p>
+            </article>
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">DIREITO PENAL</span><span class="book-level">Base e aprofundamento</span></div>
+              <h3>Manual de Direito Penal</h3>
+              <p class="book-author">Rogério Greco</p>
+              <p class="book-description">Explora os fundamentos da teoria do crime e outros temas penais, com explicações para acompanhar o estudo da parte geral e especial.</p>
+              <p class="book-use"><strong>Bom para:</strong> estudar institutos penais com mais contexto.</p>
+            </article>
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">PROCESSO PENAL</span><span class="book-level">Aprofundamento</span></div>
+              <h3>Manual de Processo Penal</h3>
+              <p class="book-author">Renato Brasileiro de Lima</p>
+              <p class="book-description">Aprofunda a investigação, as etapas do processo e as garantias processuais, articulando conceitos com a prática jurídica.</p>
+              <p class="book-use"><strong>Bom para:</strong> avançar em Processo Penal e consultar temas.</p>
+            </article>
+            <article class="book-card">
+              <div class="book-card-topline"><span class="book-category">DIREITO ADMINISTRATIVO</span><span class="book-level">Base e revisão</span></div>
+              <h3>Manual de Direito Administrativo</h3>
+              <p class="book-author">Matheus Carvalho</p>
+              <p class="book-description">Organiza os princípios, a estrutura da Administração Pública e os principais institutos administrativos.</p>
+              <p class="book-use"><strong>Bom para:</strong> construir uma referência para a disciplina.</p>
+            </article>
+          </section>
+
+          <aside class="books-note">
+            <strong>Dica de estudo</strong>
+            <p>Use livros junto das aulas e da legislação. Edições e entendimentos jurídicos mudam; confira a edição, as atualizações e as referências adotadas pelo seu curso. As indicações são educacionais e não substituem orientação acadêmica ou jurídica.</p>
+          </aside>
+        </section>
+
+        <section class="app-view glossary-view" id="glossary-view" hidden aria-labelledby="glossary-title">
+          <section class="intro">
+            <p class="eyebrow"><span class="eyebrow-line"></span> CONSULTA RÁPIDA</p>
+            <h1 id="glossary-title">Entenda os termos<br /><span>do Direito.</span></h1>
+            <p class="intro-copy">Consulte definições introdutórias de expressões jurídicas e encontre termos usados nas explicações do app. O significado concreto pode depender da lei e do contexto.</p>
+          </section>
+
+          <section class="glossary-search-panel" aria-label="Pesquisar no glossário">
+            <label for="glossary-query">BUSQUE UM TERMO OU SIGNIFICADO</label>
+            <input id="glossary-query" type="search" autocomplete="off" placeholder="Ex.: dolo, prescrição, contraditório" />
+            <p class="field-hint">Digite uma palavra para filtrar as definições. Conteúdo educativo, não é orientação jurídica.</p>
+          </section>
+          <div class="glossary-status" id="glossary-status" role="status">Carregando glossário…</div>
+          <section class="glossary-list" id="glossary-list" aria-live="polite" aria-label="Termos jurídicos"></section>
+        </section>
       </main>
       <footer>Feito para apoiar a pesquisa — <span>não substitui orientação jurídica.</span></footer>
     </div>
@@ -191,7 +284,7 @@
         <button class="install-dialog-close dialog-close" type="button" aria-label="Fechar instruções">&times;</button>
       </div>
       <div class="dialog-body install-dialog-body">
-        <h2 class="detail-title" id="install-dialog-title">Instale o Assistente Criminal</h2>
+        <h2 class="detail-title" id="install-dialog-title">Instale o ChatJuridico</h2>
         <p>Adicione o app à tela inicial para abrir em uma janela própria e consultar a legislação salva no aparelho, inclusive offline.</p>
         <section class="detail-section">
           <h3>Android</h3>

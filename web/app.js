@@ -1,5 +1,30 @@
 const CRIMINAL_ARTICLE_DATA_URL = "./data/criminal-articles.json";
 const VADE_MECUM_DATA_URL = "./data/vade-mecum.json";
+const LEGAL_GLOSSARY_DATA_URL = "./data/legal-glossary.json";
+
+const LAW_SOURCES = {
+  "Código Penal": {
+    url: "https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm",
+    vadeDocumentId: "codigo-penal",
+  },
+  "Lei 7.716/1989": {
+    url: "https://www.planalto.gov.br/ccivil_03/leis/l7716.htm",
+  },
+  "Código de Trânsito Brasileiro": {
+    url: "https://www.planalto.gov.br/ccivil_03/leis/l9503.htm",
+  },
+  "Lei 11.343/2006": {
+    url: "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11343.htm",
+    vadeDocumentId: "lei-de-drogas",
+  },
+  "Lei 8.069/1990 (ECA)": {
+    url: "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm",
+  },
+  "Lei 11.340/2006 (Maria da Penha)": {
+    url: "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm",
+    vadeDocumentId: "lei-maria-da-penha",
+  },
+};
 
 const examples = [
   "O autor, armado, rendeu a vítima e levou o celular.",
@@ -21,20 +46,31 @@ const dialogBody = document.querySelector("#dialog-body");
 const closeDialogButton = document.querySelector(".dialog-close");
 const caseView = document.querySelector("#case-view");
 const vadeView = document.querySelector("#vade-view");
+const booksView = document.querySelector("#books-view");
+const glossaryView = document.querySelector("#glossary-view");
 const caseTab = document.querySelector("#case-tab");
 const vadeTab = document.querySelector("#vade-tab");
+const booksTab = document.querySelector("#books-tab");
+const glossaryTab = document.querySelector("#glossary-tab");
+const vadeShortcut = document.querySelector("#vade-shortcut");
 const vadeForm = document.querySelector("#vade-search-form");
 const vadeQueryInput = document.querySelector("#vade-query");
 const vadeLawFilter = document.querySelector("#vade-law-filter");
 const vadeResults = document.querySelector("#vade-results");
 const vadeSourceStatus = document.querySelector("#vade-source-status");
+const sourceNotes = document.querySelector("#source-notes");
+const glossaryQuery = document.querySelector("#glossary-query");
+const glossaryList = document.querySelector("#glossary-list");
+const glossaryStatus = document.querySelector("#glossary-status");
 const installButton = document.querySelector("#install-button");
 const installDialog = document.querySelector("#install-dialog");
 const closeInstallDialogButton = document.querySelector(".install-dialog-close");
 
 let articles = [];
 let currentMatches = [];
+let currentDescription = "";
 let lawDocuments = [];
+let glossaryTerms = [];
 let installPrompt;
 let vadeIndex = { generatedAt: "" };
 
@@ -134,6 +170,7 @@ function renderResults(matches) {
     : `${matches.length} artigos possíveis`;
 
   if (matches.length === 0) {
+    sourceNotes.hidden = true;
     resultList.innerHTML = `
       <div class="empty-state">
         <h3>Nenhum artigo encontrado</h3>
@@ -141,6 +178,25 @@ function renderResults(matches) {
       </div>`;
     return;
   }
+
+  sourceNotes.hidden = false;
+  sourceNotes.innerHTML = `
+    <h3>Fontes legais citadas</h3>
+    <ol>
+      ${matches.map((match, index) => {
+        const source = LAW_SOURCES[match.article.code];
+        const citationNumber = index + 1;
+        match.citationNumber = citationNumber;
+        return `
+          <li id="legal-source-${citationNumber}">
+            <span><strong>[${citationNumber}]</strong> ${escapeHtml(match.article.code)}, ${escapeHtml(match.article.article)} — ${escapeHtml(match.article.title)}.</span>
+            ${source
+              ? `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">Consultar texto oficial no Planalto ↗</a>`
+              : `<span>Fonte oficial não cadastrada.</span>`}
+          </li>`;
+      }).join("")}
+    </ol>
+    <p class="source-note-disclaimer">A análise localiza possíveis referências na base do app; não consulta decisões judiciais nem substitui a conferência da redação vigente.</p>`;
 
   resultList.innerHTML = matches.map((match, index) => {
     const levelLabels = {
@@ -157,9 +213,9 @@ function renderResults(matches) {
       : "";
 
     return `
-      <button class="result-card" type="button" data-match="${index}" aria-label="Entender a indicação e ver detalhes: ${escapeHtml(article.article)} — ${escapeHtml(article.title)}">
+      <button class="result-card" type="button" data-match="${index}" aria-describedby="legal-source-${match.citationNumber}" aria-label="Entender a indicação e ver detalhes: ${escapeHtml(article.article)} — ${escapeHtml(article.title)}">
         <span class="result-topline">
-          <span class="result-article">${escapeHtml(article.article)}</span>
+          <span class="result-article">${escapeHtml(article.article)}<sup class="source-marker">[${match.citationNumber}]</sup></span>
           <span class="confidence ${match.confidence}">${levelLabels[match.confidence]}</span>
         </span>
         <p class="result-title">${escapeHtml(article.title)}</p>
@@ -176,13 +232,21 @@ function bulletList(items) {
 }
 
 function showView(view) {
-  const isVade = view === "vade";
-  caseView.hidden = isVade;
-  vadeView.hidden = !isVade;
-  caseTab.classList.toggle("is-active", !isVade);
-  caseTab.setAttribute("aria-selected", String(!isVade));
-  vadeTab.classList.toggle("is-active", isVade);
-  vadeTab.setAttribute("aria-selected", String(isVade));
+  const views = {
+    case: { panel: caseView, tab: caseTab },
+    vade: { panel: vadeView, tab: vadeTab },
+    books: { panel: booksView, tab: booksTab },
+    glossary: { panel: glossaryView, tab: glossaryTab },
+  };
+  const activeView = views[view];
+  if (!activeView) return;
+
+  Object.values(views).forEach(({ panel, tab }) => {
+    const isActive = panel === activeView.panel;
+    panel.hidden = !isActive;
+    tab.classList.toggle("is-active", isActive);
+    tab.setAttribute("aria-selected", String(isActive));
+  });
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
@@ -325,6 +389,7 @@ function renderVadeArticles(results, query, totalCount) {
 }
 
 function openVadeArticle(document, article) {
+  dialog.classList.add("vade-reading-dialog");
   const safeSource = escapeHtml(document.source);
   dialogBody.innerHTML = `
     <p class="detail-article">${escapeHtml(article.label)}</p>
@@ -347,6 +412,7 @@ function openVadeArticle(document, article) {
 function applicationContext(match) {
   const article = match.article;
   const articleNumber = article.article.match(/Art\.?\s*(\d+)/i)?.[1];
+  const lawSource = LAW_SOURCES[article.code];
   const matchedTerms = match.matchedTerms.length
     ? `A busca encontrou no relato correspondências com estes termos de referência: ${match.matchedTerms.map((term) => `“${escapeHtml(term)}”`).join(", ")}. São aproximações de palavras — incluindo variações simples — associadas a este tipo penal na base; isso explica por que o artigo foi sugerido, mas não confirma que a conduta ou todos os requisitos legais ocorreram.`
     : "A busca encontrou correspondências parciais. Confira com atenção o texto legal e os elementos antes de considerar este artigo.";
@@ -358,11 +424,17 @@ function applicationContext(match) {
   return `
     <section class="application-context" aria-labelledby="application-context-title">
       <h3 id="application-context-title">Como esta indicação se relaciona ao relato</h3>
+      <p class="case-report"><strong>Fatos informados:</strong> ${escapeHtml(currentDescription)}</p>
       <p>${matchedTerms}</p>
       <p><strong>Texto do artigo em linguagem direta:</strong> ${escapeHtml(article.legalText)}</p>
+      <p class="legal-reference"><strong>Fonte normativa:</strong> ${escapeHtml(article.code)}, ${escapeHtml(article.article)}. ${lawSource ? `<a href="${escapeHtml(lawSource.url)}" target="_blank" rel="noopener noreferrer">Consultar texto oficial no Planalto ↗</a>` : "Fonte oficial não cadastrada."}</p>
+      <div class="context-checklist">
+        <h4>Aspectos legais a confrontar com os fatos</h4>
+        ${bulletList(article.elements)}
+      </div>
       ${contextualCircumstances}
-      <p class="context-limit">Para aplicar o artigo a uma pessoa, não basta aparecerem palavras parecidas: é necessário verificar os elementos abaixo e as provas do caso, no procedimento adequado. A sugestão não declara que houve crime nem que a pessoa mencionada é culpada.</p>
-      ${articleNumber ? `<button class="vade-lookup-button" type="button" data-vade-lookup="${escapeHtml(articleNumber)}">Consultar Art. ${escapeHtml(articleNumber)} no Vade Mecum <span aria-hidden="true">→</span></button>` : ""}
+      <p class="context-limit">Para aplicar o artigo a uma pessoa, não basta aparecerem palavras parecidas: é necessário verificar cada requisito legal com os fatos e as provas do caso, no procedimento adequado. A sugestão não declara que houve crime nem que a pessoa mencionada é culpada.</p>
+      ${articleNumber && lawSource?.vadeDocumentId ? `<button class="vade-lookup-button" type="button" data-vade-lookup="${escapeHtml(articleNumber)}" data-vade-document="${escapeHtml(lawSource.vadeDocumentId)}">Consultar Art. ${escapeHtml(articleNumber)} no Vade Mecum <span aria-hidden="true">→</span></button>` : ""}
     </section>
     <section class="detail-section people-context">
       <h3>O que isso pode significar para cada pessoa</h3>
@@ -373,6 +445,7 @@ function applicationContext(match) {
 }
 
 function openArticle(match) {
+  dialog.classList.remove("vade-reading-dialog");
   const { article } = match;
   const groupNames = {
     ADMINISTRACAO_PUBLICA: "Administração pública",
@@ -405,10 +478,6 @@ function openArticle(match) {
       <p>Essa faixa não é aplicada automaticamente pela ferramenta nem significa que a pena máxima será imposta. Se houver condenação, a pena concreta depende da decisão judicial, das provas, das circunstâncias do caso e das regras legais aplicáveis.</p>
     </section>
     <section class="detail-section">
-      <h3>O que deve ser verificado</h3>
-      ${bulletList(article.elements)}
-    </section>
-    <section class="detail-section">
       <h3>Observações práticas</h3>
       ${bulletList(article.observations)}
     </section>
@@ -427,6 +496,7 @@ async function submitSearch(event) {
   const description = input.value.trim();
   if (!description || articles.length === 0) return;
 
+  currentDescription = description;
   clearButton.disabled = false;
   setLoading(true);
   resultsSection.hidden = false;
@@ -451,6 +521,7 @@ input.addEventListener("keydown", (event) => {
 clearButton.addEventListener("click", () => {
   input.value = "";
   currentMatches = [];
+  currentDescription = "";
   resultsSection.hidden = true;
   examplesSection.hidden = false;
   clearButton.disabled = true;
@@ -474,6 +545,39 @@ resultList.addEventListener("click", (event) => {
 
 caseTab.addEventListener("click", () => showView("case"));
 vadeTab.addEventListener("click", () => showView("vade"));
+booksTab.addEventListener("click", () => showView("books"));
+glossaryTab.addEventListener("click", () => showView("glossary"));
+vadeShortcut.addEventListener("click", () => showView("vade"));
+
+function renderGlossary(query = "") {
+  if (glossaryTerms.length === 0) return;
+
+  const normalizedQuery = normalize(query);
+  const filteredTerms = glossaryTerms.filter((entry) =>
+    normalize(`${entry.term} ${entry.category} ${entry.definition}`).includes(normalizedQuery),
+  );
+  glossaryStatus.textContent = `${filteredTerms.length} ${filteredTerms.length === 1 ? "termo" : "termos"}`;
+
+  if (filteredTerms.length === 0) {
+    glossaryList.innerHTML = `
+      <div class="empty-state">
+        <h3>Nenhum termo encontrado</h3>
+        <p>Tente buscar por outra palavra ou pelo significado do conceito.</p>
+      </div>`;
+    return;
+  }
+
+  glossaryList.innerHTML = filteredTerms.map((entry) => `
+    <article class="glossary-entry">
+      <div class="glossary-entry-heading">
+        <h2>${escapeHtml(entry.term)}</h2>
+        <span>${escapeHtml(entry.category)}</span>
+      </div>
+      <p>${escapeHtml(entry.definition)}</p>
+    </article>`).join("");
+}
+
+glossaryQuery.addEventListener("input", () => renderGlossary(glossaryQuery.value));
 
 vadeForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -506,7 +610,7 @@ dialogBody.addEventListener("click", (event) => {
   if (!lookupButton) return;
 
   dialog.close();
-  vadeLawFilter.value = "codigo-penal";
+  vadeLawFilter.value = lookupButton.dataset.vadeDocument;
   vadeQueryInput.value = `Art. ${lookupButton.dataset.vadeLookup}`;
   showView("vade");
   renderVadeSearch(vadeQueryInput.value);
@@ -600,7 +704,28 @@ loadAppData().catch((error) => {
     <p class="conflict-note" role="alert">${escapeHtml(error.message)} Inicie o servidor local a partir da pasta do projeto para habilitar a consulta.</p>`);
   submitButton.disabled = true;
   vadeSourceStatus.textContent = `Não foi possível carregar a legislação: ${error.message}`;
-  console.error("Erro ao carregar as bases locais do Assistente Criminal.", error);
+  console.error("Erro ao carregar as bases locais do ChatJuridico.", error);
+});
+
+async function loadGlossary() {
+  const response = await fetch(LEGAL_GLOSSARY_DATA_URL);
+  if (!response.ok) {
+    throw new Error(`Não foi possível carregar o glossário (HTTP ${response.status}).`);
+  }
+
+  const data = await response.json();
+  if (!Array.isArray(data) || data.length === 0) {
+    throw new Error("O glossário está vazio ou em formato inválido.");
+  }
+
+  glossaryTerms = data;
+  renderGlossary();
+}
+
+loadGlossary().catch((error) => {
+  glossaryStatus.textContent = error.message;
+  glossaryStatus.setAttribute("role", "alert");
+  console.error("Erro ao carregar o glossário jurídico.", error);
 });
 
 if ("serviceWorker" in navigator && window.isSecureContext) {

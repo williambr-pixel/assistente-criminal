@@ -1,4 +1,4 @@
-const CACHE_NAME = "assistente-criminal-v1";
+const CACHE_NAME = "chatjuridico-v4";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -6,8 +6,10 @@ const APP_SHELL = [
   "./app.js",
   "./manifest.webmanifest",
   "./favicon.svg",
+  "./icons/icon.svg",
   "./data/criminal-articles.json",
   "./data/vade-mecum.json",
+  "./data/legal-glossary.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
 ];
@@ -25,7 +27,10 @@ self.addEventListener("activate", (event) => {
     caches.keys()
       .then((keys) => Promise.all(
         keys
-          .filter((key) => key.startsWith("assistente-criminal-") && key !== CACHE_NAME)
+          .filter((key) =>
+            (key.startsWith("assistente-criminal-") || key.startsWith("chatjuridico-")) &&
+            key !== CACHE_NAME,
+          )
           .map((key) => caches.delete(key)),
       ))
       .then(() => self.clients.claim()),
