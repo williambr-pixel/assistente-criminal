@@ -1,13 +1,13 @@
 [
   {
+    "term": "Absolvição",
+    "category": "Processo Penal",
+    "definition": "Decisão que declara o acusado não culpado."
+  },
+  {
     "term": "Acórdão",
     "category": "Processo",
     "definition": "Decisão proferida por um órgão colegiado de um tribunal, formada pelo entendimento de seus julgadores."
-  },
-  {
-    "term": "Ação penal",
-    "category": "Processo Penal",
-    "definition": "Procedimento judicial destinado a apurar uma acusação criminal e permitir uma decisão, respeitados o contraditório e a ampla defesa."
   },
   {
     "term": "Ampla defesa",
@@ -20,14 +20,74 @@
     "definition": "Apresentação da pessoa presa em flagrante a uma autoridade judicial, em prazo legal, para examinar a legalidade e as circunstâncias da prisão."
   },
   {
+    "term": "Ação penal",
+    "category": "Processo Penal",
+    "definition": "Procedimento judicial destinado a apurar uma acusação criminal e permitir uma decisão, respeitados o contraditório e a ampla defesa."
+  },
+  {
+    "term": "Ação penal privada",
+    "category": "Processo Penal",
+    "definition": "Ação proposta pela própria vítima ou seu representante, por meio de queixa-crime, nos casos previstos em lei."
+  },
+  {
+    "term": "Ação penal pública",
+    "category": "Processo Penal",
+    "definition": "Ação proposta pelo Ministério Público, em regra por meio de denúncia."
+  },
+  {
+    "term": "Boa-fé objetiva",
+    "category": "Direito Civil",
+    "definition": "Dever de agir com lealdade e honestidade nas relações jurídicas."
+  },
+  {
+    "term": "Boletim de ocorrência",
+    "category": "Processo Penal",
+    "definition": "Registro policial de um fato noticiado. Não confirma por si só que houve crime."
+  },
+  {
     "term": "Cautelar",
     "category": "Processo",
     "definition": "Medida provisória destinada a proteger a utilidade do processo ou evitar riscos previstos em lei, antes da decisão final."
   },
   {
+    "term": "Concurso de crimes",
+    "category": "Direito Penal",
+    "definition": "Quando uma pessoa pratica mais de um crime, por uma ou várias condutas, e as penas são aplicadas conforme as regras do concurso."
+  },
+  {
+    "term": "Concurso de pessoas",
+    "category": "Direito Penal",
+    "definition": "Participação de duas ou mais pessoas na prática de um mesmo crime."
+  },
+  {
+    "term": "Condenação",
+    "category": "Processo Penal",
+    "definition": "Decisão que reconhece a responsabilidade penal do acusado e aplica a pena."
+  },
+  {
+    "term": "Consumação",
+    "category": "Direito Penal",
+    "definition": "Momento em que o crime reúne todos os elementos descritos na lei."
+  },
+  {
     "term": "Contraditório",
     "category": "Direitos fundamentais",
     "definition": "Direito de conhecer e poder responder aos argumentos e às provas apresentados no processo."
+  },
+  {
+    "term": "Culpa",
+    "category": "Direito Penal",
+    "definition": "Falta de cuidado (imprudência, negligência ou imperícia) que causa um resultado que o autor não queria."
+  },
+  {
+    "term": "Culpabilidade",
+    "category": "Direito Penal",
+    "definition": "Juízo de reprovação sobre o autor: se ele podia entender o caráter ilícito do fato e agir de outro modo."
+  },
+  {
+    "term": "Defensoria Pública",
+    "category": "Instituições",
+    "definition": "Instituição que presta orientação jurídica e defesa a pessoas que não podem pagar um advogado."
   },
   {
     "term": "Denúncia",
@@ -40,14 +100,44 @@
     "definition": "Em termos gerais, vontade consciente de realizar uma conduta descrita como crime ou assunção do risco de produzir o resultado, nos termos da lei penal."
   },
   {
+    "term": "Dolo eventual",
+    "category": "Direito Penal",
+    "definition": "Quando o autor não quer o resultado, mas assume o risco de produzi-lo."
+  },
+  {
+    "term": "Estado de necessidade",
+    "category": "Direito Penal",
+    "definition": "Situação em que alguém pratica um fato para salvar de perigo atual um direito próprio ou alheio, que não podia evitar de outro modo."
+  },
+  {
+    "term": "Fiança",
+    "category": "Processo Penal",
+    "definition": "Valor ou garantia que permite responder ao processo em liberdade, quando cabível."
+  },
+  {
     "term": "Flagrante",
     "category": "Processo Penal",
     "definition": "Situação em que alguém é encontrado nas hipóteses legais relacionadas à prática recente de uma infração penal, podendo haver prisão em flagrante."
   },
   {
+    "term": "Flagrante delito",
+    "category": "Processo Penal",
+    "definition": "Situação em que a pessoa é surpreendida cometendo o crime ou logo depois, nas hipóteses previstas em lei."
+  },
+  {
     "term": "Habeas corpus",
     "category": "Garantias constitucionais",
     "definition": "Ação constitucional destinada a proteger a liberdade de locomoção contra ilegalidade ou abuso de poder."
+  },
+  {
+    "term": "Habeas data",
+    "category": "Direitos fundamentais",
+    "definition": "Ação para conhecer ou corrigir informações pessoais constantes em registros públicos."
+  },
+  {
+    "term": "Ilicitude",
+    "category": "Direito Penal",
+    "definition": "Contrariedade da conduta ao Direito. Pode ser afastada por situações como legítima defesa e estado de necessidade."
   },
   {
     "term": "Indiciamento",
@@ -65,9 +155,24 @@
     "definition": "Conjunto de decisões judiciais sobre questões jurídicas. A existência de decisões não significa que esta ferramenta tenha consultado tribunais."
   },
   {
+    "term": "Júri",
+    "category": "Processo Penal",
+    "definition": "Tribunal formado por cidadãos que julgam, em regra, crimes dolosos contra a vida."
+  },
+  {
     "term": "Legítima defesa",
     "category": "Direito Penal",
     "definition": "Hipótese legal em que alguém repele, usando moderadamente os meios necessários, uma agressão injusta, atual ou iminente, a direito próprio ou de outra pessoa."
+  },
+  {
+    "term": "Liberdade provisória",
+    "category": "Processo Penal",
+    "definition": "Possibilidade de responder ao processo em liberdade, com ou sem condições, após a prisão em flagrante."
+  },
+  {
+    "term": "Mandado de segurança",
+    "category": "Direitos fundamentais",
+    "definition": "Ação para proteger direito líquido e certo contra ilegalidade ou abuso de poder de autoridade."
   },
   {
     "term": "Medida protetiva",
@@ -80,9 +185,34 @@
     "definition": "Instituição permanente que defende a ordem jurídica e interesses definidos na Constituição e nas leis; na ação penal pública, pode oferecer denúncia."
   },
   {
+    "term": "Pena privativa de liberdade",
+    "category": "Direito Penal",
+    "definition": "Pena que restringe a liberdade, como reclusão e detenção."
+  },
+  {
+    "term": "Pena restritiva de direitos",
+    "category": "Direito Penal",
+    "definition": "Pena alternativa à prisão, como prestação de serviços à comunidade, aplicada em casos previstos em lei."
+  },
+  {
     "term": "Prescrição",
     "category": "Direito Penal",
     "definition": "Perda da possibilidade de o Estado exercer determinada pretensão penal pelo decurso do tempo, conforme prazos e regras legais."
+  },
+  {
+    "term": "Presunção de inocência",
+    "category": "Direitos fundamentais",
+    "definition": "Ninguém é considerado culpado até o trânsito em julgado de sentença penal condenatória."
+  },
+  {
+    "term": "Princípio da insignificância",
+    "category": "Direito Penal",
+    "definition": "Entendimento de que fatos de lesão mínima podem não justificar a punição penal. Aplicação depende do caso e da jurisprudência."
+  },
+  {
+    "term": "Princípio da legalidade",
+    "category": "Direitos fundamentais",
+    "definition": "Não há crime sem lei anterior que o defina, nem pena sem prévia cominação legal."
   },
   {
     "term": "Prisão preventiva",
@@ -90,9 +220,59 @@
     "definition": "Prisão cautelar decretada por autoridade judicial quando presentes os requisitos e fundamentos previstos em lei; não é cumprimento antecipado de pena."
   },
   {
+    "term": "Prisão temporária",
+    "category": "Processo Penal",
+    "definition": "Prisão cautelar com prazo, usada em investigação de crimes previstos em lei."
+  },
+  {
+    "term": "Pronúncia",
+    "category": "Processo Penal",
+    "definition": "Decisão que envia o acusado a julgamento pelo júri por haver prova da materialidade e indícios suficientes de autoria."
+  },
+  {
+    "term": "Queixa-crime",
+    "category": "Processo Penal",
+    "definition": "Petição que inicia a ação penal privada."
+  },
+  {
     "term": "Recurso",
     "category": "Processo",
     "definition": "Meio previsto em lei para pedir a revisão, reforma, invalidação ou esclarecimento de uma decisão judicial."
+  },
+  {
+    "term": "Regime de cumprimento de pena",
+    "category": "Execução Penal",
+    "definition": "Forma como a pena de prisão é cumprida: fechado, semiaberto ou aberto, conforme a lei e o caso."
+  },
+  {
+    "term": "Reincidência",
+    "category": "Direito Penal",
+    "definition": "Quando a pessoa comete novo crime depois de já ter sido condenada definitivamente por outro."
+  },
+  {
+    "term": "Representação",
+    "category": "Processo Penal",
+    "definition": "Manifestação da vítima autorizando o Ministério Público a agir em crimes que dependem dessa autorização."
+  },
+  {
+    "term": "Revogação",
+    "category": "Processo Penal",
+    "definition": "Cancelamento de uma medida ou decisão, como uma prisão cautelar, quando deixa de ser necessária."
+  },
+  {
+    "term": "Sursis",
+    "category": "Direito Penal",
+    "definition": "Nome popular da suspensão condicional da pena, que permite cumprir condições em liberdade em hipóteses previstas em lei."
+  },
+  {
+    "term": "Tentativa",
+    "category": "Direito Penal",
+    "definition": "O crime começa a ser executado, mas não se consuma por circunstâncias alheias à vontade do autor."
+  },
+  {
+    "term": "Tipicidade",
+    "category": "Direito Penal",
+    "definition": "Encaixe da conduta no que a lei descreve como crime. Sem previsão legal anterior, não há crime."
   },
   {
     "term": "Trânsito em julgado",

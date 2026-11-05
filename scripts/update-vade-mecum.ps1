@@ -50,6 +50,78 @@ $documents = @(
         scope = "Disciplina a execução de sentenças e medidas penais, os direitos e deveres de pessoas condenadas ou internadas e a atuação dos órgãos de execução penal."
         source = "https://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
         minimumArticles = 150
+    },
+    @{
+        id = "estatuto-do-desarmamento"
+        title = "Estatuto do Desarmamento"
+        code = "Lei nº 10.826, de 22 de dezembro de 2003"
+        scope = "Dispõe sobre registro, posse e comercialização de armas de fogo e define crimes relacionados."
+        source = "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.826.htm"
+        minimumArticles = 25
+    },
+    @{
+        id = "lei-de-tortura"
+        title = "Lei de Tortura"
+        code = "Lei nº 9.455, de 7 de abril de 1997"
+        scope = "Define os crimes de tortura e as respectivas penas."
+        source = "https://www.planalto.gov.br/ccivil_03/leis/l9455.htm"
+        minimumArticles = 3
+    },
+    @{
+        id = "lei-de-lavagem"
+        title = "Lei de Lavagem de Dinheiro"
+        code = "Lei nº 9.613, de 3 de março de 1998"
+        scope = "Define o crime de lavagem de dinheiro e prevê medidas de prevenção e cooperação."
+        source = "https://www.planalto.gov.br/ccivil_03/leis/l9613.htm"
+        minimumArticles = 8
+    },
+    @{
+        id = "lei-de-organizacao-criminosa"
+        title = "Lei de Organização Criminosa"
+        code = "Lei nº 12.850, de 2 de agosto de 2013"
+        scope = "Define organização criminosa e trata da investigação, dos meios de obtenção de prova e das infrações penais correlatas."
+        source = "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12850.htm"
+        minimumArticles = 12
+    },
+    @{
+        id = "lei-dos-crimes-hediondos"
+        title = "Lei dos Crimes Hediondos"
+        code = "Lei nº 8.072, de 25 de julho de 1990"
+        scope = "Dispõe sobre os crimes hediondos e equiparados."
+        source = "https://www.planalto.gov.br/ccivil_03/leis/l8072.htm"
+        minimumArticles = 4
+    },
+    @{
+        id = "juizados-especiais"
+        title = "Lei dos Juizados Especiais"
+        code = "Lei nº 9.099, de 26 de setembro de 1995"
+        scope = "Dispõe sobre os Juizados Especiais Cíveis e Criminais, inclusive infrações de menor potencial ofensivo."
+        source = "https://www.planalto.gov.br/ccivil_03/leis/l9099.htm"
+        minimumArticles = 70
+    },
+    @{
+        id = "lei-de-abuso-de-autoridade"
+        title = "Lei de Abuso de Autoridade"
+        code = "Lei nº 13.869, de 5 de setembro de 2019"
+        scope = "Define os crimes de abuso de autoridade."
+        source = "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13869.htm"
+        minimumArticles = 25
+    },
+    @{
+        id = "eca"
+        title = "Estatuto da Criança e do Adolescente"
+        code = "Lei nº 8.069, de 13 de julho de 1990"
+        scope = "Dispõe sobre a proteção integral da criança e do adolescente e sobre atos infracionais."
+        source = "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm"
+        minimumArticles = 180
+    },
+    @{
+        id = "codigo-de-transito"
+        title = "Código de Trânsito Brasileiro"
+        code = "Lei nº 9.503, de 23 de setembro de 1997"
+        scope = "Institui o Código de Trânsito Brasileiro, inclusive crimes de trânsito."
+        source = "https://www.planalto.gov.br/ccivil_03/leis/l9503compilado.htm"
+        minimumArticles = 250
     }
 )
 

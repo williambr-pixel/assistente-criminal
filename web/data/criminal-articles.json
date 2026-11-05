@@ -15,34 +15,79 @@
     ],
     "observations": [
       "Se o crime é cometido por motivo fútil ou torpe, com meio cruel, emboscada ou recurso que dificulte a defesa, aplica-se o homicídio qualificado (art. 121, § 2º).",
-      "Homicídio praticado contra a mulher por razões da condição de sexo feminino configura feminicídio.",
+      "Se a vítima é mulher e há razões da condição de sexo feminino, veja o feminicídio (art. 121-A, criado pela Lei 14.994/2024).",
       "Sem dolo, o caso pode ser homicídio culposo (art. 121, § 3º)."
     ],
-    "strongKeywords": ["homicídio", "homicidio", "matou", "mataram", "matar", "assassinou", "assassinato"],
-    "keywords": ["morte", "morto", "corpo", "óbito", "obito", "disparo", "golpe", "facada", "sangue", "arma"],
-    "disqualifiers": ["culposo", "sem intenção", "acidente"]
+    "strongKeywords": [
+      "homicídio",
+      "homicidio",
+      "matou",
+      "mataram",
+      "matar",
+      "assassinou",
+      "assassinato"
+    ],
+    "keywords": [
+      "morte",
+      "morto",
+      "corpo",
+      "óbito",
+      "obito",
+      "disparo",
+      "golpe",
+      "facada",
+      "sangue",
+      "arma"
+    ],
+    "disqualifiers": [
+      "culposo",
+      "sem intenção",
+      "acidente",
+      "ameaça",
+      "ameaca"
+    ]
   },
   {
     "id": "cp-121-2",
     "code": "Código Penal",
     "article": "Art. 121, § 2º",
-    "title": "Homicídio qualificado e feminicídio",
+    "title": "Homicídio qualificado",
     "group": "VIDA",
-    "legalText": "Matar alguém mediante paga ou promessa de recompensa, por motivo torpe ou fútil, com meio cruel ou insidioso, à traição, de emboscada ou mediante recurso que dificulte a defesa da vítima, para assegurar outro crime, ou contra a mulher por razões da condição de sexo feminino.",
+    "legalText": "Matar alguém mediante paga ou promessa de recompensa, por motivo torpe ou fútil, com emprego de veneno, fogo, explosivo, asfixia, tortura ou outro meio insidioso ou cruel, à traição, de emboscada, ou mediante dissimulação ou recurso que dificulte ou torne impossível a defesa do ofendido, para assegurar a execução, a ocultação, a impunidade ou vantagem de outro crime.",
     "penalty": "Reclusão, de 12 (doze) a 30 (trinta) anos.",
     "elements": [
       "Homicídio doloso",
-      "Presença de ao menos uma circunstância qualificadora",
-      "No feminicídio, motivação ligada à condição de sexo feminino"
+      "Presença de ao menos uma circunstância qualificadora"
     ],
     "observations": [
       "Qualificadoras comuns: motivo fútil, motivo torpe, meio cruel, veneno, fogo, explosivo, emboscada, traição, dissimulação e conexão com outro crime.",
-      "O feminicídio exige contexto de violência doméstica e familiar ou menosprezo à condição de mulher.",
-      "Aumentos de pena podem incidir em razão de descumprimento de medida protetiva ou presença de menores."
+      "Se a vítima é mulher por razões da condição de sexo feminino, o crime é o feminicídio (art. 121-A), com pena própria.",
+      "Confira no Planalto a redação vigente, pois o artigo foi alterado por leis recentes."
     ],
-    "strongKeywords": ["qualificado", "feminicídio", "feminicidio", "motivo fútil", "motivo torpe", "emboscada", "traição", "veneno", "tortura", "paga", "recompensa"],
-    "keywords": ["matou", "homicídio", "morte", "ocultar", "impunidade", "meio cruel", "dissimulação", "companheira", "esposa"],
-    "disqualifiers": ["culposo", "sem intenção"]
+    "strongKeywords": [
+      "qualificado",
+      "motivo fútil",
+      "motivo torpe",
+      "emboscada",
+      "traição",
+      "veneno",
+      "tortura",
+      "paga",
+      "recompensa"
+    ],
+    "keywords": [
+      "matou",
+      "homicídio",
+      "morte",
+      "ocultar",
+      "impunidade",
+      "meio cruel",
+      "dissimulação"
+    ],
+    "disqualifiers": [
+      "culposo",
+      "sem intenção"
+    ]
   },
   {
     "id": "cp-121-3",
@@ -62,9 +107,28 @@
       "Se o crime é praticado na direção de veículo automotor, aplica-se o art. 302 do Código de Trânsito Brasileiro.",
       "A culpa consciente pode configurar dolo eventual, alterando o enquadramento para homicídio doloso."
     ],
-    "strongKeywords": ["homicídio culposo", "culposo", "negligência", "imprudência", "imperícia"],
-    "keywords": ["acidente", "morte", "atropelou", "dirigia", "carro", "caminhão", "queda", "afogamento"],
-    "disqualifiers": ["quis matar", "dolo", "intenção de matar"]
+    "strongKeywords": [
+      "homicídio culposo",
+      "culposo",
+      "negligência",
+      "imprudência",
+      "imperícia"
+    ],
+    "keywords": [
+      "acidente",
+      "morte",
+      "atropelou",
+      "dirigia",
+      "carro",
+      "caminhão",
+      "queda",
+      "afogamento"
+    ],
+    "disqualifiers": [
+      "quis matar",
+      "dolo",
+      "intenção de matar"
+    ]
   },
   {
     "id": "cp-122",
@@ -83,9 +147,25 @@
       "Se a vítima é menor de 14 anos ou não tem discernimento, o caso pode ser homicídio.",
       "A pena aumenta se o crime é praticado por motivo egoístico ou por quem tem autoridade sobre a vítima."
     ],
-    "strongKeywords": ["induziu ao suicídio", "instigou ao suicídio", "auxílio ao suicídio", "incentivou a se matar"],
-    "keywords": ["suicídio", "suicidio", "se matar", "cartas", "mensagens", "desafio", "jogo"],
-    "disqualifiers": ["matou", "homicídio doloso"]
+    "strongKeywords": [
+      "induziu ao suicídio",
+      "instigou ao suicídio",
+      "auxílio ao suicídio",
+      "incentivou a se matar"
+    ],
+    "keywords": [
+      "suicídio",
+      "suicidio",
+      "se matar",
+      "cartas",
+      "mensagens",
+      "desafio",
+      "jogo"
+    ],
+    "disqualifiers": [
+      "matou",
+      "homicídio doloso"
+    ]
   },
   {
     "id": "cp-129",
@@ -105,9 +185,36 @@
       "A lesão culposa está prevista no § 3º.",
       "Lesões leves podem ser alcançadas pelo princípio da insignificância em situações excepcionais, tema sensível na violência doméstica."
     ],
-    "strongKeywords": ["lesão corporal", "lesão", "lesionou", "lesionada", "lesionado", "agressão", "agrediu", "espancou", "feriu"],
-    "keywords": ["hematoma", "machucado", "socos", "chutes", "tapas", "empurrão", "briga", "ferimento", "dor", "hospital", "atendimento médico"],
-    "disqualifiers": ["morte", "matou", "arma de fogo", "estupro"]
+    "strongKeywords": [
+      "lesão corporal",
+      "lesão",
+      "lesionou",
+      "lesionada",
+      "lesionado",
+      "agressão",
+      "agrediu",
+      "espancou",
+      "feriu"
+    ],
+    "keywords": [
+      "hematoma",
+      "machucado",
+      "socos",
+      "chutes",
+      "tapas",
+      "empurrão",
+      "briga",
+      "ferimento",
+      "dor",
+      "hospital",
+      "atendimento médico"
+    ],
+    "disqualifiers": [
+      "morte",
+      "matou",
+      "arma de fogo",
+      "estupro"
+    ]
   },
   {
     "id": "cp-129-3",
@@ -126,9 +233,27 @@
       "Se a lesão ocorre na direção de veículo automotor, aplica-se o art. 303 do Código de Trânsito Brasileiro.",
       "É admissível a ação penal pública condicionada à representação."
     ],
-    "strongKeywords": ["lesão culposa", "culposa", "negligência", "imprudência", "imperícia"],
-    "keywords": ["acidente", "queda", "machucou", "machucado", "ferimento", "atropelamento", "sem intenção"],
-    "disqualifiers": ["quis machucar", "dolo", "agressão"]
+    "strongKeywords": [
+      "lesão culposa",
+      "culposa",
+      "negligência",
+      "imprudência",
+      "imperícia"
+    ],
+    "keywords": [
+      "acidente",
+      "queda",
+      "machucou",
+      "machucado",
+      "ferimento",
+      "atropelamento",
+      "sem intenção"
+    ],
+    "disqualifiers": [
+      "quis machucar",
+      "dolo",
+      "agressão"
+    ]
   },
   {
     "id": "cp-129-9",
@@ -148,9 +273,35 @@
       "A ação penal é pública incondicionada.",
       "Agressões recíprocas devem ser analisadas com cautela, considerando o contexto de vulnerabilidade."
     ],
-    "strongKeywords": ["violência doméstica", "violencia domestica", "marido", "esposa", "companheiro", "companheira", "namorado", "namorada", "ex-companheiro", "ex-esposa"],
-    "keywords": ["lesão", "agressão", "empurrou", "socos", "tapas", "ameaça", "residência", "cônjuge", "ciúme", "medida protetiva"],
-    "disqualifiers": ["estranho", "desconhecido", "na rua"]
+    "strongKeywords": [
+      "violência doméstica",
+      "violencia domestica",
+      "marido",
+      "esposa",
+      "companheiro",
+      "companheira",
+      "namorado",
+      "namorada",
+      "ex-companheiro",
+      "ex-esposa"
+    ],
+    "keywords": [
+      "lesão",
+      "agressão",
+      "empurrou",
+      "socos",
+      "tapas",
+      "ameaça",
+      "residência",
+      "cônjuge",
+      "ciúme",
+      "medida protetiva"
+    ],
+    "disqualifiers": [
+      "estranho",
+      "desconhecido",
+      "na rua"
+    ]
   },
   {
     "id": "cp-147",
@@ -170,9 +321,33 @@
       "Se houver agressão física, também pode haver lesão corporal (art. 129).",
       "Ameaça genérica, sem destinatário determinado, pode não configurar o tipo penal."
     ],
-    "strongKeywords": ["ameaça", "ameaca", "ameaçou", "ameacou", "ameaçando", "ameacando", "ameaçaram", "ameacaram"],
-    "keywords": ["vou te matar", "vou acabar com você", "vou pegar você", "medo", "intimidação", "mensagem", "bilhete", "gesto", "arma"],
-    "disqualifiers": ["agressão física", "soco", "empurrão", "esfaqueou"]
+    "strongKeywords": [
+      "ameaça",
+      "ameaca",
+      "ameaçou",
+      "ameacou",
+      "ameaçando",
+      "ameacando",
+      "ameaçaram",
+      "ameacaram"
+    ],
+    "keywords": [
+      "vou te matar",
+      "vou acabar com você",
+      "vou pegar você",
+      "medo",
+      "intimidação",
+      "mensagem",
+      "bilhete",
+      "gesto",
+      "arma"
+    ],
+    "disqualifiers": [
+      "agressão física",
+      "soco",
+      "empurrão",
+      "esfaqueou"
+    ]
   },
   {
     "id": "cp-147-b",
@@ -192,9 +367,33 @@
       "Pode ser cumulado com ameaça, lesão corporal e descumprimento de medida protetiva.",
       "A prova costuma ser construída com relatos, mensagens, testemunhas e avaliação psicológica."
     ],
-    "strongKeywords": ["violência psicológica", "violencia psicologica", "dano emocional", "humilhação", "humilhacao", "manipulação", "manipulacao", "chantagem", "isolamento"],
-    "keywords": ["marido", "companheiro", "namorado", "xingou", "proibiu", "ciúme", "perseguição", "controle", "ameaça", "depressão"],
-    "disqualifiers": ["agressão física grave", "estupro"]
+    "strongKeywords": [
+      "violência psicológica",
+      "violencia psicologica",
+      "dano emocional",
+      "humilhação",
+      "humilhacao",
+      "manipulação",
+      "manipulacao",
+      "chantagem",
+      "isolamento"
+    ],
+    "keywords": [
+      "marido",
+      "companheiro",
+      "namorado",
+      "xingou",
+      "proibiu",
+      "ciúme",
+      "perseguição",
+      "controle",
+      "ameaça",
+      "depressão"
+    ],
+    "disqualifiers": [
+      "agressão física grave",
+      "estupro"
+    ]
   },
   {
     "id": "cp-148",
@@ -214,9 +413,26 @@
       "Se há exigência de vantagem como condição para a liberdade, pode configurar extorsão mediante sequestro (art. 159).",
       "Se a vítima é mantida em condições degradantes de trabalho, considerar o art. 149."
     ],
-    "strongKeywords": ["sequestro", "cárcere privado", "carcere privado", "manteve presa", "trancou", "amarrou"],
-    "keywords": ["privação de liberdade", "liberdade", "cativeiro", "impediu de sair", "trancada", "amordaçou"],
-    "disqualifiers": ["extorsão", "resgate"]
+    "strongKeywords": [
+      "sequestro",
+      "cárcere privado",
+      "carcere privado",
+      "manteve presa",
+      "trancou",
+      "amarrou"
+    ],
+    "keywords": [
+      "privação de liberdade",
+      "liberdade",
+      "cativeiro",
+      "impediu de sair",
+      "trancada",
+      "amordaçou"
+    ],
+    "disqualifiers": [
+      "extorsão",
+      "resgate"
+    ]
   },
   {
     "id": "cp-149",
@@ -236,9 +452,27 @@
       "Pode haver cumulação com crimes trabalhistas e com tráfico de pessoas.",
       "A fiscalização costuma envolver o Ministério Público do Trabalho e órgãos de proteção."
     ],
-    "strongKeywords": ["trabalho escravo", "condição análoga à de escravo", "trabalho forçado", "trabalho forcado", "jornada exaustiva"],
-    "keywords": ["alojamento", "dívida", "cativeiro", "fazenda", "carvoaria", "imigrante", "documentos retidos", "salário"],
-    "disqualifiers": ["sequestro", "extorsão"]
+    "strongKeywords": [
+      "trabalho escravo",
+      "condição análoga à de escravo",
+      "trabalho forçado",
+      "trabalho forcado",
+      "jornada exaustiva"
+    ],
+    "keywords": [
+      "alojamento",
+      "dívida",
+      "cativeiro",
+      "fazenda",
+      "carvoaria",
+      "imigrante",
+      "documentos retidos",
+      "salário"
+    ],
+    "disqualifiers": [
+      "sequestro",
+      "extorsão"
+    ]
   },
   {
     "id": "cp-150",
@@ -258,9 +492,28 @@
       "A entrada pode ser justificada por flagrante delito, desastre, socorro ou determinação judicial, nos termos constitucionais.",
       "O conceito de casa inclui compartimentos habitados, ainda que não sejam residência principal."
     ],
-    "strongKeywords": ["violação de domicílio", "violacao de domicilio", "entrou na casa", "invadiu a casa", "arrombou a porta"],
-    "keywords": ["domicílio", "residência", "casa", "apartamento", "quintal", "morador", "sem autorização", "janela"],
-    "disqualifiers": ["furto", "roubo", "mandado judicial"]
+    "strongKeywords": [
+      "violação de domicílio",
+      "violacao de domicilio",
+      "entrou na casa",
+      "invadiu a casa",
+      "arrombou a porta"
+    ],
+    "keywords": [
+      "domicílio",
+      "residência",
+      "casa",
+      "apartamento",
+      "quintal",
+      "morador",
+      "sem autorização",
+      "janela"
+    ],
+    "disqualifiers": [
+      "furto",
+      "roubo",
+      "mandado judicial"
+    ]
   },
   {
     "id": "cp-138",
@@ -281,9 +534,27 @@
       "A pena aumenta se a calúnia é cometida na presença de várias pessoas ou por meio que facilite a divulgação.",
       "A retratação pode extinguir a punibilidade em determinadas fases."
     ],
-    "strongKeywords": ["calúnia", "calunia", "caluniou", "imputou falsamente crime", "acusou falsamente"],
-    "keywords": ["mentira", "falso", "difamou", "rede social", "publicação", "acusação", "crime que não cometeu"],
-    "disqualifiers": ["verdade", "fato verdadeiro", "difamação"]
+    "strongKeywords": [
+      "calúnia",
+      "calunia",
+      "caluniou",
+      "imputou falsamente crime",
+      "acusou falsamente"
+    ],
+    "keywords": [
+      "mentira",
+      "falso",
+      "difamou",
+      "rede social",
+      "publicação",
+      "acusação",
+      "crime que não cometeu"
+    ],
+    "disqualifiers": [
+      "verdade",
+      "fato verdadeiro",
+      "difamação"
+    ]
   },
   {
     "id": "cp-139",
@@ -303,9 +574,28 @@
       "A exceção da verdade só é admitida quando o ofendido é funcionário público e a ofensa se refere ao exercício das funções.",
       "A divulgação em redes sociais pode aumentar a pena."
     ],
-    "strongKeywords": ["difamação", "difamacao", "difamou", "difamaram", "ofendeu a reputação"],
-    "keywords": ["reputação", "honra", "mentira", "fofoca", "rede social", "publicação", "trabalho", "colega"],
-    "disqualifiers": ["crime", "calúnia", "injúria"]
+    "strongKeywords": [
+      "difamação",
+      "difamacao",
+      "difamou",
+      "difamaram",
+      "ofendeu a reputação"
+    ],
+    "keywords": [
+      "reputação",
+      "honra",
+      "mentira",
+      "fofoca",
+      "rede social",
+      "publicação",
+      "trabalho",
+      "colega"
+    ],
+    "disqualifiers": [
+      "crime",
+      "calúnia",
+      "injúria"
+    ]
   },
   {
     "id": "cp-140",
@@ -325,9 +615,29 @@
       "A injúria real ocorre quando há emprego de violência ou vias de fato.",
       "Ofensas genéricas podem não configurar injúria por falta de destinatário determinado."
     ],
-    "strongKeywords": ["injúria", "injuria", "injuriaram", "injurou", "ofendeu a dignidade", "xingamento"],
-    "keywords": ["palavrão", "ofensa", "humilhação", "apelido", "rede social", "mensagem", "dignidade", "decoro"],
-    "disqualifiers": ["calúnia", "difamação", "agressão física"]
+    "strongKeywords": [
+      "injúria",
+      "injuria",
+      "injuriaram",
+      "injurou",
+      "ofendeu a dignidade",
+      "xingamento"
+    ],
+    "keywords": [
+      "palavrão",
+      "ofensa",
+      "humilhação",
+      "apelido",
+      "rede social",
+      "mensagem",
+      "dignidade",
+      "decoro"
+    ],
+    "disqualifiers": [
+      "calúnia",
+      "difamação",
+      "agressão física"
+    ]
   },
   {
     "id": "lei7716-2a",
@@ -347,9 +657,28 @@
       "A ação penal é pública incondicionada.",
       "Se a ofensa atinge um grupo indeterminado, pode configurar racismo (art. 20 da Lei 7.716/1989)."
     ],
-    "strongKeywords": ["injúria racial", "injuria racial", "racismo", "ofensa racial", "xenofobia"],
-    "keywords": ["raça", "cor", "etnia", "procedência nacional", "negro", "indígena", "nordestino", "apelido racista", "rede social"],
-    "disqualifiers": ["injúria simples", "motivo pessoal"]
+    "strongKeywords": [
+      "injúria racial",
+      "injuria racial",
+      "racismo",
+      "ofensa racial",
+      "xenofobia"
+    ],
+    "keywords": [
+      "raça",
+      "cor",
+      "etnia",
+      "procedência nacional",
+      "negro",
+      "indígena",
+      "nordestino",
+      "apelido racista",
+      "rede social"
+    ],
+    "disqualifiers": [
+      "injúria simples",
+      "motivo pessoal"
+    ]
   },
   {
     "id": "lei7716-20",
@@ -369,9 +698,28 @@
       "O racismo é imprescritível e inafiançável, nos termos constitucionais.",
       "A distinção entre racismo e injúria racial depende do alcance coletivo da conduta."
     ],
-    "strongKeywords": ["racismo", "discriminação racial", "discriminacao racial", "preconceito", "segregação", "neonazismo"],
-    "keywords": ["religião", "religioso", "etnia", "procedência", "comunidade", "rede social", "discurso de ódio", "grupo"],
-    "disqualifiers": ["injúria racial", "ofensa individual"]
+    "strongKeywords": [
+      "racismo",
+      "discriminação racial",
+      "discriminacao racial",
+      "preconceito",
+      "segregação",
+      "neonazismo"
+    ],
+    "keywords": [
+      "religião",
+      "religioso",
+      "etnia",
+      "procedência",
+      "comunidade",
+      "rede social",
+      "discurso de ódio",
+      "grupo"
+    ],
+    "disqualifiers": [
+      "injúria racial",
+      "ofensa individual"
+    ]
   },
   {
     "id": "cp-155",
@@ -391,9 +739,33 @@
       "Se a coisa é de pequeno valor e o agente é primário, pode caber o furto privilegiado.",
       "O furto qualificado (art. 155, § 4º) envolve rompimento de obstáculo, abuso de confiança, destreza ou concurso de pessoas."
     ],
-    "strongKeywords": ["furto", "furtou", "furtaram", "subtraiu", "subtração", "subtracao"],
-    "keywords": ["celular", "carteira", "bicicleta", "loja", "supermercado", "apoderou", "levou", "desapareceu", "furto de fios", "sem violência"],
-    "disqualifiers": ["arma", "grave ameaça", "violência", "assalto", "rendeu"]
+    "strongKeywords": [
+      "furto",
+      "furtou",
+      "furtaram",
+      "subtraiu",
+      "subtração",
+      "subtracao"
+    ],
+    "keywords": [
+      "celular",
+      "carteira",
+      "bicicleta",
+      "loja",
+      "supermercado",
+      "apoderou",
+      "levou",
+      "desapareceu",
+      "furto de fios",
+      "sem violência"
+    ],
+    "disqualifiers": [
+      "arma",
+      "grave ameaça",
+      "violência",
+      "assalto",
+      "rendeu"
+    ]
   },
   {
     "id": "cp-155-4",
@@ -413,9 +785,29 @@
       "O abuso de confiança pressupõe relação de confiança entre autor e vítima.",
       "O concurso de pessoas exige atuação conjunta e consciente."
     ],
-    "strongKeywords": ["furto qualificado", "arrombamento", "arrombou", "rompimento de obstáculo", "abuso de confiança", "destreza"],
-    "keywords": ["porta arrombada", "janela quebrada", "cadeado", "cofre", "empregado", "conhecido", "dois autores", "vários autores"],
-    "disqualifiers": ["violência", "arma", "grave ameaça"]
+    "strongKeywords": [
+      "furto qualificado",
+      "arrombamento",
+      "arrombou",
+      "rompimento de obstáculo",
+      "abuso de confiança",
+      "destreza"
+    ],
+    "keywords": [
+      "porta arrombada",
+      "janela quebrada",
+      "cadeado",
+      "cofre",
+      "empregado",
+      "conhecido",
+      "dois autores",
+      "vários autores"
+    ],
+    "disqualifiers": [
+      "violência",
+      "arma",
+      "grave ameaça"
+    ]
   },
   {
     "id": "cp-157",
@@ -435,9 +827,31 @@
       "Se da violência resulta morte, aplica-se o latrocínio (art. 157, § 3º).",
       "Violência ou ameaça posterior à subtração, para garantir a posse, também pode configurar roubo."
     ],
-    "strongKeywords": ["roubo", "assalto", "assaltou", "assaltaram", "assaltante", "rendeu a vítima"],
-    "keywords": ["arma", "armado", "violência", "grave ameaça", "ameaçou", "celular", "dinheiro", "relógio", "rendeu", "anunciou o assalto"],
-    "disqualifiers": ["sem violência", "furto", "subtraiu sem"]
+    "strongKeywords": [
+      "roubo",
+      "assalto",
+      "assaltou",
+      "assaltaram",
+      "assaltante",
+      "rendeu a vítima"
+    ],
+    "keywords": [
+      "arma",
+      "armado",
+      "violência",
+      "grave ameaça",
+      "ameaçou",
+      "celular",
+      "dinheiro",
+      "relógio",
+      "rendeu",
+      "anunciou o assalto"
+    ],
+    "disqualifiers": [
+      "sem violência",
+      "furto",
+      "subtraiu sem"
+    ]
   },
   {
     "id": "cp-157-2",
@@ -457,9 +871,30 @@
       "A apreensão e a perícia da arma são relevantes para a comprovação.",
       "O aumento pode incidir cumulativamente em hipóteses específicas."
     ],
-    "strongKeywords": ["arma de fogo", "arma", "armado", "concurso de pessoas", "dois assaltantes", "três assaltantes", "uso restrito"],
-    "keywords": ["revólver", "pistola", "faca", "simulacro", "rendeu", "ameaçou", "assalto", "roubo"],
-    "disqualifiers": ["sem arma", "desarmado", "furto"]
+    "strongKeywords": [
+      "arma de fogo",
+      "arma",
+      "armado",
+      "concurso de pessoas",
+      "dois assaltantes",
+      "três assaltantes",
+      "uso restrito"
+    ],
+    "keywords": [
+      "revólver",
+      "pistola",
+      "faca",
+      "simulacro",
+      "rendeu",
+      "ameaçou",
+      "assalto",
+      "roubo"
+    ],
+    "disqualifiers": [
+      "sem arma",
+      "desarmado",
+      "furto"
+    ]
   },
   {
     "id": "cp-157-3",
@@ -479,9 +914,26 @@
       "Admite tentativa quando há roubo com violência e a morte não se consuma, conforme entendimento jurisprudencial.",
       "A competência e a dosimetria exigem análise detalhada do dolo e do resultado."
     ],
-    "strongKeywords": ["latrocínio", "latrocinio", "roubo seguido de morte", "matou durante o assalto", "morte no assalto"],
-    "keywords": ["assalto", "roubo", "morte", "disparo", "vítima fatal", "arma", "reação"],
-    "disqualifiers": ["furto", "sem violência"]
+    "strongKeywords": [
+      "latrocínio",
+      "latrocinio",
+      "roubo seguido de morte",
+      "matou durante o assalto",
+      "morte no assalto"
+    ],
+    "keywords": [
+      "assalto",
+      "roubo",
+      "morte",
+      "disparo",
+      "vítima fatal",
+      "arma",
+      "reação"
+    ],
+    "disqualifiers": [
+      "furto",
+      "sem violência"
+    ]
   },
   {
     "id": "cp-158",
@@ -501,9 +953,28 @@
       "Pode envolver extorsão mediante sequestro (art. 159) quando há privação de liberdade.",
       "A extorsão praticada por meio eletrônico pode ter contornos específicos."
     ],
-    "strongKeywords": ["extorsão", "extorsao", "extorquiu", "exigiu dinheiro", "exigiu vantagem"],
-    "keywords": ["constrangimento", "ameaça", "violência", "dinheiro", "pix", "resgate", "chantagem", "coação"],
-    "disqualifiers": ["furto", "roubo", "sequestro"]
+    "strongKeywords": [
+      "extorsão",
+      "extorsao",
+      "extorquiu",
+      "exigiu dinheiro",
+      "exigiu vantagem"
+    ],
+    "keywords": [
+      "constrangimento",
+      "ameaça",
+      "violência",
+      "dinheiro",
+      "pix",
+      "resgate",
+      "chantagem",
+      "coação"
+    ],
+    "disqualifiers": [
+      "furto",
+      "roubo",
+      "sequestro"
+    ]
   },
   {
     "id": "cp-159",
@@ -523,9 +994,24 @@
       "A morte da vítima pode qualificar o crime com pena mais grave.",
       "A colaboração premiada pode ser relevante em investigações complexas."
     ],
-    "strongKeywords": ["extorsão mediante sequestro", "sequestro com resgate", "pedido de resgate", "resgate"],
-    "keywords": ["cativeiro", "sequestrou", "manteve preso", "vantagem econômica", "família", "pagamento"],
-    "disqualifiers": ["sem resgate", "cárcere privado"]
+    "strongKeywords": [
+      "extorsão mediante sequestro",
+      "sequestro com resgate",
+      "pedido de resgate",
+      "resgate"
+    ],
+    "keywords": [
+      "cativeiro",
+      "sequestrou",
+      "manteve preso",
+      "vantagem econômica",
+      "família",
+      "pagamento"
+    ],
+    "disqualifiers": [
+      "sem resgate",
+      "cárcere privado"
+    ]
   },
   {
     "id": "cp-163",
@@ -545,9 +1031,28 @@
       "Se o dano é praticado em contexto de violência doméstica, pode haver majoração e medidas protetivas.",
       "O dano culposo é punido apenas na modalidade qualificada por lei especial."
     ],
-    "strongKeywords": ["dano", "danificou", "quebrou", "destruiu", "depredação", "depredacao"],
-    "keywords": ["vidraça", "carro", "portão", "muro", "celular", "patrimônio público", "pichação", "vandalismo"],
-    "disqualifiers": ["furto", "roubo"]
+    "strongKeywords": [
+      "dano",
+      "danificou",
+      "quebrou",
+      "destruiu",
+      "depredação",
+      "depredacao"
+    ],
+    "keywords": [
+      "vidraça",
+      "carro",
+      "portão",
+      "muro",
+      "celular",
+      "patrimônio público",
+      "pichação",
+      "vandalismo"
+    ],
+    "disqualifiers": [
+      "furto",
+      "roubo"
+    ]
   },
   {
     "id": "cp-168",
@@ -567,9 +1072,28 @@
       "Se a coisa foi obtida mediante fraude, pode ser estelionato.",
       "A devolução pode influenciar a dosimetria e a punibilidade."
     ],
-    "strongKeywords": ["apropriação indébita", "apropriacao indebita", "apropriou", "não devolveu", "nao devolveu"],
-    "keywords": ["empréstimo", "aluguel", "conserto", "veículo", "carro", "documento", "confiança", "depósito"],
-    "disqualifiers": ["furto", "roubo", "estelionato"]
+    "strongKeywords": [
+      "apropriação indébita",
+      "apropriacao indebita",
+      "apropriou",
+      "não devolveu",
+      "nao devolveu"
+    ],
+    "keywords": [
+      "empréstimo",
+      "aluguel",
+      "conserto",
+      "veículo",
+      "carro",
+      "documento",
+      "confiança",
+      "depósito"
+    ],
+    "disqualifiers": [
+      "furto",
+      "roubo",
+      "estelionato"
+    ]
   },
   {
     "id": "cp-171",
@@ -590,9 +1114,30 @@
       "A ação penal é pública condicionada à representação, salvo hipóteses legais.",
       "A fraude eletrônica tem tipo específico no § 2º-A."
     ],
-    "strongKeywords": ["estelionato", "estelionatário", "estelionatario", "golpe", "fraude", "aplicou um golpe"],
-    "keywords": ["pix", "transferência", "dinheiro", "vantagem", "prejuízo", "mentira", "falsa promessa", "contrato", "venda"],
-    "disqualifiers": ["furto", "roubo", "apropriação"]
+    "strongKeywords": [
+      "estelionato",
+      "estelionatário",
+      "estelionatario",
+      "golpe",
+      "fraude",
+      "aplicou um golpe"
+    ],
+    "keywords": [
+      "pix",
+      "transferência",
+      "dinheiro",
+      "vantagem",
+      "prejuízo",
+      "mentira",
+      "falsa promessa",
+      "contrato",
+      "venda"
+    ],
+    "disqualifiers": [
+      "furto",
+      "roubo",
+      "apropriação"
+    ]
   },
   {
     "id": "cp-171-2a",
@@ -612,9 +1157,29 @@
       "Engloba golpes de falso funcionário de banco, falso parente, falsas centrais de atendimento e fraudes em marketplaces.",
       "A preservação de logs, números e mensagens é essencial para a prova."
     ],
-    "strongKeywords": ["golpe virtual", "fraude eletrônica", "fraude eletronica", "estelionato digital", "golpe do pix", "falso funcionário do banco"],
-    "keywords": ["whatsapp", "telefone", "rede social", "pix", "transferência", "link", "aplicativo", "banco", "marketplace"],
-    "disqualifiers": ["furto", "roubo"]
+    "strongKeywords": [
+      "golpe virtual",
+      "fraude eletrônica",
+      "fraude eletronica",
+      "estelionato digital",
+      "golpe do pix",
+      "falso funcionário do banco"
+    ],
+    "keywords": [
+      "whatsapp",
+      "telefone",
+      "rede social",
+      "pix",
+      "transferência",
+      "link",
+      "aplicativo",
+      "banco",
+      "marketplace"
+    ],
+    "disqualifiers": [
+      "furto",
+      "roubo"
+    ]
   },
   {
     "id": "cp-180",
@@ -634,9 +1199,28 @@
       "A receptação qualificada (§ 3º) alcança a atividade comercial ou industrial.",
       "A comprovação da origem ilícita é essencial."
     ],
-    "strongKeywords": ["receptação", "receptacao", "receptou", "produto de crime", "coisa roubada"],
-    "keywords": ["celular roubado", "comprou", "vendeu", "desmanche", "peças", "ocultou", "origem ilícita", "mercado"],
-    "disqualifiers": ["furto", "roubo", "estelionato"]
+    "strongKeywords": [
+      "receptação",
+      "receptacao",
+      "receptou",
+      "produto de crime",
+      "coisa roubada"
+    ],
+    "keywords": [
+      "celular roubado",
+      "comprou",
+      "vendeu",
+      "desmanche",
+      "peças",
+      "ocultou",
+      "origem ilícita",
+      "mercado"
+    ],
+    "disqualifiers": [
+      "furto",
+      "roubo",
+      "estelionato"
+    ]
   },
   {
     "id": "cp-180-3",
@@ -656,9 +1240,27 @@
       "Pode haver cumulação com crimes contra a ordem tributária e ambientais.",
       "A fiscalização e a documentação do comércio são provas relevantes."
     ],
-    "strongKeywords": ["receptação qualificada", "desmanche", "ferro velho", "ferro-velho", "comércio de peças roubadas"],
-    "keywords": ["loja", "estabelecimento", "comércio", "peças", "celulares", "veículos", "nota fiscal", "estoque"],
-    "disqualifiers": ["receptação simples", "uso pessoal"]
+    "strongKeywords": [
+      "receptação qualificada",
+      "desmanche",
+      "ferro velho",
+      "ferro-velho",
+      "comércio de peças roubadas"
+    ],
+    "keywords": [
+      "loja",
+      "estabelecimento",
+      "comércio",
+      "peças",
+      "celulares",
+      "veículos",
+      "nota fiscal",
+      "estoque"
+    ],
+    "disqualifiers": [
+      "receptação simples",
+      "uso pessoal"
+    ]
   },
   {
     "id": "cp-213",
@@ -678,9 +1280,28 @@
       "Se da conduta resulta lesão grave ou morte, a pena é aumentada.",
       "A palavra da vítima tem especial relevância, mas deve ser analisada em conjunto com as demais provas."
     ],
-    "strongKeywords": ["estupro", "estuprou", "violência sexual", "violencia sexual", "conjunção carnal", "ato libidinoso"],
-    "keywords": ["constrangeu", "forçou", "ameaça", "violência", "vítima", "sexo", "abuso"],
-    "disqualifiers": ["consentimento", "menor de 14", "vulnerável"]
+    "strongKeywords": [
+      "estupro",
+      "estuprou",
+      "violência sexual",
+      "violencia sexual",
+      "conjunção carnal",
+      "ato libidinoso"
+    ],
+    "keywords": [
+      "constrangeu",
+      "forçou",
+      "ameaça",
+      "violência",
+      "vítima",
+      "sexo",
+      "abuso"
+    ],
+    "disqualifiers": [
+      "consentimento",
+      "menor de 14",
+      "vulnerável"
+    ]
   },
   {
     "id": "cp-215-a",
@@ -700,9 +1321,28 @@
       "Diferencia-se do estupro pela ausência de violência ou grave ameaça.",
       "Pode ocorrer em transporte público, ambiente de trabalho e locais de convivência."
     ],
-    "strongKeywords": ["importunação sexual", "importunacao sexual", "importunou", "passou a mão", "tocou sem consentimento"],
-    "keywords": ["ônibus", "metrô", "transporte público", "trabalho", "assédio", "beijo forçado", "sem consentimento", "lascívia"],
-    "disqualifiers": ["violência grave", "estupro", "menor de 14"]
+    "strongKeywords": [
+      "importunação sexual",
+      "importunacao sexual",
+      "importunou",
+      "passou a mão",
+      "tocou sem consentimento"
+    ],
+    "keywords": [
+      "ônibus",
+      "metrô",
+      "transporte público",
+      "trabalho",
+      "assédio",
+      "beijo forçado",
+      "sem consentimento",
+      "lascívia"
+    ],
+    "disqualifiers": [
+      "violência grave",
+      "estupro",
+      "menor de 14"
+    ]
   },
   {
     "id": "cp-216-a",
@@ -722,9 +1362,28 @@
       "Diferencia-se da importunação sexual pela existência de relação hierárquica.",
       "Também pode haver responsabilização cível e trabalhista."
     ],
-    "strongKeywords": ["assédio sexual", "assedio sexual", "assediou", "superior hierárquico", "chefe"],
-    "keywords": ["emprego", "trabalho", "cargo", "função", "promoção", "chantagem", "vantagem sexual", "constrangimento"],
-    "disqualifiers": ["importunação", "violência física", "estupro"]
+    "strongKeywords": [
+      "assédio sexual",
+      "assedio sexual",
+      "assediou",
+      "superior hierárquico",
+      "chefe"
+    ],
+    "keywords": [
+      "emprego",
+      "trabalho",
+      "cargo",
+      "função",
+      "promoção",
+      "chantagem",
+      "vantagem sexual",
+      "constrangimento"
+    ],
+    "disqualifiers": [
+      "importunação",
+      "violência física",
+      "estupro"
+    ]
   },
   {
     "id": "cp-217-a",
@@ -744,9 +1403,26 @@
       "O consentimento do menor não afasta a tipicidade.",
       "Pode haver aumento de pena em caso de relação de parentesco, autoridade ou prevalecimento."
     ],
-    "strongKeywords": ["estupro de vulnerável", "estupro de vulneravel", "menor de 14", "criança", "crianca", "adolescente"],
-    "keywords": ["vulnerável", "deficiência mental", "sem discernimento", "abuso", "ato libidinoso", "conjunção"],
-    "disqualifiers": ["maior de 14", "consentimento válido"]
+    "strongKeywords": [
+      "estupro de vulnerável",
+      "estupro de vulneravel",
+      "menor de 14",
+      "criança",
+      "crianca",
+      "adolescente"
+    ],
+    "keywords": [
+      "vulnerável",
+      "deficiência mental",
+      "sem discernimento",
+      "abuso",
+      "ato libidinoso",
+      "conjunção"
+    ],
+    "disqualifiers": [
+      "maior de 14",
+      "consentimento válido"
+    ]
   },
   {
     "id": "cp-329",
@@ -766,9 +1442,27 @@
       "A resistência passiva, sem violência ou ameaça, pode não configurar o tipo.",
       "A legalidade do ato é pressuposto do crime."
     ],
-    "strongKeywords": ["resistência", "resistencia", "resistiu", "reagiu à prisão", "reagiu a abordagem"],
-    "keywords": ["policial", "guarda", "abordagem", "prisão", "empurrou", "agrediu", "fuga", "algemas"],
-    "disqualifiers": ["desacato", "desobediência"]
+    "strongKeywords": [
+      "resistência",
+      "resistencia",
+      "resistiu",
+      "reagiu à prisão",
+      "reagiu a abordagem"
+    ],
+    "keywords": [
+      "policial",
+      "guarda",
+      "abordagem",
+      "prisão",
+      "empurrou",
+      "agrediu",
+      "fuga",
+      "algemas"
+    ],
+    "disqualifiers": [
+      "desacato",
+      "desobediência"
+    ]
   },
   {
     "id": "cp-330",
@@ -788,9 +1482,26 @@
       "Ofensas proferidas por particular contra servidor podem configurar injúria, conforme o caso.",
       "A abordagem policial e o contexto da conduta são relevantes."
     ],
-    "strongKeywords": ["desacato", "desacatou", "xingou o policial", "ofendeu o policial"],
-    "keywords": ["policial", "guarda municipal", "servidor", "autoridade", "ofensa", "grito", "abordagem"],
-    "disqualifiers": ["resistência", "desobediência", "injúria"]
+    "strongKeywords": [
+      "desacato",
+      "desacatou",
+      "xingou o policial",
+      "ofendeu o policial"
+    ],
+    "keywords": [
+      "policial",
+      "guarda municipal",
+      "servidor",
+      "autoridade",
+      "ofensa",
+      "grito",
+      "abordagem"
+    ],
+    "disqualifiers": [
+      "resistência",
+      "desobediência",
+      "injúria"
+    ]
   },
   {
     "id": "cp-331",
@@ -810,9 +1521,25 @@
       "A ordem deve ser legal, legítima e dirigida a quem tem dever de cumpri-la.",
       "Pode haver concurso com resistência ou desacato."
     ],
-    "strongKeywords": ["desobediência", "desobediencia", "desobedeceu", "recusou a ordem"],
-    "keywords": ["ordem", "policial", "fiscal", "servidor", "determinação", "abordagem", "recusou"],
-    "disqualifiers": ["resistência", "desacato"]
+    "strongKeywords": [
+      "desobediência",
+      "desobediencia",
+      "desobedeceu",
+      "recusou a ordem"
+    ],
+    "keywords": [
+      "ordem",
+      "policial",
+      "fiscal",
+      "servidor",
+      "determinação",
+      "abordagem",
+      "recusou"
+    ],
+    "disqualifiers": [
+      "resistência",
+      "desacato"
+    ]
   },
   {
     "id": "cp-312",
@@ -833,9 +1560,26 @@
       "Pode ser cometido por meio de fraude em sistemas e licitações.",
       "A análise exige comprovação do vínculo funcional e da disponibilidade do bem."
     ],
-    "strongKeywords": ["peculato", "apropriou de dinheiro público", "desviou verba", "desvio de verba"],
-    "keywords": ["funcionário público", "servidor", "cargo", "repartição", "licitação", "verba", "caixa", "tesouraria"],
-    "disqualifiers": ["concussão", "corrupção"]
+    "strongKeywords": [
+      "peculato",
+      "apropriou de dinheiro público",
+      "desviou verba",
+      "desvio de verba"
+    ],
+    "keywords": [
+      "funcionário público",
+      "servidor",
+      "cargo",
+      "repartição",
+      "licitação",
+      "verba",
+      "caixa",
+      "tesouraria"
+    ],
+    "disqualifiers": [
+      "concussão",
+      "corrupção"
+    ]
   },
   {
     "id": "cp-316",
@@ -855,9 +1599,26 @@
       "A exigência pode ser direta ou por interposta pessoa.",
       "A prova pode envolver gravações e testemunhas."
     ],
-    "strongKeywords": ["concussão", "concussao", "exigiu vantagem", "exigiu propina", "exigiu dinheiro"],
-    "keywords": ["funcionário público", "servidor", "fiscal", "propina", "vantagem indevida", "cargo", "repartição"],
-    "disqualifiers": ["corrupção passiva", "solicitou"]
+    "strongKeywords": [
+      "concussão",
+      "concussao",
+      "exigiu vantagem",
+      "exigiu propina",
+      "exigiu dinheiro"
+    ],
+    "keywords": [
+      "funcionário público",
+      "servidor",
+      "fiscal",
+      "propina",
+      "vantagem indevida",
+      "cargo",
+      "repartição"
+    ],
+    "disqualifiers": [
+      "corrupção passiva",
+      "solicitou"
+    ]
   },
   {
     "id": "cp-317",
@@ -877,9 +1638,27 @@
       "A corrupção ativa é o crime do particular que oferece ou promete vantagem (art. 333).",
       "Colaboração premiada e acordo de não persecução penal podem ser aplicáveis."
     ],
-    "strongKeywords": ["corrupção passiva", "corrupcao passiva", "recebeu propina", "aceitou propina", "solicitou propina"],
-    "keywords": ["funcionário público", "servidor", "policial", "fiscal", "propina", "vantagem indevida", "pagamento", "promessa"],
-    "disqualifiers": ["concussão", "corrupção ativa"]
+    "strongKeywords": [
+      "corrupção passiva",
+      "corrupcao passiva",
+      "recebeu propina",
+      "aceitou propina",
+      "solicitou propina"
+    ],
+    "keywords": [
+      "funcionário público",
+      "servidor",
+      "policial",
+      "fiscal",
+      "propina",
+      "vantagem indevida",
+      "pagamento",
+      "promessa"
+    ],
+    "disqualifiers": [
+      "concussão",
+      "corrupção ativa"
+    ]
   },
   {
     "id": "cp-333",
@@ -899,9 +1678,27 @@
       "O crime se consuma com a oferta ou promessa, ainda que não haja aceitação.",
       "A colaboração do particular pode ser relevante para a investigação."
     ],
-    "strongKeywords": ["corrupção ativa", "corrupcao ativa", "ofereceu propina", "prometeu propina", "subornou"],
-    "keywords": ["policial", "fiscal", "servidor", "propina", "vantagem", "dinheiro", "ofereceu", "prometeu"],
-    "disqualifiers": ["corrupção passiva", "concussão"]
+    "strongKeywords": [
+      "corrupção ativa",
+      "corrupcao ativa",
+      "ofereceu propina",
+      "prometeu propina",
+      "subornou"
+    ],
+    "keywords": [
+      "policial",
+      "fiscal",
+      "servidor",
+      "propina",
+      "vantagem",
+      "dinheiro",
+      "ofereceu",
+      "prometeu"
+    ],
+    "disqualifiers": [
+      "corrupção passiva",
+      "concussão"
+    ]
   },
   {
     "id": "cp-299",
@@ -921,9 +1718,26 @@
       "Pode ocorrer em declarações de imposto de renda, contratos e registros públicos.",
       "A consumação ocorre com a prática da conduta, independentemente do resultado."
     ],
-    "strongKeywords": ["falsidade ideológica", "falsidade ideologica", "declaração falsa", "declaracao falsa", "informação falsa"],
-    "keywords": ["documento", "contrato", "declaração", "imposto de renda", "registro", "assinatura", "certidão"],
-    "disqualifiers": ["documento falso", "uso de documento falso"]
+    "strongKeywords": [
+      "falsidade ideológica",
+      "falsidade ideologica",
+      "declaração falsa",
+      "declaracao falsa",
+      "informação falsa"
+    ],
+    "keywords": [
+      "documento",
+      "contrato",
+      "declaração",
+      "imposto de renda",
+      "registro",
+      "assinatura",
+      "certidão"
+    ],
+    "disqualifiers": [
+      "documento falso",
+      "uso de documento falso"
+    ]
   },
   {
     "id": "cp-304",
@@ -943,9 +1757,25 @@
       "O uso pode ocorrer perante autoridade, banco ou estabelecimento comercial.",
       "A perícia documental é prova relevante."
     ],
-    "strongKeywords": ["uso de documento falso", "usou documento falso", "documento falsificado", "carteira falsa"],
-    "keywords": ["identidade", "CNH", "passaporte", "certidão", "diploma", "apresentou", "fiscalização"],
-    "disqualifiers": ["falsidade ideológica", "falsificação"]
+    "strongKeywords": [
+      "uso de documento falso",
+      "usou documento falso",
+      "documento falsificado",
+      "carteira falsa"
+    ],
+    "keywords": [
+      "identidade",
+      "CNH",
+      "passaporte",
+      "certidão",
+      "diploma",
+      "apresentou",
+      "fiscalização"
+    ],
+    "disqualifiers": [
+      "falsidade ideológica",
+      "falsificação"
+    ]
   },
   {
     "id": "cp-307",
@@ -965,9 +1795,25 @@
       "Se há documento falso, pode haver concurso com uso de documento falso.",
       "A identificação falsa em abordagem policial é hipótese comum."
     ],
-    "strongKeywords": ["falsa identidade", "identidade falsa", "se passou por outra pessoa", "nome falso"],
-    "keywords": ["documento", "RG", "CPF", "abordagem", "policial", "identificação", "assumiu o nome"],
-    "disqualifiers": ["documento falso", "falsificação"]
+    "strongKeywords": [
+      "falsa identidade",
+      "identidade falsa",
+      "se passou por outra pessoa",
+      "nome falso"
+    ],
+    "keywords": [
+      "documento",
+      "RG",
+      "CPF",
+      "abordagem",
+      "policial",
+      "identificação",
+      "assumiu o nome"
+    ],
+    "disqualifiers": [
+      "documento falso",
+      "falsificação"
+    ]
   },
   {
     "id": "ctb-302",
@@ -987,9 +1833,28 @@
       "A velocidade excessiva, a manobra perigosa e o uso de celular podem caracterizar culpa grave.",
       "A CNH e o prontuário de trânsito são provas relevantes."
     ],
-    "strongKeywords": ["homicídio culposo na direção", "atropelou e matou", "matou no trânsito", "acidente fatal"],
-    "keywords": ["carro", "moto", "caminhão", "atropelamento", "morte", "acidente", "dirigia", "velocidade", "álcool"],
-    "disqualifiers": ["quis matar", "dolo", "homicídio doloso"]
+    "strongKeywords": [
+      "homicídio culposo na direção",
+      "atropelou e matou",
+      "matou no trânsito",
+      "acidente fatal"
+    ],
+    "keywords": [
+      "carro",
+      "moto",
+      "caminhão",
+      "atropelamento",
+      "morte",
+      "acidente",
+      "dirigia",
+      "velocidade",
+      "álcool"
+    ],
+    "disqualifiers": [
+      "quis matar",
+      "dolo",
+      "homicídio doloso"
+    ]
   },
   {
     "id": "ctb-303",
@@ -1009,9 +1874,27 @@
       "A vítima pode ser pedestre, passageiro ou outro condutor.",
       "A ação penal é pública incondicionada."
     ],
-    "strongKeywords": ["lesão corporal na direção", "atropelou", "atropelamento", "acidente de trânsito com ferido"],
-    "keywords": ["carro", "moto", "caminhão", "ferido", "hospital", "habilitação", "velocidade", "ultrapassagem"],
-    "disqualifiers": ["morte", "dolo", "agressão"]
+    "strongKeywords": [
+      "lesão corporal na direção",
+      "atropelou",
+      "atropelamento",
+      "acidente de trânsito com ferido"
+    ],
+    "keywords": [
+      "carro",
+      "moto",
+      "caminhão",
+      "ferido",
+      "hospital",
+      "habilitação",
+      "velocidade",
+      "ultrapassagem"
+    ],
+    "disqualifiers": [
+      "morte",
+      "dolo",
+      "agressão"
+    ]
   },
   {
     "id": "ctb-306",
@@ -1031,9 +1914,27 @@
       "Sinais de alteração também podem ser comprovados por exame clínico, perícia ou vídeo.",
       "A recusa ao teste do bafômetro não impede a comprovação por outros meios."
     ],
-    "strongKeywords": ["embriaguez ao volante", "dirigia embriagado", "bêbado ao volante", "bebado ao volante", "álcool no sangue"],
-    "keywords": ["bafômetro", "cerveja", "álcool", "drink", "blitz", "bar", "CNH", "direção"],
-    "disqualifiers": ["droga ilícita", "tráfico"]
+    "strongKeywords": [
+      "embriaguez ao volante",
+      "dirigia embriagado",
+      "bêbado ao volante",
+      "bebado ao volante",
+      "álcool no sangue"
+    ],
+    "keywords": [
+      "bafômetro",
+      "cerveja",
+      "álcool",
+      "drink",
+      "blitz",
+      "bar",
+      "CNH",
+      "direção"
+    ],
+    "disqualifiers": [
+      "droga ilícita",
+      "tráfico"
+    ]
   },
   {
     "id": "ctb-308",
@@ -1053,9 +1954,25 @@
       "Vídeos e testemunhas são provas frequentes.",
       "A autorização da autoridade competente afasta a tipicidade."
     ],
-    "strongKeywords": ["racha", "corrida ilegal", "corrida não autorizada", "pega"],
-    "keywords": ["velocidade", "via pública", "competição", "moto", "carro", "adrenalina", "dano"],
-    "disqualifiers": ["corrida autorizada", "circuito fechado"]
+    "strongKeywords": [
+      "racha",
+      "corrida ilegal",
+      "corrida não autorizada",
+      "pega"
+    ],
+    "keywords": [
+      "velocidade",
+      "via pública",
+      "competição",
+      "moto",
+      "carro",
+      "adrenalina",
+      "dano"
+    ],
+    "disqualifiers": [
+      "corrida autorizada",
+      "circuito fechado"
+    ]
   },
   {
     "id": "drogas-28",
@@ -1075,9 +1992,28 @@
       "A distinção entre usuário e traficante considera quantidade, circunstâncias, conduta e antecedentes.",
       "O porte para consumo não gera antecedente criminal, conforme entendimento consolidado."
     ],
-    "strongKeywords": ["uso pessoal", "consumo pessoal", "usuário de drogas", "usuario de drogas", "maconha para uso"],
-    "keywords": ["maconha", "cocaína", "droga", "pequena quantidade", "porção", "cigarro", "dose"],
-    "disqualifiers": ["venda", "tráfico", "balança", "dinheiro trocado"]
+    "strongKeywords": [
+      "uso pessoal",
+      "consumo pessoal",
+      "usuário de drogas",
+      "usuario de drogas",
+      "maconha para uso"
+    ],
+    "keywords": [
+      "maconha",
+      "cocaína",
+      "droga",
+      "pequena quantidade",
+      "porção",
+      "cigarro",
+      "dose"
+    ],
+    "disqualifiers": [
+      "venda",
+      "tráfico",
+      "balança",
+      "dinheiro trocado"
+    ]
   },
   {
     "id": "drogas-33",
@@ -1097,9 +2033,29 @@
       "A quantidade e a natureza da droga influenciam a dosimetria.",
       "A associação para o tráfico tem tipo autônomo (art. 35)."
     ],
-    "strongKeywords": ["tráfico de drogas", "trafico de drogas", "traficante", "venda de drogas", "vendia drogas"],
-    "keywords": ["maconha", "cocaína", "crack", "entorpecente", "porções", "balança", "dinheiro", "boca de fumo", "entrega"],
-    "disqualifiers": ["uso pessoal", "consumo próprio", "pequena quantidade para uso"]
+    "strongKeywords": [
+      "tráfico de drogas",
+      "trafico de drogas",
+      "traficante",
+      "venda de drogas",
+      "vendia drogas"
+    ],
+    "keywords": [
+      "maconha",
+      "cocaína",
+      "crack",
+      "entorpecente",
+      "porções",
+      "balança",
+      "dinheiro",
+      "boca de fumo",
+      "entrega"
+    ],
+    "disqualifiers": [
+      "uso pessoal",
+      "consumo próprio",
+      "pequena quantidade para uso"
+    ]
   },
   {
     "id": "drogas-35",
@@ -1119,9 +2075,26 @@
       "Pode haver concurso com o tráfico e com organização criminosa.",
       "A prova costuma ser indireta, com vigilância, interceptações e testemunhas."
     ],
-    "strongKeywords": ["associação para o tráfico", "associacao para o trafico", "associação ao tráfico", "organização do tráfico"],
-    "keywords": ["grupo", "boca de fumo", "divisão de tarefas", "olheiro", "avião", "gerente", "venda", "droga"],
-    "disqualifiers": ["uso pessoal", "tráfico individual"]
+    "strongKeywords": [
+      "associação para o tráfico",
+      "associacao para o trafico",
+      "associação ao tráfico",
+      "organização do tráfico"
+    ],
+    "keywords": [
+      "grupo",
+      "boca de fumo",
+      "divisão de tarefas",
+      "olheiro",
+      "avião",
+      "gerente",
+      "venda",
+      "droga"
+    ],
+    "disqualifiers": [
+      "uso pessoal",
+      "tráfico individual"
+    ]
   },
   {
     "id": "eca-244b",
@@ -1141,9 +2114,26 @@
       "A Súmula 500 do STJ admite a comprovação da idade por outros meios, não só pela certidão.",
       "Pode haver concurso com o crime praticado em conjunto."
     ],
-    "strongKeywords": ["corrupção de menores", "corrupcao de menores", "menor de idade", "adolescente no crime", "usou menor"],
-    "keywords": ["menor", "adolescente", "17 anos", "16 anos", "coautoria", "induziu", "facilitou"],
-    "disqualifiers": ["maior de idade", "18 anos completos"]
+    "strongKeywords": [
+      "corrupção de menores",
+      "corrupcao de menores",
+      "menor de idade",
+      "adolescente no crime",
+      "usou menor"
+    ],
+    "keywords": [
+      "menor",
+      "adolescente",
+      "17 anos",
+      "16 anos",
+      "coautoria",
+      "induziu",
+      "facilitou"
+    ],
+    "disqualifiers": [
+      "maior de idade",
+      "18 anos completos"
+    ]
   },
   {
     "id": "lmp-24a",
@@ -1163,8 +2153,764 @@
       "O descumprimento pode gerar prisão preventiva e novas medidas.",
       "A comunicação imediata à autoridade judicial e ao Ministério Público é recomendada."
     ],
-    "strongKeywords": ["descumprimento de medida protetiva", "descumpriu medida protetiva", "violou medida protetiva"],
-    "keywords": ["medida protetiva", "aproximação", "afastamento", "Maria da Penha", "companheiro", "ex-companheiro", "ordem judicial"],
-    "disqualifiers": ["sem medida judicial", "medida revogada"]
+    "strongKeywords": [
+      "descumprimento de medida protetiva",
+      "descumpriu medida protetiva",
+      "violou medida protetiva"
+    ],
+    "keywords": [
+      "medida protetiva",
+      "aproximação",
+      "afastamento",
+      "Maria da Penha",
+      "companheiro",
+      "ex-companheiro",
+      "ordem judicial"
+    ],
+    "disqualifiers": [
+      "sem medida judicial",
+      "medida revogada"
+    ]
+  },
+  {
+    "id": "cp-121-a",
+    "code": "Código Penal",
+    "article": "Art. 121-A",
+    "title": "Feminicídio",
+    "group": "VIDA",
+    "legalText": "Matar mulher por razões da condição do sexo feminino.",
+    "penalty": "Reclusão, de 20 (vinte) a 40 (quarenta) anos.",
+    "elements": [
+      "Morte de mulher",
+      "Razões da condição de sexo feminino (violência doméstica e familiar ou menosprezo/discriminação à condição de mulher)",
+      "Dolo"
+    ],
+    "observations": [
+      "Desde a Lei 14.994/2024, o feminicídio é crime autônomo (antes era qualificadora do homicídio).",
+      "Confira no Planalto a redação vigente e as causas de aumento de pena."
+    ],
+    "strongKeywords": [
+      "feminicídio",
+      "feminicidio"
+    ],
+    "keywords": [
+      "matou",
+      "matar",
+      "mataram",
+      "namorada",
+      "esposa",
+      "companheira",
+      "mulher",
+      "ex-namorada",
+      "ex-companheira",
+      "violência doméstica"
+    ],
+    "disqualifiers": [
+      "culposo",
+      "acidente"
+    ]
+  },
+  {
+    "id": "cp-135",
+    "code": "Código Penal",
+    "article": "Art. 135",
+    "title": "Omissão de socorro",
+    "group": "VIDA",
+    "legalText": "Deixar de prestar assistência, quando possível fazê-lo sem risco pessoal, à criança abandonada ou extraviada, ou à pessoa inválida ou ferida, ao desamparo ou em grave e iminente perigo; ou não pedir, nesses casos, o socorro da autoridade pública.",
+    "penalty": "Detenção, de 1 (um) a 6 (seis) meses, ou multa.",
+    "elements": [
+      "Pessoa em situação de perigo ou desamparo",
+      "Possibilidade de ajudar sem risco pessoal",
+      "Deixar de ajudar ou de pedir socorro à autoridade"
+    ],
+    "observations": [
+      "A pena aumenta se da omissão resulta lesão corporal grave ou morte.",
+      "Ligar para o SAMU (192) ou outra autoridade já pode ser a forma de prestar socorro."
+    ],
+    "strongKeywords": [
+      "omissão de socorro",
+      "omissao de socorro",
+      "não socorreu",
+      "nao socorreu",
+      "deixou de socorrer"
+    ],
+    "keywords": [
+      "atropelado",
+      "ferido",
+      "desmaiado",
+      "caído",
+      "caido",
+      "ajuda",
+      "socorro",
+      "samu",
+      "abandonou"
+    ],
+    "disqualifiers": [
+      "socorreu",
+      "chamou o samu"
+    ]
+  },
+  {
+    "id": "cp-136",
+    "code": "Código Penal",
+    "article": "Art. 136",
+    "title": "Maus-tratos",
+    "group": "VIDA",
+    "legalText": "Expor a perigo a vida ou a saúde de pessoa sob sua autoridade, guarda ou vigilância, para fim de educação, ensino, tratamento ou custódia, privando-a de alimentação ou cuidados indispensáveis, sujeitando-a a trabalho excessivo ou inadequado, ou abusando de meios de correção ou disciplina.",
+    "penalty": "Detenção, de 2 (dois) meses a 1 (um) ano, ou multa.",
+    "elements": [
+      "Vítima sob autoridade, guarda ou vigilância do autor",
+      "Exposição a perigo à vida ou à saúde",
+      "Privação de cuidados, excesso de trabalho ou abuso de disciplina"
+    ],
+    "observations": [
+      "Se resulta lesão grave ou morte, a pena é maior.",
+      "Maus-tratos contra animais têm tipo penal próprio na Lei 9.605/1998 (não coberto nesta base)."
+    ],
+    "strongKeywords": [
+      "maus-tratos",
+      "maus tratos"
+    ],
+    "keywords": [
+      "idoso",
+      "criança",
+      "crianca",
+      "filho",
+      "filha",
+      "sem comida",
+      "passando fome",
+      "castigo",
+      "trancado",
+      "negligência",
+      "negligencia"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "cp-146",
+    "code": "Código Penal",
+    "article": "Art. 146",
+    "title": "Constrangimento ilegal",
+    "group": "LIBERDADE",
+    "legalText": "Constranger alguém, mediante violência ou grave ameaça, ou depois de lhe haver reduzido, por qualquer outro meio, a capacidade de resistência, a não fazer o que a lei permite, ou a fazer o que ela não manda.",
+    "penalty": "Detenção, de 3 (três) meses a 1 (um) ano, ou multa.",
+    "elements": [
+      "Constranger a vítima",
+      "Uso de violência, grave ameaça ou outro meio que reduza a resistência",
+      "Obrigar a fazer ou deixar de fazer algo"
+    ],
+    "observations": [
+      "Se o objetivo é obter vantagem econômica, pode ser extorsão (art. 158).",
+      "Se há ameaça de mal injusto e grave sem constrangimento a agir, veja ameaça (art. 147)."
+    ],
+    "strongKeywords": [
+      "constrangimento ilegal",
+      "constrangeu",
+      "obrigou"
+    ],
+    "keywords": [
+      "forçou",
+      "forcou",
+      "obrigado a",
+      "coagiu",
+      "coação",
+      "coacao"
+    ],
+    "disqualifiers": [
+      "dinheiro",
+      "vantagem econômica"
+    ]
+  },
+  {
+    "id": "cp-147-a",
+    "code": "Código Penal",
+    "article": "Art. 147-A",
+    "title": "Perseguição (stalking)",
+    "group": "LIBERDADE",
+    "legalText": "Perseguir alguém, reiteradamente e por qualquer meio, ameaçando-lhe a integridade física ou psicológica, restringindo-lhe a capacidade de locomoção ou, de qualquer forma, invadindo ou perturbando sua esfera de liberdade ou privacidade.",
+    "penalty": "Reclusão, de 6 (seis) meses a 2 (dois) anos, e multa.",
+    "elements": [
+      "Conduta reiterada (várias vezes)",
+      "Perseguição por qualquer meio, inclusive internet",
+      "Ameaça à integridade, restrição de locomoção ou invasão da privacidade"
+    ],
+    "observations": [
+      "A pena aumenta em casos como vítima criança, adolescente, idoso ou mulher por razões de gênero.",
+      "Um único episódio isolado normalmente não basta: é preciso reiteração."
+    ],
+    "strongKeywords": [
+      "perseguição",
+      "perseguicao",
+      "stalking",
+      "stalker",
+      "persegue",
+      "perseguindo"
+    ],
+    "keywords": [
+      "seguindo",
+      "insiste",
+      "mensagens",
+      "ligações",
+      "ligacoes",
+      "vigia",
+      "ex",
+      "obsessão",
+      "obsessao",
+      "aparece na porta"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "cp-154-a",
+    "code": "Código Penal",
+    "article": "Art. 154-A",
+    "title": "Invasão de dispositivo informático",
+    "group": "OUTROS",
+    "legalText": "Invadir dispositivo informático de uso alheio, conectado ou não à rede de computadores, mediante violação indevida de mecanismo de segurança e com o fim de obter, adulterar ou destruir dados ou informações sem autorização, ou instalar vulnerabilidades para obter vantagem ilícita.",
+    "penalty": "Reclusão, de 1 (um) a 4 (quatro) anos, e multa.",
+    "elements": [
+      "Dispositivo informático de uso alheio",
+      "Violação indevida de mecanismo de segurança",
+      "Finalidade de obter, adulterar ou destruir dados, ou instalar vulnerabilidade"
+    ],
+    "observations": [
+      "Alterada pela Lei 14.155/2021, que aumentou a pena.",
+      "Se o fim é obter dinheiro, pode haver também estelionato eletrônico (art. 171, § 2º-A)."
+    ],
+    "strongKeywords": [
+      "invasão de celular",
+      "invasao de celular",
+      "hackeou",
+      "hacker",
+      "invadiu o celular",
+      "invadiu a conta",
+      "clonou"
+    ],
+    "keywords": [
+      "senha",
+      "conta",
+      "redes sociais",
+      "instagram",
+      "whatsapp",
+      "computador",
+      "celular",
+      "dados",
+      "fotos",
+      "vazou"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "cp-218-c",
+    "code": "Código Penal",
+    "article": "Art. 218-C",
+    "title": "Divulgação de cena de estupro, nudez ou pornografia sem consentimento",
+    "group": "DIGNIDADE_SEXUAL",
+    "legalText": "Oferecer, trocar, disponibilizar, transmitir, vender, expor à venda, distribuir, publicar ou divulgar, por qualquer meio, fotografia, vídeo ou outro registro audiovisual que contenha cena de estupro ou de estupro de vulnerável, ou que faça apologia ou induza à sua prática, ou, sem o consentimento da vítima, cena de sexo, nudez ou pornografia.",
+    "penalty": "Reclusão, de 1 (um) a 5 (cinco) anos, se o fato não constitui crime mais grave.",
+    "elements": [
+      "Registro audiovisual de cena de sexo, nudez ou estupro",
+      "Divulgação por qualquer meio",
+      "Ausência de consentimento da pessoa retratada"
+    ],
+    "observations": [
+      "A pena aumenta se o autor tem relação íntima com a vítima ou age por vingança ou humilhação.",
+      "Vítima pode buscar a remoção do conteúdo e pedir medidas protetivas."
+    ],
+    "strongKeywords": [
+      "vazou nudes",
+      "nudes",
+      "divulgou fotos íntimas",
+      "divulgou fotos intimas",
+      "pornografia de vingança",
+      "revenge porn"
+    ],
+    "keywords": [
+      "vazamento",
+      "vídeo íntimo",
+      "video intimo",
+      "foto íntima",
+      "foto intima",
+      "sem consentimento",
+      "ex-namorado",
+      "expôs",
+      "expos",
+      "grupo"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "cp-250",
+    "code": "Código Penal",
+    "article": "Art. 250",
+    "title": "Incêndio",
+    "group": "OUTROS",
+    "legalText": "Causar incêndio, expondo a perigo a vida, a integridade física ou o patrimônio de outrem.",
+    "penalty": "Reclusão, de 3 (três) a 6 (seis) anos, e multa.",
+    "elements": [
+      "Provocar incêndio",
+      "Perigo comum a vida, integridade física ou patrimônio de outras pessoas"
+    ],
+    "observations": [
+      "A pena aumenta em casos como incêndio em casa habitada, edifício público ou local com muitas pessoas.",
+      "Se houver dano apenas ao patrimônio de alguém, pode ser dano (art. 163)."
+    ],
+    "strongKeywords": [
+      "incêndio",
+      "incendio",
+      "ateou fogo",
+      "incendiou",
+      "pôs fogo",
+      "pos fogo"
+    ],
+    "keywords": [
+      "fogo",
+      "chamas",
+      "queimou",
+      "casa",
+      "prédio",
+      "predio",
+      "floresta"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "cp-288",
+    "code": "Código Penal",
+    "article": "Art. 288",
+    "title": "Associação criminosa",
+    "group": "OUTROS",
+    "legalText": "Associarem-se 3 (três) ou mais pessoas, para o fim específico de cometer crimes.",
+    "penalty": "Reclusão, de 1 (um) a 3 (três) anos.",
+    "elements": [
+      "Três ou mais pessoas",
+      "Associação estável e permanente",
+      "Finalidade específica de cometer crimes"
+    ],
+    "observations": [
+      "Não se confunde com o simples concurso de pessoas em um crime isolado.",
+      "Se o grupo é estruturado, hierarquizado e com divisão de tarefas, pode ser organização criminosa (Lei 12.850/2013)."
+    ],
+    "strongKeywords": [
+      "associação criminosa",
+      "associacao criminosa",
+      "quadrilha",
+      "bando"
+    ],
+    "keywords": [
+      "grupo",
+      "três pessoas",
+      "tres pessoas",
+      "combinaram",
+      "vários crimes",
+      "varios crimes"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "cp-297",
+    "code": "Código Penal",
+    "article": "Art. 297",
+    "title": "Falsificação de documento público",
+    "group": "FE_PUBLICA",
+    "legalText": "Falsificar, no todo ou em parte, documento público, ou alterar documento público verdadeiro.",
+    "penalty": "Reclusão, de 2 (dois) a 6 (seis) anos, e multa.",
+    "elements": [
+      "Falsificar ou alterar documento público",
+      "Potencial de enganar (imitação da verdade)"
+    ],
+    "observations": [
+      "Exemplos de documento público: RG, CNH, certidão, diploma de órgão oficial.",
+      "Usar o documento falso é outro crime (art. 304)."
+    ],
+    "strongKeywords": [
+      "falsificação de documento",
+      "falsificacao de documento",
+      "documento falso",
+      "rg falso",
+      "cnh falsa"
+    ],
+    "keywords": [
+      "falsificou",
+      "adulterou",
+      "certidão",
+      "certidao",
+      "carteira",
+      "diploma",
+      "carimbo"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "cp-319",
+    "code": "Código Penal",
+    "article": "Art. 319",
+    "title": "Prevaricação",
+    "group": "ADMINISTRACAO_PUBLICA",
+    "legalText": "Retardar ou deixar de praticar, indevidamente, ato de ofício, ou praticá-lo contra disposição expressa de lei, para satisfazer interesse ou sentimento pessoal.",
+    "penalty": "Detenção, de 3 (três) meses a 1 (um) ano, e multa.",
+    "elements": [
+      "Autor é funcionário público",
+      "Retardar, omitir ou praticar ato de ofício contra a lei",
+      "Finalidade de satisfazer interesse ou sentimento pessoal"
+    ],
+    "observations": [
+      "Sem o interesse ou sentimento pessoal, a conduta pode ser apenas infração administrativa.",
+      "Se há troca por vantagem indevida, veja corrupção passiva (art. 317)."
+    ],
+    "strongKeywords": [
+      "prevaricação",
+      "prevaricacao",
+      "prevaricou"
+    ],
+    "keywords": [
+      "servidor",
+      "funcionário público",
+      "funcionario publico",
+      "policial",
+      "deixou de",
+      "engavetou",
+      "retardou",
+      "favor pessoal"
+    ],
+    "disqualifiers": [
+      "propina",
+      "recebeu dinheiro"
+    ]
+  },
+  {
+    "id": "cp-339",
+    "code": "Código Penal",
+    "article": "Art. 339",
+    "title": "Denunciação caluniosa",
+    "group": "ADMINISTRACAO_PUBLICA",
+    "legalText": "Dar causa à instauração de investigação policial, de processo judicial, de investigação administrativa, inquérito civil ou ação de improbidade administrativa contra alguém, imputando-lhe crime, infração ético-disciplinar ou ato ímprobo de que o sabe inocente.",
+    "penalty": "Reclusão, de 2 (dois) a 8 (oito) anos, e multa.",
+    "elements": [
+      "Dar causa à instauração de investigação ou processo",
+      "Imputar crime ou infração a alguém",
+      "Saber que a pessoa é inocente"
+    ],
+    "observations": [
+      "A prova de que o autor sabia da inocência é essencial.",
+      "Difere da calúnia (art. 138), que é só a falsa imputação de crime sem provocar investigação."
+    ],
+    "strongKeywords": [
+      "denunciação caluniosa",
+      "denunciacao caluniosa"
+    ],
+    "keywords": [
+      "acusou falsamente",
+      "inocente",
+      "inventou crime",
+      "registrou boletim",
+      "boletim de ocorrência",
+      "falsa acusação",
+      "falsa acusacao"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "cp-340",
+    "code": "Código Penal",
+    "article": "Art. 340",
+    "title": "Comunicação falsa de crime",
+    "group": "ADMINISTRACAO_PUBLICA",
+    "legalText": "Provocar a ação de autoridade, comunicando-lhe a ocorrência de crime ou de contravenção que sabe não se ter verificado.",
+    "penalty": "Detenção, de 1 (um) a 6 (seis) meses, ou multa.",
+    "elements": [
+      "Comunicar crime ou contravenção à autoridade",
+      "Saber que o fato não aconteceu",
+      "Não apontar um culpado específico (senão seria denunciação caluniosa)"
+    ],
+    "observations": [
+      "Exemplo clássico: inventar um assalto para a polícia ou para receber seguro."
+    ],
+    "strongKeywords": [
+      "comunicação falsa de crime",
+      "comunicacao falsa de crime",
+      "falso assalto"
+    ],
+    "keywords": [
+      "inventou",
+      "mentiu para a polícia",
+      "mentiu para a policia",
+      "boletim falso",
+      "fingiu"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "cp-342",
+    "code": "Código Penal",
+    "article": "Art. 342",
+    "title": "Falso testemunho ou falsa perícia",
+    "group": "ADMINISTRACAO_PUBLICA",
+    "legalText": "Fazer afirmação falsa, ou negar ou calar a verdade como testemunha, perito, contador, tradutor ou intérprete em processo judicial, ou administrativo, inquérito policial, ou em juízo arbitral.",
+    "penalty": "Reclusão, de 2 (dois) a 4 (quatro) anos, e multa.",
+    "elements": [
+      "Autor é testemunha, perito, contador, tradutor ou intérprete",
+      "Afirmação falsa, negação ou silêncio sobre a verdade",
+      "Em processo judicial, administrativo, inquérito ou juízo arbitral"
+    ],
+    "observations": [
+      "O fato deixa de ser punível se, antes da sentença, o autor se retrata ou declara a verdade.",
+      "O acusado não comete falso testemunho ao negar a acusação em seu interrogatório."
+    ],
+    "strongKeywords": [
+      "falso testemunho",
+      "falsa perícia",
+      "falsa pericia"
+    ],
+    "keywords": [
+      "testemunha",
+      "mentiu em juízo",
+      "mentiu em juizo",
+      "audiência",
+      "audiencia",
+      "perito",
+      "depoimento"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "cp-345",
+    "code": "Código Penal",
+    "article": "Art. 345",
+    "title": "Exercício arbitrário das próprias razões",
+    "group": "ADMINISTRACAO_PUBLICA",
+    "legalText": "Fazer justiça pelas próprias mãos, para satisfazer pretensão, embora legítima, salvo quando a lei o permite.",
+    "penalty": "Detenção, de 15 (quinze) dias a 1 (um) mês, ou multa, além da pena correspondente à violência.",
+    "elements": [
+      "Pretensão que o autor acredita ser legítima",
+      "Agir por conta própria em vez de recorrer à Justiça",
+      "Lei não autoriza essa forma de agir"
+    ],
+    "observations": [
+      "Se há violência, responde também por ela.",
+      "Exemplo: tomar de volta à força um bem que acredita ser seu."
+    ],
+    "strongKeywords": [
+      "exercício arbitrário",
+      "exercicio arbitrario",
+      "justiça pelas próprias mãos",
+      "justica pelas proprias maos"
+    ],
+    "keywords": [
+      "cobrança",
+      "cobranca",
+      "cobrar dívida",
+      "cobrar divida",
+      "tomou de volta",
+      "retomou",
+      "fez justiça",
+      "fez justica"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "l10826-12",
+    "code": "Lei 10.826/2003 (Estatuto do Desarmamento)",
+    "article": "Art. 12",
+    "title": "Posse irregular de arma de fogo de uso permitido",
+    "group": "ARMAS",
+    "legalText": "Possuir ou manter sob sua guarda arma de fogo, acessório ou munição, de uso permitido, em desacordo com determinação legal ou regulamentar, no interior de sua residência ou dependência desta, ou, ainda no seu local de trabalho, desde que seja o titular ou o responsável legal do estabelecimento ou empresa.",
+    "penalty": "Detenção, de 1 (um) a 3 (três) anos, e multa.",
+    "elements": [
+      "Arma, acessório ou munição de uso permitido",
+      "Guarda dentro de casa ou local de trabalho (como titular ou responsável)",
+      "Sem registro ou em desacordo com a lei"
+    ],
+    "observations": [
+      "Fora de casa ou do local de trabalho, a conduta pode ser porte (art. 14)."
+    ],
+    "strongKeywords": [
+      "posse irregular de arma",
+      "posse de arma",
+      "arma sem registro"
+    ],
+    "keywords": [
+      "arma em casa",
+      "guardava arma",
+      "revólver",
+      "revolver",
+      "pistola",
+      "munição",
+      "municao",
+      "sem registro"
+    ],
+    "disqualifiers": [
+      "portava na rua"
+    ]
+  },
+  {
+    "id": "l10826-14",
+    "code": "Lei 10.826/2003 (Estatuto do Desarmamento)",
+    "article": "Art. 14",
+    "title": "Porte ilegal de arma de fogo de uso permitido",
+    "group": "ARMAS",
+    "legalText": "Portar, deter, adquirir, fornecer, receber, ter em depósito, transportar, ceder, emprestar, remeter, empregar, manter sob guarda ou ocultar arma de fogo, acessório ou munição, de uso permitido, sem autorização e em desacordo com determinação legal ou regulamentar.",
+    "penalty": "Reclusão, de 2 (dois) a 4 (quatro) anos, e multa.",
+    "elements": [
+      "Arma, acessório ou munição de uso permitido",
+      "Uma das condutas do tipo (portar, transportar, ceder etc.)",
+      "Sem autorização legal"
+    ],
+    "observations": [
+      "Se a arma é de uso restrito ou proibido, aplica-se o art. 16.",
+      "Se a arma foi usada em outro crime (como roubo), o caso pode envolver concurso de crimes."
+    ],
+    "strongKeywords": [
+      "porte ilegal de arma",
+      "porte de arma",
+      "portava arma"
+    ],
+    "keywords": [
+      "armado",
+      "arma de fogo",
+      "revólver",
+      "revolver",
+      "pistola",
+      "andava com arma",
+      "carregava arma"
+    ],
+    "disqualifiers": [
+      "registrada",
+      "autorização",
+      "autorizacao"
+    ]
+  },
+  {
+    "id": "l10826-16",
+    "code": "Lei 10.826/2003 (Estatuto do Desarmamento)",
+    "article": "Art. 16",
+    "title": "Posse ou porte de arma de fogo de uso restrito",
+    "group": "ARMAS",
+    "legalText": "Possuir, deter, portar, adquirir, fornecer, receber, ter em depósito, transportar, ceder, emprestar, manter sob guarda ou ocultar arma de fogo, acessório ou munição de uso restrito, sem autorização e em desacordo com determinação legal ou regulamentar.",
+    "penalty": "Reclusão, de 3 (três) a 6 (seis) anos, e multa.",
+    "elements": [
+      "Arma, acessório ou munição de uso restrito",
+      "Sem autorização legal",
+      "Conduta descrita no tipo"
+    ],
+    "observations": [
+      "A classificação de uso restrito ou permitido depende de normas regulamentares atualizadas.",
+      "Também alcança armas com numeração raspada ou adulterada, conforme o próprio artigo."
+    ],
+    "strongKeywords": [
+      "arma de uso restrito",
+      "fuzil",
+      "metralhadora",
+      "submetralhadora"
+    ],
+    "keywords": [
+      "calibre restrito",
+      "explosivo",
+      "granada",
+      "raspada",
+      "numeração raspada",
+      "numeracao raspada"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "l9455-1",
+    "code": "Lei 9.455/1997 (Crime de Tortura)",
+    "article": "Art. 1º",
+    "title": "Tortura",
+    "group": "LIBERDADE",
+    "legalText": "Constranger alguém com emprego de violência ou grave ameaça, causando-lhe sofrimento físico ou mental, com finalidades como obter informação, declaração ou confissão, provocar ação ou omissão de natureza criminosa, ou em razão de discriminação racial ou religiosa; ou submeter alguém sob sua guarda, poder ou autoridade a intenso sofrimento físico ou mental como forma de castigo pessoal ou medida de caráter preventivo.",
+    "penalty": "Reclusão, de 2 (dois) a 8 (oito) anos.",
+    "elements": [
+      "Violência ou grave ameaça",
+      "Sofrimento físico ou mental intenso",
+      "Finalidade especial prevista na lei ou vítima sob guarda, poder ou autoridade"
+    ],
+    "observations": [
+      "A pena aumenta se o crime é cometido por agente público ou contra criança, gestante, pessoa com deficiência ou idoso.",
+      "Tortura é crime equiparado a hediondo."
+    ],
+    "strongKeywords": [
+      "tortura",
+      "torturou",
+      "torturaram"
+    ],
+    "keywords": [
+      "sofrimento",
+      "confissão",
+      "confissao",
+      "choque",
+      "afogamento",
+      "pau de arara",
+      "policial",
+      "castigo",
+      "agrediu até confessar"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "l9613-1",
+    "code": "Lei 9.613/1998 (Lavagem de Dinheiro)",
+    "article": "Art. 1º",
+    "title": "Lavagem de dinheiro",
+    "group": "OUTROS",
+    "legalText": "Ocultar ou dissimular a natureza, origem, localização, disposição, movimentação ou propriedade de bens, direitos ou valores provenientes, direta ou indiretamente, de infração penal.",
+    "penalty": "Reclusão, de 3 (três) a 10 (dez) anos, e multa.",
+    "elements": [
+      "Bens, direitos ou valores originados de infração penal",
+      "Ocultar ou dissimular origem, localização ou propriedade",
+      "Dolo"
+    ],
+    "observations": [
+      "Não exige condenação prévia pelo crime de origem, mas é preciso indícios dele.",
+      "Laranjas e empresas de fachada são exemplos comuns de dissimulação."
+    ],
+    "strongKeywords": [
+      "lavagem de dinheiro",
+      "lavou dinheiro",
+      "lavagem de capitais"
+    ],
+    "keywords": [
+      "laranja",
+      "empresa de fachada",
+      "ocultar origem",
+      "dinheiro sujo",
+      "conta de terceiros",
+      "dissimular"
+    ],
+    "disqualifiers": []
+  },
+  {
+    "id": "l12850-2",
+    "code": "Lei 12.850/2013 (Organização Criminosa)",
+    "article": "Art. 2º",
+    "title": "Organização criminosa",
+    "group": "OUTROS",
+    "legalText": "Promover, constituir, financiar ou integrar, pessoalmente ou por interposta pessoa, organização criminosa.",
+    "penalty": "Reclusão, de 3 (três) a 8 (oito) anos, e multa, sem prejuízo das penas correspondentes às demais infrações penais praticadas.",
+    "elements": [
+      "Associação de 4 ou mais pessoas",
+      "Estrutura ordenada e divisão de tarefas",
+      "Objetivo de obter vantagem mediante infrações penais com pena máxima superior a 4 anos (ou de caráter transnacional)"
+    ],
+    "observations": [
+      "Diferente da associação criminosa (art. 288 do CP), que exige 3 pessoas e não exige estrutura ordenada."
+    ],
+    "strongKeywords": [
+      "organização criminosa",
+      "organizacao criminosa",
+      "facção criminosa",
+      "faccao criminosa"
+    ],
+    "keywords": [
+      "hierarquia",
+      "chefe",
+      "divisão de tarefas",
+      "divisao de tarefas",
+      "quatro pessoas",
+      "grupo estruturado",
+      "comandava"
+    ],
+    "disqualifiers": []
   }
 ]

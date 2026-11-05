@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="ChatJuridico: análise local de relatos, consulta a seis normas brasileiras, fontes oficiais, glossário jurídico e indicações de livros."
+      content="ChatJuridico: análise local de relatos, consulta a quinze normas brasileiras, fontes oficiais, glossário jurídico e indicações de livros."
     />
     <meta name="theme-color" content="#2563eb" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -41,6 +41,7 @@
         <button class="view-tab" id="vade-tab" type="button" aria-controls="vade-view" aria-selected="false">Vade Mecum</button>
         <button class="view-tab" id="books-tab" type="button" aria-controls="books-view" aria-selected="false">Livros</button>
         <button class="view-tab" id="glossary-tab" type="button" aria-controls="glossary-view" aria-selected="false">Glossário</button>
+        <button class="view-tab" id="chat-tab" type="button" aria-controls="chat-view" aria-selected="false">Ajuda</button>
       </nav>
 
       <main>
@@ -58,7 +59,7 @@
         <button class="vade-quick-access" id="vade-shortcut" type="button">
           <span class="vade-quick-copy">
             <strong>Vade Mecum</strong>
-            <span>Consulte seis normas brasileiras selecionadas, também offline após o carregamento inicial.</span>
+            <span>Consulte quinze normas brasileiras selecionadas, também offline após o carregamento inicial.</span>
           </span>
           <span class="vade-quick-action">Consultar <span aria-hidden="true">→</span></span>
         </button>
@@ -160,7 +161,7 @@
           <section class="intro">
             <p class="eyebrow"><span class="eyebrow-line"></span> LEGISLAÇÃO FEDERAL</p>
             <h1 id="vade-title">Consulte as leis<br /><span>do seu caso.</span></h1>
-            <p class="intro-copy">Pesquise em seis normas selecionadas: Constituição Federal, Código Penal, Código de Processo Penal, Lei Maria da Penha, Lei de Drogas e Lei de Execução Penal. O texto local fica disponível offline após o carregamento inicial.</p>
+            <p class="intro-copy">Pesquise em quinze normas federais, incluindo Constituição, códigos Penal e de Processo Penal, Lei Maria da Penha, Lei de Drogas, Estatuto do Desarmamento, ECA e legislação sobre tortura, lavagem de dinheiro e organização criminosa. O texto local fica disponível offline após o carregamento inicial.</p>
           </section>
 
           <form class="vade-search-panel" id="vade-search-form">
@@ -267,6 +268,42 @@
           </section>
           <div class="glossary-status" id="glossary-status" role="status">Carregando glossário…</div>
           <section class="glossary-list" id="glossary-list" aria-live="polite" aria-label="Termos jurídicos"></section>
+        </section>
+
+        <section class="app-view chat-view" id="chat-view" hidden aria-labelledby="chat-title">
+          <section class="intro">
+            <p class="eyebrow"><span class="eyebrow-line"></span> AJUDA LOCAL</p>
+            <h1 id="chat-title">Tire dúvidas<br /><span>sobre o app.</span></h1>
+            <p class="intro-copy">Consulte definições e fontes oficiais já disponíveis neste aplicativo. As respostas são gerais e processadas neste aparelho, sem serviço externo.</p>
+          </section>
+
+          <aside class="chat-privacy-note">
+            <strong>Privacidade e limites</strong>
+            <p>Não envie nomes, documentos ou relatos de casos. A conversa não é enviada nem salva; ela permanece apenas enquanto esta página estiver aberta. Este recurso não presta aconselhamento jurídico individual, não analisa casos e não determina culpa.</p>
+          </aside>
+
+          <div class="chat-suggestions" aria-label="Perguntas frequentes">
+            <button type="button" data-chat-prompt="Como funciona a análise do app?">Como funciona o app?</button>
+            <button type="button" data-chat-prompt="O que significa contraditório?">O que é contraditório?</button>
+            <button type="button" data-chat-prompt="Quais são as fontes oficiais?">Ver fontes oficiais</button>
+          </div>
+
+          <section class="chat-panel" aria-label="Chat de ajuda informativa">
+            <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-relevant="additions">
+              <article class="chat-message assistant">
+                <p>Olá! Posso explicar termos do glossário, indicar como usar as seções do app ou mostrar as fontes oficiais incluídas. Faça uma pergunta geral, sem compartilhar detalhes pessoais ou de um caso.</p>
+              </article>
+            </div>
+            <form class="chat-form" id="chat-form">
+              <label for="chat-query">PERGUNTA GERAL</label>
+              <div class="chat-input-row">
+                <input id="chat-query" name="question" type="text" autocomplete="off" maxlength="240" placeholder="Ex.: o que é ampla defesa?" />
+                <button class="primary-button" type="submit">Enviar</button>
+              </div>
+              <p class="field-hint">Processamento local, sem API externa e sem histórico salvo.</p>
+            </form>
+            <button class="chat-clear-button" id="chat-clear" type="button">Limpar conversa</button>
+          </section>
         </section>
       </main>
       <footer>Feito para apoiar a pesquisa — <span>não substitui orientação jurídica.</span></footer>

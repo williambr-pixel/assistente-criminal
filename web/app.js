@@ -24,6 +24,22 @@ const LAW_SOURCES = {
     url: "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm",
     vadeDocumentId: "lei-maria-da-penha",
   },
+  "Lei 10.826/2003 (Estatuto do Desarmamento)": {
+    url: "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.826.htm",
+    vadeDocumentId: "estatuto-do-desarmamento",
+  },
+  "Lei 9.455/1997 (Crime de Tortura)": {
+    url: "https://www.planalto.gov.br/ccivil_03/leis/l9455.htm",
+    vadeDocumentId: "lei-de-tortura",
+  },
+  "Lei 9.613/1998 (Lavagem de Dinheiro)": {
+    url: "https://www.planalto.gov.br/ccivil_03/leis/l9613.htm",
+    vadeDocumentId: "lei-de-lavagem",
+  },
+  "Lei 12.850/2013 (Organização Criminosa)": {
+    url: "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12850.htm",
+    vadeDocumentId: "lei-de-organizacao-criminosa",
+  },
 };
 
 const examples = [
@@ -48,10 +64,12 @@ const caseView = document.querySelector("#case-view");
 const vadeView = document.querySelector("#vade-view");
 const booksView = document.querySelector("#books-view");
 const glossaryView = document.querySelector("#glossary-view");
+const chatView = document.querySelector("#chat-view");
 const caseTab = document.querySelector("#case-tab");
 const vadeTab = document.querySelector("#vade-tab");
 const booksTab = document.querySelector("#books-tab");
 const glossaryTab = document.querySelector("#glossary-tab");
+const chatTab = document.querySelector("#chat-tab");
 const vadeShortcut = document.querySelector("#vade-shortcut");
 const vadeForm = document.querySelector("#vade-search-form");
 const vadeQueryInput = document.querySelector("#vade-query");
@@ -62,6 +80,10 @@ const sourceNotes = document.querySelector("#source-notes");
 const glossaryQuery = document.querySelector("#glossary-query");
 const glossaryList = document.querySelector("#glossary-list");
 const glossaryStatus = document.querySelector("#glossary-status");
+const chatForm = document.querySelector("#chat-form");
+const chatQuery = document.querySelector("#chat-query");
+const chatMessages = document.querySelector("#chat-messages");
+const chatClearButton = document.querySelector("#chat-clear");
 const installButton = document.querySelector("#install-button");
 const installDialog = document.querySelector("#install-dialog");
 const closeInstallDialogButton = document.querySelector(".install-dialog-close");
@@ -82,6 +104,49 @@ function escapeHtml(value) {
     '"': "&quot;",
     "'": "&#39;",
   })[character]);
+}
+
+
+// Linguagem do dia a dia -> termos que a base jurídica entende.
+// Se o relato tiver qualquer "gatilho", o app também procura pelos termos de "adiciona".
+const SYNONYMS = [
+  { gatilhos: ["assaltou", "assaltaram", "assalto", "roubaram", "roubou", "arrastao", "sequestro relampago"], adiciona: ["roubo"] },
+  { gatilhos: ["furtaram", "afanou", "bateu carteira", "pegou escondido"], adiciona: ["furto"] },
+  { gatilhos: ["bateu", "espancou", "espancaram", "socou", "soco", "chutou", "chute", "porrada", "tapa", "surra", "machucou", "empurrou", "agrediu"], adiciona: ["agressão", "lesão", "corporal"] },
+  { gatilhos: ["ameaçou", "ameacaram", "intimidou", "vou te matar", "vai se arrepender"], adiciona: ["ameaça"] },
+  { gatilhos: ["xingou", "ofendeu", "humilhou", "insultou", "chamou de"], adiciona: ["injúria"] },
+  { gatilhos: ["falou mal", "espalhou boato", "espalhou fofoca", "manchou a reputação"], adiciona: ["difamação"] },
+  { gatilhos: ["golpe", "pirâmide", "boleto falso", "falso perfil", "cartão clonado", "clonaram"], adiciona: ["estelionato", "fraude"] },
+  { gatilhos: ["maconha", "cocaína", "crack", "droga", "drogas", "entorpecente", "boca de fumo", "traficando"], adiciona: ["drogas"] },
+  { gatilhos: ["assassinaram", "executaram", "tiraram a vida", "mataram", "matou"], adiciona: ["homicídio"] },
+  { gatilhos: ["bêbado", "bebeu e dirigiu", "bafômetro", "embriagado"], adiciona: ["embriaguez", "volante"] },
+  { gatilhos: ["me segue", "me seguindo", "não para de mandar mensagem", "fica me ligando"], adiciona: ["perseguição"] },
+  { gatilhos: ["nudes", "fotos íntimas", "vídeo íntimo"], adiciona: ["vazou", "nudes"] },
+  { gatilhos: ["hackearam", "hackeou", "invadiram meu celular", "invadiram minha conta"], adiciona: ["invasão de celular"] },
+  { gatilhos: ["documento falso", "carteira falsa", "rg falso", "cnh falsa"], adiciona: ["falsificação de documento"] },
+  { gatilhos: ["não prestou socorro", "deixou na rua ferido", "fugiu sem ajudar"], adiciona: ["omissão de socorro"] },
+];
+
+function expandTokens(textTokens) {
+  const extra = [];
+  for (const group of SYNONYMS) {
+    if (group.gatilhos.some((trigger) => mentions(textTokens, trigger))) {
+      for (const term of group.adiciona) extra.push(...normalize(term).split(/ +/).filter(Boolean));
+    }
+  }
+  return [...textTokens, ...extra];
+}
+
+// Aceita um erro de digitação (letra a mais, a menos ou trocada) em palavras longas.
+function withinOneEdit(a, b) {
+  if (Math.abs(a.length - b.length) > 1) return false;
+  let i = 0;
+  while (i < a.length && i < b.length && a[i] === b[i]) i += 1;
+  if (a.length === b.length) {
+    const swapped = a[i] === b[i + 1] && a[i + 1] === b[i] && a.slice(i + 2) === b.slice(i + 2);
+    return a.slice(i + 1) === b.slice(i + 1) || swapped;
+  }
+  return a.length > b.length ? a.slice(i + 1) === b.slice(i) : b.slice(i + 1) === a.slice(i);
 }
 
 function normalize(value) {
@@ -110,7 +175,8 @@ function mentions(textTokens, term) {
       }
       const sharesPrefix = shortestLength >= 4 &&
         commonPrefixLength >= shortestLength - 1;
-      return token === termToken || sharesPrefix;
+      const typo = shortestLength >= 6 && withinOneEdit(token, termToken);
+      return token === termToken || sharesPrefix || typo;
     }),
   );
 }
@@ -132,7 +198,9 @@ function confidence(strongCount, supportCount, conflictCount) {
 }
 
 function searchArticles(description) {
-  const textTokens = normalize(description).split(/ +/).filter(Boolean);
+  const cleanedText = normalize(description)
+    .replace(/\b(vou|vai|ia|iria|vamos|quer|queria)\s+(?:te\s+|me\s+|lhe\s+|nos\s+)?mat\w+/g, "ameaca de morte");
+  const textTokens = expandTokens(cleanedText.split(/ +/).filter(Boolean));
 
   return articles
     .map((article) => {
@@ -175,6 +243,7 @@ function renderResults(matches) {
       <div class="empty-state">
         <h3>Nenhum artigo encontrado</h3>
         <p>Descreva melhor a conduta, o meio empregado e o resultado. Também vale citar o contexto e o vínculo entre as pessoas.</p>
+        <p><strong>Perguntas que ajudam:</strong> O que a pessoa fez? Houve violência, ameaça ou arma? Algo foi levado ou danificado? Quanto prejuízo? Quem eram as partes (conhecidos, parentes, funcionário público)? Foi pela internet?</p>
       </div>`;
     return;
   }
@@ -237,6 +306,7 @@ function showView(view) {
     vade: { panel: vadeView, tab: vadeTab },
     books: { panel: booksView, tab: booksTab },
     glossary: { panel: glossaryView, tab: glossaryTab },
+    chat: { panel: chatView, tab: chatTab },
   };
   const activeView = views[view];
   if (!activeView) return;
@@ -460,6 +530,7 @@ function openArticle(match) {
     TRANSITO: "Trânsito",
     VIDA: "Vida",
     VIOLENCIA_DOMESTICA: "Violência doméstica",
+    CRIME_ORGANIZADO: "Crime organizado",
   };
 
   dialogBody.innerHTML = `
@@ -547,6 +618,7 @@ caseTab.addEventListener("click", () => showView("case"));
 vadeTab.addEventListener("click", () => showView("vade"));
 booksTab.addEventListener("click", () => showView("books"));
 glossaryTab.addEventListener("click", () => showView("glossary"));
+chatTab.addEventListener("click", () => showView("chat"));
 vadeShortcut.addEventListener("click", () => showView("vade"));
 
 function renderGlossary(query = "") {
@@ -578,6 +650,148 @@ function renderGlossary(query = "") {
 }
 
 glossaryQuery.addEventListener("input", () => renderGlossary(glossaryQuery.value));
+
+function appendChatMessage(text, links = []) {
+  const message = window.document.createElement("article");
+  message.className = "chat-message assistant";
+  const paragraph = window.document.createElement("p");
+  paragraph.textContent = text;
+  message.append(paragraph);
+
+  links.forEach((link) => {
+    if (link.view) {
+      const button = window.document.createElement("button");
+      button.className = "chat-view-link";
+      button.type = "button";
+      button.dataset.chatView = link.view;
+      button.textContent = link.label;
+      message.append(button);
+      return;
+    }
+
+    const url = new URL(link.url);
+    if (url.protocol !== "https:" || url.hostname !== "www.planalto.gov.br") return;
+    const anchor = window.document.createElement("a");
+    anchor.href = url.href;
+    anchor.target = "_blank";
+    anchor.rel = "noopener noreferrer";
+    anchor.textContent = link.label;
+    message.append(anchor);
+  });
+
+  chatMessages.append(message);
+  message.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function glossaryAnswer(question) {
+  if (glossaryTerms.length === 0) return null;
+
+  const queryTokens = normalize(question)
+    .split(" ")
+    .filter((token) => !["o", "a", "os", "as", "que", "significa", "significado", "termo", "e", "de", "do", "da"].includes(token));
+  if (queryTokens.length === 0) return null;
+
+  const matches = glossaryTerms
+    .map((entry) => {
+      const term = normalize(entry.term);
+      const matchingTokens = queryTokens.filter((token) => term.split(" ").includes(token));
+      return { entry, term, matchingTokens };
+    })
+    .filter((match) => match.matchingTokens.length > 0)
+    .sort((left, right) =>
+      right.matchingTokens.length - left.matchingTokens.length ||
+      left.term.length - right.term.length,
+    );
+
+  const match = matches[0];
+  if (!match) return null;
+  return `No glossário, “${match.entry.term}” significa: ${match.entry.definition}\n\nÉ uma explicação introdutória; o sentido e os efeitos jurídicos dependem da lei e do contexto.`;
+}
+
+function answerChatQuestion(question) {
+  const normalizedQuestion = normalize(question);
+  if (!normalizedQuestion) return "Digite uma pergunta geral sobre o app, um termo do glossário ou as fontes incluídas.";
+  if (question.length > 100) {
+    return "Para proteger sua privacidade, não compartilhe relatos ou detalhes de um caso aqui. Posso responder dúvidas gerais sobre o app, explicar termos do glossário ou mostrar as fontes oficiais.";
+  }
+
+  if (/\b(meu caso|minha situacao|aconteceu comigo|o que devo fazer|fui preso|fui acusad|fui vitim|qual crime|qual artigo se aplica|qual lei se aplica|posso processar|sou culpado|isso e crime)\b/.test(normalizedQuestion)) {
+    return "Não consigo analisar uma situação individual, indicar um enquadramento para fatos concretos ou avaliar culpa. Evite compartilhar dados pessoais ou detalhes do caso. Para orientação individual, procure profissional habilitado ou a Defensoria Pública; em risco imediato, acione os serviços de emergência locais.";
+  }
+
+  if (/fontes|planalto|fonte oficial|legislacao|leis disponiveis/.test(normalizedQuestion)) {
+    const links = lawDocuments
+      .filter((document) => document.source)
+      .map((document) => ({ label: `Fonte oficial: ${document.title} ↗`, url: document.source }));
+    return {
+      text: `O Vade Mecum local reúne ${lawDocuments.length} normas. Os textos salvos têm a data de consulta indicada no próprio app e podem não refletir mudanças posteriores; confirme sempre a versão vigente na fonte oficial.`,
+      links,
+    };
+  }
+
+  if (/privacidade|salva|enviada|historico|api/.test(normalizedQuestion)) {
+    return "As perguntas são processadas neste aparelho por regras simples e pelo glossário incluído no app. O chat não chama API externa, não envia nem salva as perguntas ou a conversa. Ao fechar ou recarregar a página, as mensagens temporárias desaparecem.";
+  }
+
+  if (/como funciona|analise|analisar|resultado|culpa/.test(normalizedQuestion)) {
+    return {
+      text: "A análise compara palavras do relato com termos associados aos artigos da base local. É uma busca informativa, não consulta jurisprudência, não verifica provas e não conclui que houve crime ou que alguém é culpado. Para proteger sua privacidade, não envie relatos neste chat.",
+      links: [{ label: "Abrir análise informativa", view: "case" }],
+    };
+  }
+
+  if (/offline|sem internet|instalar/.test(normalizedQuestion)) {
+    return "A PWA pode manter a interface e os dados em cache para consulta offline depois do carregamento inicial. Atualizações legislativas podem não estar disponíveis sem conexão; confira a fonte oficial quando puder.";
+  }
+
+  const definition = glossaryAnswer(question);
+  if (definition) {
+    return {
+      text: definition,
+      links: [{ label: "Abrir glossário", view: "glossary" }],
+    };
+  }
+
+  return {
+    text: "Ainda não encontrei uma resposta para essa pergunta geral no conteúdo local. Posso ajudar com definições introdutórias, navegação pelo app ou fontes oficiais; não analiso casos individuais.",
+    links: [
+      { label: "Pesquisar no glossário", view: "glossary" },
+      { label: "Consultar legislação", view: "vade" },
+    ],
+  };
+}
+
+function submitChatQuestion(question) {
+  const answer = answerChatQuestion(question);
+  if (typeof answer === "string") {
+    appendChatMessage(answer);
+  } else {
+    appendChatMessage(answer.text, answer.links);
+  }
+}
+
+chatForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const question = chatQuery.value.trim();
+  chatQuery.value = "";
+  if (question) submitChatQuestion(question);
+});
+
+chatView.addEventListener("click", (event) => {
+  const promptButton = event.target.closest("[data-chat-prompt]");
+  if (promptButton) {
+    submitChatQuestion(promptButton.dataset.chatPrompt);
+    return;
+  }
+
+  const viewButton = event.target.closest("[data-chat-view]");
+  if (viewButton) showView(viewButton.dataset.chatView);
+});
+
+chatClearButton.addEventListener("click", () => {
+  const welcomeMessage = chatMessages.firstElementChild?.cloneNode(true);
+  chatMessages.replaceChildren(...(welcomeMessage ? [welcomeMessage] : []));
+});
 
 vadeForm.addEventListener("submit", (event) => {
   event.preventDefault();

@@ -15,11 +15,14 @@ Aplicativo de apoio informativo para consulta inicial de temas jurídicos e estu
 
 - **Análise inicial de relatos:** compara palavras do relato com referências de artigos penais na
   base local. Não pesquisa jurisprudência nem decide se houve crime.
-- **Vade Mecum offline:** consulta a legislação disponível no app, incluindo Constituição, Código
-  Penal, Código de Processo Penal, Lei Maria da Penha, Lei de Drogas e Lei de Execução Penal.
+- **Vade Mecum offline:** consulta a quinze normas federais, incluindo Constituição, códigos Penal
+  e de Processo Penal, Lei Maria da Penha, Lei de Drogas, Estatuto do Desarmamento, ECA e leis
+  sobre tortura, lavagem de dinheiro e organização criminosa.
 - **Fontes oficiais:** as referências legais apresentam links para consultar a legislação no Portal
   da Legislação da Presidência da República.
 - **Glossário jurídico:** pesquisa definições introdutórias de termos jurídicos.
+- **Ajuda local:** responde perguntas frequentes e explica termos do glossário neste aparelho, sem
+  API externa nem histórico salvo. Não avalia casos nem presta aconselhamento jurídico individual.
 - **Indicações de leitura:** sugestões de livros para apoiar os estudos de Direito.
 
 O texto legislativo armazenado no dispositivo pode não refletir alterações recentes. Use os links

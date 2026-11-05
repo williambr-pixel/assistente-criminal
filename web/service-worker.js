@@ -1,4 +1,4 @@
-const CACHE_NAME = "chatjuridico-v6";
+const CACHE_NAME = "chatjuridico-v8";
 const APP_SHELL = [
   "./",
   "./index.html",
